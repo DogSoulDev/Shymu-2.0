@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='w-screen h-screen bg-blue-400 flex justify-center items-center text-base font-bold'>
 			<p>Hola</p>
 		</div>
 	);
