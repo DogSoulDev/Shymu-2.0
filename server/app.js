@@ -10,6 +10,16 @@ app.get("/", (req, res) => {
 	return res.json("Hi there...");
 });
 
+//!User authentication route
+const userRoute = require("./routes/auth");
+app.use("/api/users/", userRoute);
+
+// app.use(cors({origin:true}));
+
+app.get("/", (req, res) => {
+	return res.json("Hi there...");
+});
+
 mongoose.connect(process.env.DB_STRING, (err, req) => {
 	try {
 		if (err) {
@@ -22,6 +32,6 @@ mongoose.connect(process.env.DB_STRING, (err, req) => {
 	}
 });
 
-app.listen(4000, (req, res) => {
+app.listen(process.env.LH_PORT, (req, res) => {
 	console.log("Server runs OK!");
 });
