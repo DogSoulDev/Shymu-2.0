@@ -8,7 +8,6 @@ import { useEffect } from "react";
 const Login = ({ setAuth }) => {
 	const firebaseAuth = getAuth(app);
 	const provider = new GoogleAuthProvider();
-
 	const navigate = useNavigate();
 
 	const loginWithGoogle = async () => {
