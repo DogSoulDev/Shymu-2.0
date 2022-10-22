@@ -12,7 +12,6 @@ function App() {
 	const [auth, setAuth] = useState(
 		false || window.localStorage.getItem("auth") === "true",
 	);
-
 	useEffect(() => {
 		firebaseAuth.onAuthStateChanged((userCred) => {
 			if (userCred) {
