@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Music app",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DogSoulDev/Shymu-2.0.git"
+  },
+  "author": "Javier Fernández",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DogSoulDev/Shymu-2.0/issues"
+  },
+  "homepage": "https://github.com/DogSoulDev/Shymu-2.0#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
