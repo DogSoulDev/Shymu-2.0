@@ -1,0 +1,53 @@
+// const dotenv = require('dotenv');
+// const logger = require('loglevel');
+// logger.enableAll();
+// dotenv.config();
+
+// const {
+
+// } = process.env;
+
+// const config = {
+//   server: {
+//     app: {
+//       port: DB_PORT || DB_ALTERNATIVE_PORT,
+//     },
+//     client: {
+//       url: CLIENT_URL || ALTERNATIVE_CLIENT_URL,
+//     },
+//     logger: {
+//       warn: logger.warn,
+//       info: logger.info,
+//       error: logger.error,
+//       trace: logger.trace,
+//       debug: logger.debug,
+//     },
+//     db: {
+//       url: DB_MONGODB,
+//     },
+//     firebase: {
+//       type: FB_TYPE,
+//       project_id: FB_PROJECT_ID,
+//       private_key_id: FB_PRIVATE_KEY_ID,
+//       private_key: FB_PRIVATE_KEY,
+//       client_email: FB_CLIENT_EMAIL,
+//       client_id: FB_CLIENT_ID,
+//       auth_uri: FB_AUTH_URI,
+//       token_uri: FB_TOKEN_URI,
+//       auth_provider_x509_cert_url: FB_AUTH_PROVIDER_X509_CERT_URL,
+//       client_x509_cert_url: FB_CLIENT_X509_CERT_URL,
+//     },
+//     cloudinary: {
+//       cloud_name: CLOUD_NAME,
+//       api_key: API_KEY,
+//       api_secret: API_SECRET,
+//       profile_image: PROFILE_IMAGE,
+//       playlist_thumbnail: PLAYLIST_THUMBNAIL,
+//       cloudinary_host: CLOUDINARY_HOST,
+//     },
+//   },
+// };
+
+// module.exports = {
+//   config,
+// };
