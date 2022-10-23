@@ -11,6 +11,20 @@ const Home = () => {
 				<NavLink to='/'>
 					<img src={Logo} alt='Logo' className='w-16' />
 				</NavLink>
+				<ul className='flex items-center justify-center ml-7'>
+					<li className='mx-5 text-lg'>
+						<NavLink to='/home'>Home</NavLink>
+					</li>
+					<li className='mx-5 text-lg'>
+						<NavLink to='/musics'>Music</NavLink>
+					</li>
+					<li className='mx-5 text-lg'>
+						<NavLink to='/premium'>Premium</NavLink>
+					</li>
+					<li className='mx-5 text-lg'>
+						<NavLink to='/contact'>Contact Us</NavLink>
+					</li>
+				</ul>
 			</header>
 		</div>
 	);
