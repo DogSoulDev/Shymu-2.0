@@ -1,0 +1,42 @@
+The first thing I did was to create the firebase account, mongodb, tailwind, install the dependencies for:
+In client:
+   "@testing-library/jest-dom":"^5.16.5",
+    "@testing-library/react":"^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.1.3",
+    "dotenv":"^16.0.3",
+    "firebase": "^9.12.1",
+    "framer-motion": "^7.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4".
+
+
+On server:
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express":"^4.18.2",
+    "firebase-admin":"^11.2.0",
+    "mongoose": "^6.6.7",
+    "nodemon": "^2.0.20".
+
+Then we get into our folder:
+(Github repository is: https://github.com/DogSoulDev/Shymu-2.0
+C:\UsersRepository-2.0
+Inside our general folder we have on the one hand the 
+Client that we execute with : Npm start
+Server that we execute with: Npm run dev
+
+It is important to emphasize that both work with the same branch of Git, a change in any of the two folders will mean to make a push before making modifications in the other one.
+
+
+Next we connect express , mongoose and firebase (the admin on the server)to our database.
+LINKS:
+Firebase => https://console.firebase.google.com/u/1/
+Mongodb (Atlas Cluster0)=> https://cloud.mongodb.com/v2#/org/6353ca0b4e18081dd68150d0/projects
+Tailwind for CSS=> https://tailwindcss.com/docs/guides/create-react-app
+
+Once configured all the startup, both client with React and server with Nodejs, we create the Schema "user" with mongoose, our login with firebase and store the token, to be able to receive it in the back and store it.
