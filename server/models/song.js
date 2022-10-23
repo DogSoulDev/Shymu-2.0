@@ -1,12 +1,8 @@
 const mongoose = require("mongoose");
 
-const UserSchema = mongoose.Schema(
+const SongSchema = mongoose.Schema(
 	{
 		name: {
-			type: String,
-			required: true,
-		},
-		email: {
 			type: String,
 			required: true,
 		},
@@ -14,24 +10,22 @@ const UserSchema = mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		user_id: {
+		songUrl: {
 			type: String,
 			required: true,
 		},
-		email_verfied: {
-			type: Boolean,
-			required: true,
+		album: {
+			type: String,
 		},
-		favourites: [
-			{
-				songId: String,
-			},
-		],
-		role: {
+		artist: {
 			type: String,
 			required: true,
 		},
-		auth_time: {
+		language: {
+			type: String,
+			required: true,
+		},
+		category: {
 			type: String,
 			required: true,
 		},
@@ -39,4 +33,4 @@ const UserSchema = mongoose.Schema(
 	{ timestamps: true },
 );
 
-module.exports = mongoose.model("user", UserSchema);
+module.exports = mongoose.model("song", SongSchema);
