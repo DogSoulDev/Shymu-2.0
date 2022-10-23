@@ -2,18 +2,20 @@ import { deleteObject, ref } from "firebase/storage";
 import { storage } from "../config/firebase.config";
 
 export const filters = [
-	{ id: 2, name: "Jasp", value: "jasp" },
+	{ id: 2, name: "Blues", value: "blues" },
 	{ id: 3, name: "Rock", value: "rock" },
-	{ id: 4, name: "Melody", value: "melody" },
-	{ id: 5, name: "Karoke", value: "karoke" },
+	{ id: 4, name: "Chill-out", value: "chill-out" },
+	{ id: 5, name: "Hip-Hop", value: "hip-hop" },
+	{ id: 6, name: "K-PoP", value: "k-pop" },
+	{ id: 7, name: "Merengue", value: "merengue" },
+	{ id: 8, name: "Metal", value: "metal" },
+	{ id: 9, name: "PoP", value: "pop" },
+	{ id: 10, name: "Regueton", value: "regueton" },
 ];
 
 export const filterByLanguage = [
-	{ id: 1, name: "Tamil", value: "tamil" },
+	{ id: 1, name: "Spanish", value: "spanish" },
 	{ id: 2, name: "English", value: "english" },
-	{ id: 3, name: "Malayalam", value: "malayalam" },
-	{ id: 4, name: "Telungu", value: "Telungu" },
-	{ id: 5, name: "Hindi", value: "hindi" },
 ];
 
 export const deleteAnObject = (referenceUrl) => {
