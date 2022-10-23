@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
@@ -13,9 +12,9 @@ module.exports = {
 				350: "350px",
 				375: "375px",
 				460: "460px",
-				508: "508px",
 				656: "656px",
 				880: "880px",
+				508: "508px",
 			},
 			height: {
 				80: "80px",
@@ -41,7 +40,7 @@ module.exports = {
 				sm: "640px",
 				md: "768px",
 				lg: "1024px",
-				xl: "1280",
+				xl: "1280px",
 				"2xl": "1536px",
 			},
 			colors: {
@@ -57,9 +56,9 @@ module.exports = {
 				cartBg: "#282a2c",
 				cartItem: "#2e3033",
 				cartTotal: "#343739",
-				loarderOverlay: "rgba(256,256,256,0.1",
+				loaderOverlay: "rgba(256,256,256,0.1)",
 			},
 		},
 	},
-	// plugins: [require("tailwind-scrollbar")],
+	plugins: [require("tailwind-scrollbar")],
 };
