@@ -23,9 +23,9 @@ const Header = () => {
 		navigate("/login", { replace: true });
 	};
 	return (
-		<header className='flex items-center w-full p-4 md:py-2 md:px-6'>
+		<header className='flex items-center w-full p-4 md:py-2 md:px-8'>
 			<NavLink to={"/"}>
-				<img src={Logo} className='w-16' alt='' />
+				<img src={Logo} className='w-20' alt='' />
 			</NavLink>
 			<ul className='flex items-center justify-center ml-7'>
 				<li className="mx-5 text-lg"><NavLink to={'/home'} className={({isActive}) => isActive ? isActiveStyles : isNotActiveStyles}>Home</NavLink></li>

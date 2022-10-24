@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
-import {
-	getAuth,
+import { getAuth,
 	GoogleAuthProvider,
 	inMemoryPersistence,
 	signInWithPopup,
@@ -20,6 +19,8 @@ import {
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion, AnimatePresence } from "framer-motion";
+import Onboarding from "./components/Onboarding/Onboarding"
+
 
 function App() {
 	const firebaseAuth = getAuth(app);
@@ -53,7 +54,7 @@ function App() {
 				});
 				setIsLoading(false);
 				window.localStorage.setItem("auth", "false");
-				navigate("/login");
+				navigate("/onboarding");
 			}
 		});
 	}, []);
@@ -70,13 +71,15 @@ function App() {
 	return (
 		<AnimatePresence>
 			<div className='h-auto flex items-center justify-center min-w-[680px]'>
-				{isLoading ||
+				{/* {isLoading ||
 					(!user && (
 						<div className='fixed inset-0 bg-loaderOverlay backdrop-blur-sm '>
 							<Loader />
 						</div>
-					))}
+					))} */}
 				<Routes>
+					<Route path='/onboarding' element={<Onboarding />} />
+
 					<Route path='/login' element={<Login setAuth={setAuth} />} />
 					<Route path='/*' element={<Home />} />
 					<Route path='/dashboard/*' element={<Dashboard />} />
