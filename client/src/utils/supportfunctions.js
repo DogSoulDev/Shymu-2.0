@@ -11,6 +11,8 @@ export const filters = [
 	{ id: 8, name: "Metal", value: "metal" },
 	{ id: 9, name: "PoP", value: "pop" },
 	{ id: 10, name: "Regueton", value: "regueton" },
+	{ id: 11, name: "AudioBooks", value: "audiobooks" },
+	{ id: 12, name: "Podcast", value: "podcast" },
 ];
 
 export const filterByLanguage = [
