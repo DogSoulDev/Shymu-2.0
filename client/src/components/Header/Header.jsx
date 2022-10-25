@@ -10,7 +10,7 @@ import { FaCrown } from "react-icons/fa";
 
 const Header = () => {
 	const navigate = useNavigate();
-	const [{ user }, dispatch] = useStateValue();
+	const [{ user }, dispatch] = useStateValue();  //!Nuestro custom hook., que nos sirve para redireccionar mas abajo donde queramos al usuario.(Desplegable del login)
 	const [isMenu, setIsMenu] = useState(false);
 	const logout = () => {
 		const firebaseAuth = getAuth(app);

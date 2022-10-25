@@ -67,6 +67,8 @@ function App() {
 			});
 		}
 	}, []);
+	//*Aqui ponemos las rutas de navegacion principales. (Nuestro rooutes)
+	//*Info de AnimatePresence en: https://www.framer.com/docs/animate-presence/
 	return (
 		<AnimatePresence>
 			<div className='h-auto flex items-center justify-center min-w-[680px]'>
