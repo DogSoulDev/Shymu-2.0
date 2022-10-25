@@ -39,5 +39,7 @@ LINKS:
 Firebase =>  https://console.firebase.google.com/u/1/
 Mongodb (Cluster0 de Atlas)=> https://cloud.mongodb.com/v2#/org/6353ca0b4e18081dd68150d0/projects
 Tailwind para el CSS=> https://tailwindcss.com/docs/guides/create-react-app
+Framer Motion => https://www.framer.com/motion/
+Routing de Express => https://expressjs.com/en/guide/routing.html
 
 Una vez configurado todo el inicio, tanto de client con React como de server con Nodejs, creamos el Schema "user" con mongoose, nuestro login con firebase y almacenamos el token, para poder recibirlo en el back y almacenarlo.
