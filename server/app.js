@@ -7,19 +7,19 @@ const { default: mongoose } = require("mongoose");
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-// user authentication routes
+//* user authentication routes
 const userRoute = require("./routes/auth");
 app.use("/api/users/", userRoute);
 
-// Artist links
+//* Artist links
 const artistsRoute = require("./routes/artists");
 app.use("/api/artists/", artistsRoute);
 
-// Album links
+//* Album links
 const albumRoute = require("./routes/albums");
 app.use("/api/albums/", albumRoute);
 
-// Songs links
+//* Songs links
 const songRoute = require("./routes/songs");
 app.use("/api/songs/", songRoute);
 
@@ -39,5 +39,5 @@ mongoose.connect(process.env.DB_STRING, (err, req) => {
 });
 
 app.listen(process.env.LH_PORT, (req, res) => {
-	console.log("Server runs OK!");
+	console.log("Server Runs OK!");
 });
