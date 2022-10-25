@@ -25,7 +25,8 @@ router.get("/getOne/:getOne", async (req, res) => {
 		res.status(200).send({ success: true, msg: "No Data Found" });
 	}
 });
-
+//! Esperara a que se conecte con mongodb y le haga un fetch a la data.
+//!Toda info viene del API Body request.
 router.post("/save", async (req, res) => {
 	const newArtist = artist({
 		name: req.body.name,

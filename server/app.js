@@ -5,8 +5,10 @@ const cors = require("cors");
 const { default: mongoose } = require("mongoose");
 
 app.use(cors({ origin: true }));
+//!Esto lo que hace es convertir los datos default en JSON:
 app.use(express.json());
 
+//!Todas estas rutas las tenemos comprobadas en POSTMAN
 //* user authentication routes
 const userRoute = require("./routes/auth");
 app.use("/api/users/", userRoute);
