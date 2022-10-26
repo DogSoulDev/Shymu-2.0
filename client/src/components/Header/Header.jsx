@@ -23,7 +23,7 @@ const Header = () => {
 		navigate("/login", { replace: true });
 	};
 	return (
-		<header className='flex items-center w-full p-4 md:py-2 md:px-8'>
+		<header className='flex items-center w-full p-4 md:py-8 md:px-8 bg-primary '>
 			<NavLink to={"/"}>
 				<img src={Logo} className='w-20' alt='' />
 			</NavLink>
