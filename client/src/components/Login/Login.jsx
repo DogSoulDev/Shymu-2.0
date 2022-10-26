@@ -8,6 +8,9 @@ import { validateUser } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 
+import "./Login.css";
+
+
 const Login = ({ setAuth }) => {
 	const firebaseAuth = getAuth(app);
 	const provider = new GoogleAuthProvider();

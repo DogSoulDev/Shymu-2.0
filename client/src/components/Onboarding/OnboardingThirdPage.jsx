@@ -37,9 +37,9 @@ const OnboardingThirdPage = ({ btnThirdPage, setBtnThirdPage }) => {
           </div>
           <div className="get-started animate-enter">
           <input
-            type='button'
-            value='Get Started →	 '
-            className='bg  text-1 '
+            // type='button'
+            value='Get Started →'
+            className='bgPage3  text-1 '
             onClick={handleBtnThirdPage}
           />
         </div>
