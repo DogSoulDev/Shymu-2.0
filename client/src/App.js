@@ -22,6 +22,7 @@ import { actionType } from "./hooks/Context/reducer";
 import { motion, AnimatePresence } from "framer-motion";
 import Premium from "./components/Header/Premium";
 import Onboarding from "./components/Onboarding/Onboarding"
+import Contact from "./components/Contact/Contact";
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
      <Route path='/*' element={<Home />} />
      <Route path='/dashboard/*' element={<Dashboard />} />
      <Route path='/userProfile' element={<UserProfile />} />
+     <Route path='/contact' element={<Contact />} />
     </Routes>
     {isSongPlaying && (
      <motion.div
