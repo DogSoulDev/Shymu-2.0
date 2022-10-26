@@ -42,7 +42,7 @@ const Header = () => {
 					className='w-12 min-w-[44px] object-cover rounded-full shadow-lg'
 					src={user?.user?.imageURL}
 					alt=''
-					referrerpolicy='no-referrer'
+					referrerPolicy='no-referrer'
 				/>
 				<div className='flex flex-col'>
 					<p className='text-textColor text-lg hover:text-headingColor font-semibold'>

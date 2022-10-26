@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
-import { getAuth,
-	GoogleAuthProvider,
-	inMemoryPersistence,
-	signInWithPopup,
+import {
+ getAuth,
+ GoogleAuthProvider,
+ inMemoryPersistence,
+ signInWithPopup,
 } from "firebase/auth";
 import { app } from "./config/firebase.config";
 import { getAllSongs, validateUser } from "./api";
 import {
-	Dashboard,
-	Home,
-	Loader,
-	Login,
-	MusicPlayer,
-	UserProfile,
+ Dashboard,
+ Home,
+ Loader,
+ Login,
+ MusicPlayer,
+ UserProfile,
 } from "./components";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
@@ -75,13 +76,11 @@ function App() {
 		<AnimatePresence>
 			<div className='h-auto  items-center justify-center min-w-[680px]'>
 				{/* {isLoading ||
-					(!user && (
-						<div className='fixed inset-0 bg-loaderOverlay backdrop-blur-sm '>
-							<Loader />
-						</div>
+=======
+
 					))} */}
-				<Routes>
-					<Route path='/onboarding' element={<Onboarding />} />
+    <Routes>
+     <Route path='/onboarding' element={<Onboarding />} />
 
 					<Route path='/login' element={<Login setAuth={setAuth} />} />
 					<Route path='/*' element={<Home />} />
@@ -102,6 +101,8 @@ function App() {
 			</div>
 		</AnimatePresence>
 	);
+
+
 }
 
 export default App;
