@@ -19,6 +19,7 @@ import {
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion, AnimatePresence } from "framer-motion";
+import Premium from "./components/Header/Premium";
 import Onboarding from "./components/Onboarding/Onboarding"
 
 
@@ -68,6 +69,8 @@ function App() {
 			});
 		}
 	}, []);
+	//*Aqui ponemos las rutas de navegacion principales. (Nuestro rooutes)
+	//*Info de AnimatePresence en: https://www.framer.com/docs/animate-presence/
 	return (
 		<AnimatePresence>
 			<div className='h-auto  items-center justify-center min-w-[680px]'>
@@ -84,6 +87,7 @@ function App() {
 					<Route path='/*' element={<Home />} />
 					<Route path='/dashboard/*' element={<Dashboard />} />
 					<Route path='/userProfile' element={<UserProfile />} />
+					<Route path='/premium' element={<Premium />} />
 				</Routes>
 				{isSongPlaying && (
 					<motion.div
