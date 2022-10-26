@@ -65,6 +65,7 @@ const Header = () => {
 								Profile
 							</p>
 						</NavLink>
+						
 						<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
 							My Favourites
 						</p>

@@ -20,6 +20,7 @@ import {
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion, AnimatePresence } from "framer-motion";
+import Premium from "./components/Header/Premium";
 
 function App() {
 	const firebaseAuth = getAuth(app);
@@ -83,6 +84,7 @@ function App() {
 					<Route path='/*' element={<Home />} />
 					<Route path='/dashboard/*' element={<Dashboard />} />
 					<Route path='/userProfile' element={<UserProfile />} />
+					<Route path='/premium' element={<Premium />} />
 				</Routes>
 				{isSongPlaying && (
 					<motion.div
