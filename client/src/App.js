@@ -74,6 +74,7 @@ function App() {
 		<AnimatePresence>
 			<div className='h-auto  items-center justify-center min-w-[680px]'>
 				{/* {isLoading ||
+>>>>>>>>> Temporary merge branch 2
 					(!user && (
 						<div className='fixed inset-0 bg-loaderOverlay backdrop-blur-sm '>
 							<Loader />
@@ -82,24 +83,24 @@ function App() {
     <Routes>
      <Route path='/onboarding' element={<Onboarding />} />
 
-					<Route path='/login' element={<Login setAuth={setAuth} />} />
-					<Route path='/*' element={<Home />} />
-					<Route path='/dashboard/*' element={<Dashboard />} />
-					<Route path='/userProfile' element={<UserProfile />} />
-				</Routes>
-				{isSongPlaying && (
-					<motion.div
-						initial={{ opacity: 0, y: 50 }}
-						animate={{ opacity: 1, y: 0 }}
-						exit={{ opacity: 0, y: 50 }}
-						className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
-					>
-						<MusicPlayer />
-					</motion.div>
-				)}
-			</div>
-		</AnimatePresence>
-	);
+     <Route path='/login' element={<Login setAuth={setAuth} />} />
+     <Route path='/*' element={<Home />} />
+     <Route path='/dashboard/*' element={<Dashboard />} />
+     <Route path='/userProfile' element={<UserProfile />} />
+    </Routes>
+    {isSongPlaying && (
+     <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
+     >
+      <MusicPlayer />
+     </motion.div>
+    )}
+   </div>
+  </AnimatePresence>
+ );
 }
 
 export default App;
