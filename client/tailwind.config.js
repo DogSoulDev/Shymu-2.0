@@ -59,6 +59,14 @@ module.exports = {
     loaderOverlay: "rgba(256,256,256,0.1)",
     btn: "#F4694C",
     btnHover: "#FE8369",
+    //colores figma
+    bgNav: '#1B2F50',
+    bgGeneral: '#fff',
+    layout: '#F4F5F7',
+    textColor2: '#858F9C',
+    primaryOrange: '#F4694C',
+    primaryBeige: '#FFEFDA',
+    primaryYellow: '#5C76EC'
    },
   },
  },
