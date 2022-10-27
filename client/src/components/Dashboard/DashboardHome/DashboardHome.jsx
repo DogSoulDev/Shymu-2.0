@@ -7,10 +7,10 @@ import {
 	getAllArtist,
 	getAllSongs,
 	getAllUsers,
-} from "../../api";
-import { actionType } from "../../hooks/Context/reducer";
-import { useStateValue } from "../../hooks/Context/StateProvider";
-import { bgColors } from "../../utils/styles";
+} from "../../../api";
+import { actionType } from "../../../hooks/Context/reducer";
+import { useStateValue } from "../../../hooks/Context/StateProvider";
+import { bgColors } from "../../../utils/styles";
 
 export const DashboardCard = ({ icon, name, count }) => {
 	const bg_color = bgColors[parseInt(Math.random() * bgColors.length)];

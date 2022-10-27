@@ -12,6 +12,7 @@ import { getAllSongs, validateUser } from "./api";
 import {
 	Dashboard,
 	Home,
+	Header,
 	Loader,
 	Login,
 	MusicPlayer,
@@ -25,7 +26,7 @@ import Contact from "./components/Header/Contact/Contact.jsx";
 import Musics from "./components/Header/Musics/Musics";
 import AboutUs from "./components/Header/AboutUs/AboutUs";
 import { MdOutlineSnowboarding } from "react-icons/md";
-import Onboarding from "./components/Onboarding/Onboarding.jsx"
+import Onboarding from "./components/Onboarding/Onboarding.jsx";
 
 function App() {
 	const firebaseAuth = getAuth(app);

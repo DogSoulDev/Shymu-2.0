@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import moment from "moment";
 import { motion } from "framer-motion";
-import { changingUserRole, getAllUsers, removeUser } from "../../api";
-import { actionType } from "../../hooks/Context/reducer";
-import { useStateValue } from "../../hooks/Context/StateProvider";
+import { changingUserRole, getAllUsers, removeUser } from "../../../api";
+import { actionType } from "../../../hooks/Context/reducer";
+import { useStateValue } from "../../../hooks/Context/StateProvider";
 import { MdDelete } from "react-icons/md";
 
 const DashboardUserCard = ({ data, index }) => {

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useStateValue } from "../../hooks/Context/StateProvider";
+import { useStateValue } from "../../../hooks/Context/StateProvider";
 import { motion } from "framer-motion";
 import { MdDelete } from "react-icons/md";
-import { actionType } from "../../hooks/Context/reducer";
-import { getAllAlbums } from "../../api";
+import { actionType } from "../../../hooks/Context/reducer";
+import { getAllAlbums } from "../../../api";
 
 const DashboardAlbum = () => {
 	const [{ allAlbums }, dispatch] = useStateValue();

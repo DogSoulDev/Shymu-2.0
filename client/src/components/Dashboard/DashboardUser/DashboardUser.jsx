@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineClear } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { getAllUsers } from "../../api";
-import { actionType } from "../../hooks/Context/reducer";
-import { useStateValue } from "../../hooks/Context/StateProvider";
-import DashboardUserCard from "./DashboardUserCard";
+import { getAllUsers } from "../../../api";
+import { actionType } from "../../../hooks/Context/reducer.js";
+import { useStateValue } from "../../../hooks/Context/StateProvider.js";
+import DashboardUserCard from "../DashboardUserCard/DashboardUserCard";
 
 const DashboardUser = () => {
 	const [emailFilter, setEmailFilter] = useState("");

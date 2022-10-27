@@ -9,9 +9,9 @@ import {
 import { motion } from "framer-motion";
 import { BiCloudUpload } from "react-icons/bi";
 import { MdDelete } from "react-icons/md";
-import { storage } from "../../config/firebase.config";
-import { useStateValue } from "../../hooks/Context/StateProvider";
-import FilterButtons from "../Filter/FilterButtons";
+import { storage } from "../../../config/firebase.config";
+import { useStateValue } from "../../../hooks/Context/StateProvider";
+import FilterButtons from "../../Filter/FilterButtons";
 
 import {
 	getAllAlbums,
@@ -20,13 +20,13 @@ import {
 	saveNewAlbum,
 	saveNewArtist,
 	saveNewSong,
-} from "../../api";
+} from "../../../api";
 
-import { actionType } from "../../hooks/Context/reducer";
-import { filterByLanguage, filters } from "../../utils/supportfunctions";
+import { actionType } from "../../../hooks/Context/reducer";
+import { filterByLanguage, filters } from "../../../utils/supportfunctions";
 import { IoMusicalNote } from "react-icons/io5";
-import AlertSuccess from "../Alerts/AlertSucces";
-import AlertError from "../Alerts/AlertError";
+import AlertSuccess from "../../Alerts/AlertSucces";
+import AlertError from "../../Alerts/AlertError";
 export const ImageLoader = ({ progress }) => {
 	return (
 		<div className='w-full h-full flex flex-col items-center justify-center'>

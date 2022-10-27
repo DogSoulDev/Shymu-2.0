@@ -2,12 +2,12 @@ import React from "react";
 import { IoHome } from "react-icons/io5";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
-import DashboardNewSong from "./DashboardNewSong";
-import DashboardAlbum from "./DashboardAlbum";
-import DashboardArtist from "./DashboardArtist";
-import DashboardHome from "./DashboardHome";
-import DashboardSongs from "./DashboardSongs";
-import DashboardUser from "./DashboardUser";
+import DashboardNewSong from "./DashboardNewSong/DashboardNewSong";
+import DashboardAlbum from "./DashboardAlbum/DashboardAlbum";
+import DashboardArtist from "./DashboardArtist/DashboardArtist";
+import DashboardHome from "./DashboardHome/DashboardHome";
+import DashboardSongs from "./DashboardSongs/DashboardSongs";
+import DashboardUser from "./DashboardUser/DashboardUser";
 import Header from "../Header/Header";
 
 const Dashboard = () => {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getAllSongs } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
 import { useStateValue } from "../../hooks/Context/StateProvider";
-import { SongCard } from "../Dashboard/DashboardSongs";
+import { SongCard } from "../Dashboard/DashboardSongs/DashboardSongs";
 import Filter from "../Filter/Filter";
 import Header from "../Header/Header";
 import SearchBar from "../SearchBar/SearchBar";
