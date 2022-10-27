@@ -15,7 +15,6 @@ router.get("/getAll", async (req, res) => {
 		res.status(200).send({ success: true, msg: "No Data Found" });
 	}
 });
-
 router.get("/getOne/:getOne", async (req, res) => {
 	const filter = { _id: req.params.getOne };
 	const cursor = await artist.findOne(filter);
@@ -64,7 +63,6 @@ router.put("/update/:updateId", async (req, res) => {
 		res.status(400).send({ success: false, msg: error });
 	}
 });
-
 router.delete("/delete/:deleteId", async (req, res) => {
 	const filter = { _id: req.params.deleteId };
 	const result = await artist.deleteOne(filter);

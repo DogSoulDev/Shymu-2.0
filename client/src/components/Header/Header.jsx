@@ -10,7 +10,7 @@ import { FaCrown } from "react-icons/fa";
 
 const Header = () => {
 	const navigate = useNavigate();
-	const [{ user }, dispatch] = useStateValue();  //!Nuestro custom hook., que nos sirve para redireccionar mas abajo donde queramos al usuario.(Desplegable del login)
+	const [{ user }, dispatch] = useStateValue(); //!Nuestro custom hook., que nos sirve para redireccionar mas abajo donde queramos al usuario.(Desplegable del login)
 	const [isMenu, setIsMenu] = useState(false);
 	const logout = () => {
 		const firebaseAuth = getAuth(app);
@@ -28,10 +28,56 @@ const Header = () => {
 				<img src={Logo} className='w-20' alt='' />
 			</NavLink>
 			<ul className='flex items-center justify-center ml-7'>
-				<li className="mx-5 text-lg"><NavLink to={'/home'} className={({isActive}) => isActive ? isActiveStyles : isNotActiveStyles}>Home</NavLink></li>
-				<li className="mx-5 text-lg"><NavLink to={'/musics'} className={({isActive}) => isActive ? isActiveStyles : isNotActiveStyles}>Musics</NavLink></li>
-				<li className="mx-5 text-lg"><NavLink to={'/premium'} className={({isActive}) => isActive ? isActiveStyles : isNotActiveStyles}>Premium</NavLink></li>
-				<li className="mx-5 text-lg"><NavLink to={'/contact'} className={({isActive}) => isActive ? isActiveStyles : isNotActiveStyles}>Contact</NavLink></li>
+				<li className='mx-5 text-lg'>
+					<NavLink
+						to={"/home"}
+						className={({ isActive }) =>
+							isActive ? isActiveStyles : isNotActiveStyles
+						}
+					>
+						Home
+					</NavLink>
+				</li>
+				<li className='mx-5 text-lg'>
+					<NavLink
+						to={"/musics"}
+						className={({ isActive }) =>
+							isActive ? isActiveStyles : isNotActiveStyles
+						}
+					>
+						Musics
+					</NavLink>
+				</li>
+				<li className='mx-5 text-lg'>
+					<NavLink
+						to={"/premium"}
+						className={({ isActive }) =>
+							isActive ? isActiveStyles : isNotActiveStyles
+						}
+					>
+						Premium
+					</NavLink>
+				</li>
+				<li className='mx-5 text-lg'>
+					<NavLink
+						to={"/contact"}
+						className={({ isActive }) =>
+							isActive ? isActiveStyles : isNotActiveStyles
+						}
+					>
+						Contact
+					</NavLink>
+				</li>
+				<li className='mx-5 text-lg'>
+					<NavLink
+						to={"/aboutus"}
+						className={({ isActive }) =>
+							isActive ? isActiveStyles : isNotActiveStyles
+						}
+					>
+						About Us
+					</NavLink>
+				</li>
 			</ul>
 			<div
 				className='flex items-center ml-auto cursor-pointer gap-2 relative'
@@ -65,7 +111,6 @@ const Header = () => {
 								Profile
 							</p>
 						</NavLink>
-						
 						<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
 							My Favourites
 						</p>

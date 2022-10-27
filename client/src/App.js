@@ -2,28 +2,30 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import {
- getAuth,
- GoogleAuthProvider,
- inMemoryPersistence,
- signInWithPopup,
+	getAuth,
+	GoogleAuthProvider,
+	inMemoryPersistence,
+	signInWithPopup,
 } from "firebase/auth";
 import { app } from "./config/firebase.config";
 import { getAllSongs, validateUser } from "./api";
 import {
- Dashboard,
- Home,
- Loader,
- Login,
- MusicPlayer,
- UserProfile,
+	Dashboard,
+	Home,
+	Loader,
+	Login,
+	MusicPlayer,
+	UserProfile,
 } from "./components";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion, AnimatePresence } from "framer-motion";
-import Premium from "./components/Header/Premium";
-import Onboarding from "./components/Onboarding/Onboarding"
-import Contact from "./components/Contact/Contact";
-
+import Premium from "./components/Header/Premium/Premium.jsx";
+import Contact from "./components/Header/Contact/Contact.jsx";
+import Musics from "./components/Header/Musics/Musics";
+import AboutUs from "./components/Header/AboutUs/AboutUs";
+import { MdOutlineSnowboarding } from "react-icons/md";
+import Onboarding from "./components/Onboarding/Onboarding.jsx"
 
 function App() {
 	const firebaseAuth = getAuth(app);
@@ -39,7 +41,7 @@ function App() {
 		firebaseAuth.onAuthStateChanged((userCred) => {
 			if (userCred) {
 				userCred.getIdToken().then((token) => {
-					// console.log(token);
+					//! para pillar el token y hacer las peticiones,  console.log(token);
 					window.localStorage.setItem("auth", "true");
 					validateUser(token).then((data) => {
 						dispatch({
@@ -74,35 +76,36 @@ function App() {
 	return (
 		<AnimatePresence>
 			<div className='h-auto  items-center justify-center min-w-[680px]'>
-				{/* {isLoading ||
->>>>>>>>> Temporary merge branch 2
+				{isLoading ||
 					(!user && (
 						<div className='fixed inset-0 bg-loaderOverlay backdrop-blur-sm '>
 							<Loader />
 						</div>
-					))} */}
-    <Routes>
-     <Route path='/onboarding' element={<Onboarding />} />
-
-     <Route path='/login' element={<Login setAuth={setAuth} />} />
-     <Route path='/*' element={<Home />} />
-     <Route path='/dashboard/*' element={<Dashboard />} />
-     <Route path='/userProfile' element={<UserProfile />} />
-     <Route path='/contact' element={<Contact />} />
-    </Routes>
-    {isSongPlaying && (
-     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 50 }}
-      className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
-     >
-      <MusicPlayer />
-     </motion.div>
-    )}
-   </div>
-  </AnimatePresence>
- );
+					))}
+				<Routes>
+					<Route path='/onboarding' element={<Onboarding />} />
+					<Route path='/login' element={<Login setAuth={setAuth} />} />
+					<Route path='/*' element={<Home />} />
+					<Route path='/dashboard/*' element={<Dashboard />} />
+					<Route path='/userProfile' element={<UserProfile />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/musics' element={<Musics />} />
+					<Route path='/premium' element={<Premium />} />
+					<Route path='/aboutus' element={<AboutUs />} />
+				</Routes>
+				{isSongPlaying && (
+					<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						animate={{ opacity: 1, y: 0 }}
+						exit={{ opacity: 0, y: 50 }}
+						className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
+					>
+						<MusicPlayer />
+					</motion.div>
+				)}
+			</div>
+		</AnimatePresence>
+	);
 }
 
 export default App;
