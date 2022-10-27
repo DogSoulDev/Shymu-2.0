@@ -89,9 +89,11 @@ const DashboardUser = () => {
 				</div>
 				{allUsers && !filtereUsers
 					? allUsers?.map((data, i) => (
-							<DashboardUserCard data={data} key={data._id} index={i} />))
+							<DashboardUserCard data={data} key={data._id} index={i} />
+					  ))
 					: filtereUsers?.map((data, i) => (
-							<DashboardUserCard data={data} key={data._id} index={i} />))}
+							<DashboardUserCard data={data} key={data._id} index={i} />
+					  ))}
 			</div>
 		</div>
 	);
