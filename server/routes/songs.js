@@ -3,10 +3,10 @@ const router = require("express").Router();
 
 router.get("/getAll", async (req, res) => {
 	const options = {
-		// sort returned documents in ascending order
+		//*Sort returned documents in ascending order
 		sort: { createdAt: 1 },
-		// Include only the following
-		// projection : {}
+		//*Include only the following
+		//*Projection : {}
 	};
 
 	const cursor = await song.find(options);

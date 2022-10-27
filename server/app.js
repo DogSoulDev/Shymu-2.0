@@ -8,20 +8,20 @@ app.use(cors({ origin: true }));
 //!Esto lo que hace es convertir los datos default en JSON:
 app.use(express.json());
 
-//!Todas estas rutas las tenemos comprobadas en POSTMAN
-//* user authentication routes
+//!Todas estas RUTAS las tenemos comprobadas en POSTMAN.
+//*User authentication routes
 const userRoute = require("./routes/auth");
 app.use("/api/users/", userRoute);
 
-//* Artist links
+//*Artist links
 const artistsRoute = require("./routes/artists");
 app.use("/api/artists/", artistsRoute);
 
-//* Album links
+//*Album links
 const albumRoute = require("./routes/albums");
 app.use("/api/albums/", albumRoute);
 
-//* Songs links
+//*Songs links
 const songRoute = require("./routes/songs");
 app.use("/api/songs/", songRoute);
 
