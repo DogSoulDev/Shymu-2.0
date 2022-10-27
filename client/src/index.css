@@ -64,7 +64,6 @@ code {
 	background-color: #ff000033 !important;
 }
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

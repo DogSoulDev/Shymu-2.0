@@ -36,7 +36,7 @@ function App() {
 		firebaseAuth.onAuthStateChanged((userCred) => {
 			if (userCred) {
 				userCred.getIdToken().then((token) => {
-					// console.log(token);
+					//! para pillar el token y hacer las peticiones,  console.log(token);
 					window.localStorage.setItem("auth", "true");
 					validateUser(token).then((data) => {
 						dispatch({
