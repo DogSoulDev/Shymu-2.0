@@ -20,7 +20,10 @@ import {
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion, AnimatePresence } from "framer-motion";
-import Premium from "./components/Header/Premium";
+import Premium from "./components/Header/Premium/Premium.jsx";
+import Contact from "./components/Header/Contact/Contact.jsx";
+import Musics from "./components/Header/Musics/Musics";
+import AboutUs from "./components/Header/AboutUs/AboutUs";
 
 function App() {
 	const firebaseAuth = getAuth(app);
@@ -84,7 +87,11 @@ function App() {
 					<Route path='/*' element={<Home />} />
 					<Route path='/dashboard/*' element={<Dashboard />} />
 					<Route path='/userProfile' element={<UserProfile />} />
+
+					<Route path='/musics' element={<Musics />} />
 					<Route path='/premium' element={<Premium />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/aboutus' element={<AboutUs />} />
 				</Routes>
 				{isSongPlaying && (
 					<motion.div
