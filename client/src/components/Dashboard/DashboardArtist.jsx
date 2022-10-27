@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useStateValue } from "../../hooks/Context/StateProvider";
-import { Link } from "react-router-dom";
 import { IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { getAllArtist } from "../../api";

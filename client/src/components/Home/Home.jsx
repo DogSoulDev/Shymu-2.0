@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { getAllSongs } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
 import { useStateValue } from "../../hooks/Context/StateProvider";
-import { SongCard } from "../Dashboard/DashboardSongs";
 import Filter from "../Filter/Filter";
 import Header from "../Header/Header";
 import SearchBar from "../SearchBar/SearchBar";
@@ -12,8 +11,6 @@ const Home = () => {
 	const [
 		{
 			searchTerm,
-			isSongPlaying,
-			song,
 			allSongs,
 			artistFilter,
 			filterTerm,
