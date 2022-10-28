@@ -4,7 +4,7 @@
 //     { name: 'Contact', href: '/contact' },
 //     { name: 'AboutUs', href: '/aboutus' },
 //   ]
-  
+
 //   export default function Example() {
 //     return (
 //       <header className="bg-indigo-600">
