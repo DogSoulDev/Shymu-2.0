@@ -8,23 +8,21 @@ import { validateUser } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 
-import "./Login.css";
-
-
 const Login = ({ setAuth }) => {
 	const firebaseAuth = getAuth(app);
 	const provider = new GoogleAuthProvider();
 	const navigate = useNavigate();
 	const [{ user }, dispatch] = useStateValue();
+
 	const loginWithGoogle = async () => {
 		await signInWithPopup(firebaseAuth, provider).then((userCred) => {
 			if (userCred) {
 				setAuth(true);
 				window.localStorage.setItem("auth", "true");
+
 				firebaseAuth.onAuthStateChanged((userCred) => {
 					if (userCred) {
 						userCred.getIdToken().then((token) => {
-							console.log(token);
 							window.localStorage.setItem("auth", "true");
 							validateUser(token).then((data) => {
 								dispatch({
@@ -46,10 +44,12 @@ const Login = ({ setAuth }) => {
 			}
 		});
 	};
+
 	useEffect(() => {
 		if (window.localStorage.getItem("auth") === "true")
 			navigate("/", { replace: true });
 	}, []);
+
 	return (
 		<div className='relative w-screen h-screen'>
 			<video
