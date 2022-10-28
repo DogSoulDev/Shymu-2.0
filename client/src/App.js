@@ -20,14 +20,14 @@ import {
 } from "./components";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Premium from "./components/Header/Premium/Premium.jsx";
 import Contact from "./components/Header/Contact/Contact.jsx";
 import Musics from "./components/Header/Musics/Musics";
 import AboutUs from "./components/Header/AboutUs/AboutUs";
 import { MdOutlineSnowboarding } from "react-icons/md";
 import Onboarding from "./components/Onboarding/Onboarding.jsx";
-import Error404 from "./pages/Error404.jsx/Error404";
+// import Error404 from "./pages/Error404.jsx/Error404";
 
 function App() {
 	const firebaseAuth = getAuth(app);
@@ -76,13 +76,12 @@ function App() {
 		}
 	}, []);
 	return (
-		<AnimatePresence>
 			<div className='h-auto  items-center justify-center min-w-[680px]'>
 				<Routes>
 					<Route path='/onboarding' element={<Onboarding />} />
 					<Route path='/login' element={<Login setAuth={setAuth} />} />
-					<Route path='/home' element={<Home />} />
-					<Route path='*' element={<Error404 />} />
+					<Route path='/*' element={<Home />} />
+					{/* <Route path='*' element={<Error404 />} /> */}
 					<Route path='/dashboard/*' element={<Dashboard />} />
 					<Route path='/userProfile' element={<UserProfile />} />
 					<Route path='/contact' element={<Contact />} />
@@ -102,7 +101,6 @@ function App() {
 					</motion.div>
 				)}
 			</div>
-		</AnimatePresence>
 	);
 }
 
