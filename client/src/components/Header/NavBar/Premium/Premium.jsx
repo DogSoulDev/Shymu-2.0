@@ -1,5 +1,5 @@
-import Header from '../Header'
-import Footer from '../../Footer/Footer'
+import Header from '../../Header'
+import Footer from '../../../Footer/Footer'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 const includedFeatures = [

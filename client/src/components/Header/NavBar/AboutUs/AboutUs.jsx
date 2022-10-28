@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../../Footer/Footer";
-import Header from "../Header";
+import Footer from "../../../Footer/Footer";
+import Header from "../../Header";
 
 const stats = [
  { label: "Founded", value: "2021" },

@@ -18,13 +18,13 @@ import {
 	MusicPlayer,
 	UserProfile,
 	Trending,
-} from "./components";
+	Premium,
+	Contact,
+	AboutUs
+} from "./components/index";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion } from "framer-motion";
-import Premium from "./components/Header/Premium/Premium.jsx";
-import Contact from "./components/Header/Contact/Contact.jsx";
-import AboutUs from "./components/Header/AboutUs/AboutUs";
 import { MdOutlineSnowboarding } from "react-icons/md";
 import Onboarding from "./components/Onboarding/Onboarding.jsx";
 // import Error404 from "./pages/Error404.jsx/Error404";

@@ -1,5 +1,5 @@
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { useState } from "react";
+
 const navigation = {
  solutions: [
   { name: "Marketing", href: "#" },

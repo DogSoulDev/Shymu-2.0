@@ -157,6 +157,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 					</p>
 				</motion.div>
 			))}
+		<Footer />
 		</>
 	);
 };
