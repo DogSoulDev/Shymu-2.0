@@ -1,1 +1,1 @@
-export { default as LoginBg } from "./login.mp4";
+export { default as LoginBg } from "./trailer.mp4";
