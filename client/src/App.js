@@ -27,6 +27,7 @@ import Musics from "./components/Header/Musics/Musics";
 import AboutUs from "./components/Header/AboutUs/AboutUs";
 import { MdOutlineSnowboarding } from "react-icons/md";
 import Onboarding from "./components/Onboarding/Onboarding.jsx";
+import Error404 from "./pages/Error404.jsx/Error404";
 
 function App() {
 	const firebaseAuth = getAuth(app);
@@ -80,7 +81,8 @@ function App() {
 				<Routes>
 					<Route path='/onboarding' element={<Onboarding />} />
 					<Route path='/login' element={<Login setAuth={setAuth} />} />
-					<Route path='/*' element={<Home />} />
+					<Route path='/home' element={<Home />} />
+					<Route path='*' element={<Error404 />} />
 					<Route path='/dashboard/*' element={<Dashboard />} />
 					<Route path='/userProfile' element={<UserProfile />} />
 					<Route path='/contact' element={<Contact />} />
