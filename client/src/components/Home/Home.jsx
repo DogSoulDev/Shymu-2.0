@@ -86,9 +86,9 @@ const Home = () => {
  }, [languageFilter]);
  
  return (
-  <div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
+  <div className=''>
    <Header />
-   <div className='bg-indigo-50 w-full m-2'>
+   <div className='bg-indigo-50 w-full  '>
     <div className='mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8'>
      <h2 className='text-3xl font-bold tracking-tight text-gray-900 md:text-4xl'>
       <span className='block'>Ready to dive in?</span>
