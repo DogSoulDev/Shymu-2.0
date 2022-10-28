@@ -78,6 +78,17 @@ const Header = () => {
 						About Us
 					</NavLink>
 				</li>
+				<li className='mx-5 text-lg'>
+					<NavLink
+						to={"/match"}
+						className={({ isActive }) =>
+							isActive ? isActiveStyles : isNotActiveStyles
+						}
+					>
+						Match
+					</NavLink>
+					
+				</li>
 			</ul>
 			<div
 				className='flex items-center ml-auto cursor-pointer gap-2 relative'

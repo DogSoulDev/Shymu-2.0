@@ -12,11 +12,8 @@ import { getAllSongs, validateUser } from "./api";
 import {
 	Dashboard,
 	Home,
-<<<<<<< HEAD
 	Header,
-	Loader,
-=======
->>>>>>> nav
+	Match,
 	Login,
 	MusicPlayer,
 	UserProfile,
@@ -90,6 +87,7 @@ function App() {
 					<Route path='/musics' element={<Musics />} />
 					<Route path='/premium' element={<Premium />} />
 					<Route path='/aboutus' element={<AboutUs />} />
+					<Route path='/match' element={<Match />} />
 				</Routes>
 				{isSongPlaying && (
 					<motion.div
