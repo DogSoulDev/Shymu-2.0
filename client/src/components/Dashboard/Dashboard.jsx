@@ -1,7 +1,7 @@
 import React from "react";
 import { IoHome } from "react-icons/io5";
 import { NavLink, Route, Routes } from "react-router-dom";
-import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
+import { isActiveStyles, isNotActiveStyles } from "../../utils/styles.js";
 import DashboardNewSong from "./DashboardNewSong";
 import DashboardAlbum from "./DashboardAlbum";
 import DashboardArtist from "./DashboardArtist";

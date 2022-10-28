@@ -1,5 +1,5 @@
 export { default as Login } from "./Login/Login.jsx";
-export { default as Home } from "./Home/Home.jsx";
+export { default as Home } from "../pages/Home/Home.jsx";
 export { default as Header } from "./Header/Header.jsx";
 export { default as Loader } from "./Loader/Loader.jsx";
 export { default as SearchBar } from "./SearchBar/SearchBar.jsx";
@@ -16,7 +16,12 @@ export { default as DashboardUser } from "./Dashboard/DashboardUser.jsx";
 export { default as DashboardUserCard } from "./Dashboard/DashboardUserCard.jsx";
 export { default as DashboardNewSong } from "./Dashboard/DashboardNewSong.jsx";
 
+export { default as AboutUs } from "./Header/AboutUs/AboutUs.jsx";
+export { default as Contact } from "./Header/Contact/Contact.jsx";
+export { default as Trending } from "./Header/Trending/Trending.jsx";
+export { default as Premium } from "./Header/Premium/Premium.jsx";
+export { default as Match } from "./Header/Match/Match.jsx"
+
 export { default as AlertSuccess } from "./Alerts/AlertSucces.jsx";
 export { default as AlertError } from "./Alerts/AlertError.jsx";
-
 export { default as MusicPlayer } from "./MusicPlayer/MusicPlayer.jsx";
