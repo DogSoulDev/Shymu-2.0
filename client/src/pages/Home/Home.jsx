@@ -121,7 +121,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 			});
 		}
 	};
-
+//!Con esto buscamos la cancion por Id dentro del Index.
 	const CurrentSong = (songId) => {
 		const index = allIdSongs.findIndex((song) => {
 			return song._id === songId;

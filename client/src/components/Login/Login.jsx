@@ -19,7 +19,6 @@ const Login = ({ setAuth }) => {
 			if (userCred) {
 				setAuth(true);
 				window.localStorage.setItem("auth", "true");
-
 				firebaseAuth.onAuthStateChanged((userCred) => {
 					if (userCred) {
 						userCred.getIdToken().then((token) => {
