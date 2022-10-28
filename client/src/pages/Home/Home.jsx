@@ -96,13 +96,16 @@ const Home = () => {
 			)}
 			<Filter setFilteredSongs={setFilteredSongs} />
 			<div className='w-full h-auto flex items-center justify-evenly gap-4 flex-wrap p-4'>
-				<HomeSongContainer musics={filteredSongs ? filteredSongs : allSongs} />
+				<HomeSongContainer
+					musics={filteredSongs ? filteredSongs : allSongs}
+					allIdSongs={allSongs}
+				/>
 			</div>
 		</div>
 	);
 };
 
-export const HomeSongContainer = ({ musics }) => {
+export const HomeSongContainer = ({ musics, allIdSongs }) => {
 	const [{ isSongPlaying, song }, dispatch] = useStateValue();
 	const addSongToContext = (index) => {
 		if (!isSongPlaying) {
@@ -118,6 +121,14 @@ export const HomeSongContainer = ({ musics }) => {
 			});
 		}
 	};
+
+	const CurrentSong = (songId) => {
+		const index = allIdSongs.findIndex((song) => {
+			return song._id === songId;
+		});
+		return index;
+	};
+
 	return (
 		<>
 			{musics?.map((data, index) => (
@@ -128,7 +139,7 @@ export const HomeSongContainer = ({ musics }) => {
 					animate={{ opacity: 1, translateX: 0 }}
 					transition={{ duration: 0.3, delay: index * 0.1 }}
 					className='relative w-40 px-2 py-4 cursor-pointer hover:shadow-xl hover:bg-card bg-gray-100 shadow-md rounded-lg flex flex-col items-center'
-					onClick={() => addSongToContext(index)}
+					onClick={() => addSongToContext(CurrentSong(data._id))}
 				>
 					<div className='w-40 min-w-[160px] h-40 min-h-[160px] rounded-lg drop-shadow-lg relative overflow-hidden'>
 						<motion.img
