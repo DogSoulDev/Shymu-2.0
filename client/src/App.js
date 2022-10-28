@@ -17,13 +17,13 @@ import {
 	Login,
 	MusicPlayer,
 	UserProfile,
+	Trending,
 } from "./components";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion } from "framer-motion";
 import Premium from "./components/Header/Premium/Premium.jsx";
 import Contact from "./components/Header/Contact/Contact.jsx";
-import Musics from "./components/Header/Musics/Musics";
 import AboutUs from "./components/Header/AboutUs/AboutUs";
 import { MdOutlineSnowboarding } from "react-icons/md";
 import Onboarding from "./components/Onboarding/Onboarding.jsx";
@@ -76,31 +76,31 @@ function App() {
 		}
 	}, []);
 	return (
-			<div className='h-auto  items-center justify-center min-w-[680px]'>
-				<Routes>
-					<Route path='/onboarding' element={<Onboarding />} />
-					<Route path='/login' element={<Login setAuth={setAuth} />} />
-					<Route path='/*' element={<Home />} />
-					{/* <Route path='*' element={<Error404 />} /> */}
-					<Route path='/dashboard/*' element={<Dashboard />} />
-					<Route path='/userProfile' element={<UserProfile />} />
-					<Route path='/contact' element={<Contact />} />
-					<Route path='/musics' element={<Musics />} />
-					<Route path='/premium' element={<Premium />} />
-					<Route path='/aboutus' element={<AboutUs />} />
-					<Route path='/match' element={<Match />} />
-				</Routes>
-				{isSongPlaying && (
-					<motion.div
-						initial={{ opacity: 0, y: 50 }}
-						animate={{ opacity: 1, y: 0 }}
-						exit={{ opacity: 0, y: 50 }}
-						className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
-					>
-						<MusicPlayer />
-					</motion.div>
-				)}
-			</div>
+		<div className='h-auto  items-center justify-center min-w-[680px]'>
+			<Routes>
+				<Route path='/onboarding' element={<Onboarding />} />
+				<Route path='/login' element={<Login setAuth={setAuth} />} />
+				<Route path='/*' element={<Home />} />
+				{/* <Route path='*' element={<Error404 />} /> */}
+				<Route path='/dashboard/*' element={<Dashboard />} />
+				<Route path='/userProfile' element={<UserProfile />} />
+				<Route path='/contact' element={<Contact />} />
+				<Route path='/trending' element={<Trending />} />
+				<Route path='/premium' element={<Premium />} />
+				<Route path='/aboutus' element={<AboutUs />} />
+				<Route path='/match' element={<Match />} />
+			</Routes>
+			{isSongPlaying && (
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					animate={{ opacity: 1, y: 0 }}
+					exit={{ opacity: 0, y: 50 }}
+					className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
+				>
+					<MusicPlayer />
+				</motion.div>
+			)}
+		</div>
 	);
 }
 

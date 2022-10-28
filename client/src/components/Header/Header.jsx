@@ -40,12 +40,12 @@ const Header = () => {
 				</li>
 				<li className='mx-5 text-lg'>
 					<NavLink
-						to={"/musics"}
+						to={"/trending"}
 						className={({ isActive }) =>
 							isActive ? isActiveStyles : isNotActiveStyles
 						}
 					>
-						Musics
+						Trending
 					</NavLink>
 				</li>
 				<li className='mx-5 text-lg'>

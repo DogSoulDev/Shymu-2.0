@@ -18,7 +18,7 @@ export { default as DashboardNewSong } from "./Dashboard/DashboardNewSong.jsx";
 
 export { default as AboutUs } from "./Header/AboutUs/AboutUs.jsx";
 export { default as Contact } from "./Header/Contact/Contact.jsx";
-export { default as Musics } from "./Header/Musics/Musics.jsx";
+export { default as Trending } from "./Header/Trending/Trending.jsx";
 export { default as Premium } from "./Header/Premium/Premium.jsx";
 export { default as Match } from "./Header/Match/Match.jsx"
 
