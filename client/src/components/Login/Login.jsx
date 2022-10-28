@@ -13,11 +13,13 @@ const Login = ({ setAuth }) => {
 	const provider = new GoogleAuthProvider();
 	const navigate = useNavigate();
 	const [{ user }, dispatch] = useStateValue();
+
 	const loginWithGoogle = async () => {
 		await signInWithPopup(firebaseAuth, provider).then((userCred) => {
 			if (userCred) {
 				setAuth(true);
 				window.localStorage.setItem("auth", "true");
+
 				firebaseAuth.onAuthStateChanged((userCred) => {
 					if (userCred) {
 						userCred.getIdToken().then((token) => {
@@ -43,10 +45,12 @@ const Login = ({ setAuth }) => {
 			}
 		});
 	};
+
 	useEffect(() => {
 		if (window.localStorage.getItem("auth") === "true")
 			navigate("/", { replace: true });
 	}, []);
+
 	return (
 		<div className='relative w-screen h-screen'>
 			<video
