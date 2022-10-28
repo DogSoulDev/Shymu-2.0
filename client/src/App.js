@@ -20,7 +20,7 @@ import {
 	Trending,
 	Premium,
 	Contact,
-	AboutUs
+	AboutUs,
 } from "./components/index";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
