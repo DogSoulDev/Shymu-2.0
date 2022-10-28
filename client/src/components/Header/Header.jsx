@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { Logo } from "../../assets/img";
+import logo from '../../assets/img/ShymuWhite.png'
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
 import { getAuth } from "firebase/auth";
@@ -32,13 +32,13 @@ const Header = () => {
 		navigate("/login", { replace: true });
 	};
 	return (
-		<header className="bg-indigo-600">
+		<header className="bg-primaryOrange">
 		  <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
 			<div className="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none">
 			  <div className="flex items-center">
 				<a href="/home">
 				  <span className="sr-only">Your Company</span>
-				  <img className="h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=white" alt="" />
+				  <img className="h-10 w-auto" src={logo}  alt="" />
 				</a>
 				<div className="ml-10 hidden space-x-8 lg:block">
 				  {navigation.map((link) => (
@@ -60,10 +60,10 @@ const Header = () => {
 					  referrerPolicy='no-referrer'
 				  />
 				  <div className='flex flex-col'>
-					  <p className='text-textColor text-lg hover:text-headingColor font-semibold'>
+					  <p className='text-white text-lg hover:text-headingColor font-semibold'>
 						  {user?.user.name}
 					  </p>
-					  <p className='flex items-center gap-2 text-xs text-gray-500 font-normal'>
+					  <p className='flex items-center gap-2 text-xs text-white font-normal'>
 						  Premium Member.{" "}
 						  <FaCrown className='text-xm -ml-1 text-yellow-500' />{" "}
 					  </p>
@@ -106,7 +106,7 @@ const Header = () => {
 			</div>
 			<div className="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">
 			  {navigation.map((link) => (
-				<a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-indigo-50">
+				<a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-white">
 				  {link.name}
 				</a>
 			  ))}
