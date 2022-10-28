@@ -213,8 +213,8 @@ const Footer = () => {
       </p>
      </div>
     </div>
-    <div className='fixed inset-x-0 bottom-0'>
-     <div className='bg-indigo-600'>
+    {/* <div className='fixed inset-x-0 bottom-0'> */}
+     {/* <div className='bg-indigo-600'>
       <div className='mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8'>
        <div className='flex flex-wrap items-center justify-between'>
         <div className='flex w-0 flex-1 items-center'>
@@ -242,13 +242,13 @@ const Footer = () => {
           className='-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2'
          >
           <span className='sr-only'>Dismiss</span>
-          <XMarkIcon className='h-6 w-6 text-white' aria-hidden='true' />
+          <XMarkIcon className='h-6 w-6 text-white' aria-hidden='false' />
          </button>
         </div>{" "}
        </div>
       </div>
      </div>
-    </div>
+    </div> */}
    </footer>
   </>
  );
