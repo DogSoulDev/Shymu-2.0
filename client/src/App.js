@@ -12,7 +12,6 @@ import { getAllSongs, validateUser } from "./api";
 import {
 	Dashboard,
 	Home,
-	Loader,
 	Login,
 	MusicPlayer,
 	UserProfile,
@@ -76,12 +75,6 @@ function App() {
 	return (
 		<AnimatePresence>
 			<div className='h-auto  items-center justify-center min-w-[680px]'>
-				{isLoading ||
-					(!user && (
-						<div className='fixed inset-0 bg-loaderOverlay backdrop-blur-sm '>
-							<Loader />
-						</div>
-					))}
 				<Routes>
 					<Route path='/onboarding' element={<Onboarding />} />
 					<Route path='/login' element={<Login setAuth={setAuth} />} />
