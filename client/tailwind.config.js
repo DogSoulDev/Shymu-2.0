@@ -66,6 +66,8 @@ module.exports = {
     textColor2: '#858F9C',
     primaryOrange: '#F4694C',
     primaryBeige: '#FFEFDA',
+    primaryFooter: '#1f2937',
+    primaryHeader: '#131625',
     primaryYellow: '#5C76EC'
    },
   },
