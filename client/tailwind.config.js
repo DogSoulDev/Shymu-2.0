@@ -69,6 +69,7 @@ module.exports = {
     primaryFooter: '#1f2937',
     primaryHeader: '#131625',
     primaryYellow: '#5C76EC'
+    
    },
   },
  },
