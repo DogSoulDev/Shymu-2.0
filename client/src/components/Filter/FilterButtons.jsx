@@ -3,6 +3,8 @@ import { IoChevronDown } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import { actionType } from "../../hooks/Context/reducer";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const FilterButtons = ({ filterData, flag }) => {
 	const [filterName, setFilterName] = useState(null);
@@ -25,9 +27,10 @@ const FilterButtons = ({ filterData, flag }) => {
 		}
 	};
 	return (
-		<div className='border border-gray-300 rounded-md px-4 py-1 relative cursor-pointer hover:border-gray-400'>
-			<p
-				className='text-base tracking-wide text-textColor flex items-center gap-2 '
+		<div className='border border-gray-300 rounded-md px-4 py-1.5 relative cursor-pointer hover:bg-gray-50'>
+			<button
+				type="button"
+				className='text-base tracking-wide text-textColor flex items-center gap-2'
 				onClick={() => setFilterMenu(!filterMenu)}
 			>
 				{!filterName && flag}
@@ -43,7 +46,7 @@ const FilterButtons = ({ filterData, flag }) => {
 						filterMenu ? "rotate-180" : "rotate-0"
 					}`}
 				/>
-			</p>
+			</button>
 			{filterData && filterMenu && (
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
