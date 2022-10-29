@@ -8,13 +8,6 @@ import { app } from "../../config/firebase.config";
 import { motion } from "framer-motion";
 import { FaCrown } from "react-icons/fa";
 
-const navigation = [
-		{ name: 'Home', href: '/home' },
-		{ name: 'Music', href: '/musics' },
-		{ name: 'Premium', href: '/premium' },
-		{ name: 'Contact', href: '/contact' },
-		{ name: 'AboutUs', href: '/aboutus' },
-	  ]
 
 
 const Header = () => {
@@ -208,7 +201,7 @@ const Header = () => {
 						to={"/aboutus"}
 						className={({ isActive }) =>
 							isActive ? isActiveStyles : isNotActiveStyles
-						}
+						} 
 					>
 						About Us
 					</NavLink>
