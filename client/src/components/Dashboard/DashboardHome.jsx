@@ -26,7 +26,7 @@ export const DashboardCard = ({ icon, name, count }) => {
 	);
 };
 
-const DashboardHome = () => {
+const DashBoardHome = () => {
 	const [{ allUsers, allSongs, artists, allAlbums }, dispatch] =
 		useStateValue();
 	useEffect(() => {
@@ -83,4 +83,4 @@ const DashboardHome = () => {
 	);
 };
 
-export default DashboardHome;
+export default DashBoardHome;

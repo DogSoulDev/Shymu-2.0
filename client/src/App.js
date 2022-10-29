@@ -21,12 +21,12 @@ import {
 	Premium,
 	Contact,
 	AboutUs,
-} from "./components/index";
+} from "./components/index.js";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion } from "framer-motion";
 import { MdOutlineSnowboarding } from "react-icons/md";
-import Onboarding from "./components/Onboarding/Onboarding.jsx";
+import Onboarding from "./components/Onboarding/Onboarding";
 // import Error404 from "./pages/Error404.jsx/Error404";
 
 function App() {

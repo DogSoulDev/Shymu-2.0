@@ -12,7 +12,6 @@ import { MdDelete } from "react-icons/md";
 import { storage } from "../../config/firebase.config";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import FilterButtons from "../Filter/FilterButtons";
-
 import {
 	getAllAlbums,
 	getAllArtist,
@@ -21,12 +20,12 @@ import {
 	saveNewArtist,
 	saveNewSong,
 } from "../../api";
-
 import { actionType } from "../../hooks/Context/reducer";
 import { filterByLanguage, filters } from "../../utils/supportfunctions";
 import { IoMusicalNote } from "react-icons/io5";
 import AlertSuccess from "../Alerts/AlertSucces";
 import AlertError from "../Alerts/AlertError";
+
 export const ImageLoader = ({ progress }) => {
 	return (
 		<div className='w-full h-full flex flex-col items-center justify-center'>
@@ -56,11 +55,13 @@ export const ImageUploader = ({
 			`${isImage ? "Images" : "Audio"}/${Date.now()}-${imageFile.name}`,
 		);
 		const uploadTask = uploadBytesResumable(storageRef, imageFile);
+
 		uploadTask.on(
 			"state_changed",
 			(snapshot) => {
 				setProgress((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
 			},
+
 			(error) => {
 				setAlert("error");
 				alertMsg("File upload failed.");
@@ -176,6 +177,7 @@ const DashboardNewSong = () => {
 		const returnSec = seconds < 10 ? `0${seconds}` : `${seconds}`;
 		return `${returnMin} : ${returnSec}`;
 	};
+
 	const deleteImageObject = (songURL, action) => {
 		if (action === "image") {
 			setIsImageLoading(true);
@@ -236,6 +238,7 @@ const DashboardNewSong = () => {
 			setDuration(null);
 		}
 	};
+
 	return (
 		<div className='flex items-center justify-center p-4 border border-gray-300 rounded-md'>
 			<div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
@@ -271,7 +274,7 @@ const DashboardNewSong = () => {
 										<div className='relative w-full h-full overflow-hidden rounded-md'>
 											<img
 												src={songImageUrl}
-												alt='uploaded image'
+												alt='uploaded'
 												className='w-full h-full object-cover'
 											/>
 											<button
@@ -361,7 +364,6 @@ export const AddNewArtist = () => {
 	const [twitter, setTwitter] = useState("");
 	const [instagram, setInstagram] = useState("");
 	const [{ artists }, dispatch] = useStateValue();
-
 	const deleteImageObject = (songURL) => {
 		setIsArtist(true);
 		setArtistCoverImage(null);
@@ -403,6 +405,7 @@ export const AddNewArtist = () => {
 			setInstagram("");
 		}
 	};
+
 	return (
 		<div className='flex items-center justify-evenly w-full flex-wrap'>
 			<div className='bg-card  backdrop-blur-md w-full lg:w-225 h-225 rounded-md border-2 border-dotted border-gray-300 cursor-pointer'>
@@ -422,7 +425,7 @@ export const AddNewArtist = () => {
 							<div className='relative w-full h-full overflow-hidden rounded-md'>
 								<img
 									src={artistCoverImage}
-									alt='uploaded image'
+									alt='uploaded'
 									className='w-full h-full object-cover'
 								/>
 								<button
@@ -506,7 +509,6 @@ export const AddNewAlbum = () => {
 	const [artistCoverImage, setArtistCoverImage] = useState(null);
 	const [artistName, setArtistName] = useState("");
 	const [{ artists }, dispatch] = useStateValue();
-
 	const deleteImageObject = (songURL) => {
 		setIsArtist(true);
 		setArtistCoverImage(null);
@@ -520,7 +522,6 @@ export const AddNewAlbum = () => {
 			setIsArtist(false);
 		});
 	};
-
 	const saveArtist = () => {
 		if (!artistCoverImage || !artistName) {
 			setAlert("error");
@@ -566,7 +567,7 @@ export const AddNewAlbum = () => {
 							<div className='relative w-full h-full overflow-hidden rounded-md'>
 								<img
 									src={artistCoverImage}
-									alt='uploaded image'
+									alt='uploaded'
 									className='w-full h-full object-cover'
 								/>
 								<button

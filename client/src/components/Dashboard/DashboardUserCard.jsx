@@ -28,7 +28,6 @@ const DashboardUserCard = ({ data, index }) => {
 			}
 		});
 	};
-
 	const deleteuser = (userId) => {
 		setIsLoading(true);
 		removeUser(userId).then((res) => {
@@ -62,24 +61,18 @@ const DashboardUserCard = ({ data, index }) => {
 				</motion.div>
 			)}
 			<div className='w-275 min-w-[160px] flex items-center justify-center'>
-				<img
-					src={data.imageURL}
-					alt=''
-					className='w-10 h-10 object-cover rounded-md min-w-[40px] shadow-md'
-				/>
+				{/* prettier-ignore */}
+				<img src={data.imageURL} alt="" className="w-10 h-10 object-cover rounded-md min-w-[40px] shadow-md"
+        />
 			</div>
-			<p className='text-base text-textColor w-275 min-w-[160px] text-center'>
-				{data.name}
-			</p>
-			<p className='text-base text-textColor w-275 min-w-[160px] text-center'>
-				{data.email}
-			</p>
-			<p className='text-base text-textColor w-275 min-w-[160px] text-center'>
-				{data.email_verfied ? "True" : "False"}
-			</p>
-			<p className='text-base text-textColor w-275 min-w-[160px] text-center'>
-				{createdAt}
-			</p>
+			{/* prettier-ignore */}
+			<p className="text-base text-textColor w-275 min-w-[160px] text-center">{data.name}</p>
+			{/* prettier-ignore */}
+			<p className="text-base text-textColor w-275 min-w-[160px] text-center">{data.email}</p>
+			{/* prettier-ignore */}
+			<p className="text-base text-textColor w-275 min-w-[160px] text-center">{data.email_verfied ? 'True' : 'False'}</p>
+			{/* prettier-ignore */}
+			<p className="text-base text-textColor w-275 min-w-[160px] text-center">{createdAt}</p>
 			<div className=' w-275 min-w-[160px] text-center flex items-center justify-center gap-6 relative'>
 				<p className='text-base text-textColor'> {data.role}</p>
 				{data._id !== user?.user._id && (

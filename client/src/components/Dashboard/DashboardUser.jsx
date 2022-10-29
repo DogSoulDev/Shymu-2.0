@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { getAllUsers } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
 import { useStateValue } from "../../hooks/Context/StateProvider";
-import DashboardUserCard from "./DashboardUserCard";
+import DashboardUserCard from "../Dashboard/DashboardUserCard";
 
 const DashboardUser = () => {
 	const [emailFilter, setEmailFilter] = useState("");
@@ -68,24 +68,18 @@ const DashboardUser = () => {
 					</p>
 				</div>
 				<div className='w-full min-w-[750px] flex items-center justify-between'>
-					<p className='text-sm text-textColor font-semibold w-275 min-w-[160px] text-center'>
-						Image
-					</p>
-					<p className='text-sm text-textColor font-semibold w-275 min-w-[160px] text-center'>
-						Name
-					</p>
-					<p className='text-sm text-textColor font-semibold w-275 min-w-[160px] text-center'>
-						Email
-					</p>
-					<p className='text-sm text-textColor font-semibold w-275 min-w-[160px] text-center'>
-						Verified
-					</p>
-					<p className='text-sm text-textColor font-semibold w-275 min-w-[160px] text-center'>
-						Created
-					</p>
-					<p className='text-sm text-textColor font-semibold w-275 min-w-[160px] text-center'>
-						Role
-					</p>{" "}
+					{/* prettier-ignore */}
+					<p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Image</p>
+					{/* prettier-ignore */}
+					<p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Name</p>
+					{/* prettier-ignore */}
+					<p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Email</p>
+					{/* prettier-ignore */}
+					<p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Verified</p>
+					{/* prettier-ignore */}
+					<p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Created</p>
+					{/* prettier-ignore */}
+					<p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Role</p>{" "}
 				</div>
 				{allUsers && !filtereUsers
 					? allUsers?.map((data, i) => (
