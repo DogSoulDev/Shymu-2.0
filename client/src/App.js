@@ -17,11 +17,17 @@ import {
 	Login,
 	MusicPlayer,
 	UserProfile,
+	MyFavourites,
+	MyMatches,
 	Trending,
 	Premium,
 	Contact,
 	AboutUs,
+<<<<<<< HEAD
 } from "./components";
+=======
+} from "./components/index";
+>>>>>>> origin/Style_Slider
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion } from "framer-motion";
@@ -84,6 +90,8 @@ function App() {
 				{/* <Route path='*' element={<Error404 />} /> */}
 				<Route path='/dashboard/*' element={<Dashboard />} />
 				<Route path='/userProfile' element={<UserProfile />} />
+				<Route path='/myFavourites' element={<MyFavourites />} />
+				<Route path='/myMatches' element={<MyMatches />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/trending' element={<Trending />} />
 				<Route path='/premium' element={<Premium />} />
