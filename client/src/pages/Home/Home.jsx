@@ -88,7 +88,7 @@ const Home = () => {
 			{/* Slider */}
 			<div className="w-full relative">
       <img
-        src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+        src="https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         className="absolute inset-0 object-cover w-full h-full"
         alt=""
       />
