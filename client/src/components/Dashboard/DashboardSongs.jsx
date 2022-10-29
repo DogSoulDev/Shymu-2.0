@@ -584,7 +584,7 @@ export const AddNewAlbum = () => {
 			<div className='flex flex-col items-center justify-center gap-4 '>
 				<input
 					type='text'
-					placeholder='Artist Name'
+					placeholder='Album name'
 					className='w-full lg:w-300 p-3 rounded-md text-base font-semibold text-textColor outline-none shadow-sm border border-gray-300 bg-transparent'
 					value={artistName}
 					onChange={(e) => setArtistName(e.target.value)}
