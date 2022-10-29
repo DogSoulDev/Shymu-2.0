@@ -87,10 +87,10 @@ const Home = () => {
 			<Header />
 
 
-			<div className="w-full relative bg-gradient-to-r from-indigo-500">
+			<div className="w-full relative bg-gradient-to-r from-primaryHeader">
       <img
-        src="https://images.pexels.com/photos/7149180/pexels-photo-7149180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        className="absolute inset-0 object-cover w-full h-full"
+        src="https://images.pexels.com/photos/2322726/pexels-photo-2322726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        className="absolute inset-0 object-cover w-full h-full mix-blend-multiply"
         alt=""
       />
       <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
