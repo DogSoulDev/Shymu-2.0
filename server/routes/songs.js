@@ -1,14 +1,12 @@
 const song = require("../models/song");
 const router = require("express").Router();
-
 router.get("/getAll", async (req, res) => {
 	const options = {
-		//*Sort returned documents in ascending order
+		// sort returned documents in ascending order
 		sort: { createdAt: 1 },
-		//*Include only the following
-		//*Projection : {}
+		// Include only the following
+		// projection : {}
 	};
-
 	const cursor = await song.find(options);
 	if (cursor) {
 		res.status(200).send({ success: true, data: cursor });
@@ -16,7 +14,6 @@ router.get("/getAll", async (req, res) => {
 		res.status(200).send({ success: true, msg: "No Data Found" });
 	}
 });
-
 router.get("/getOne/:getOne", async (req, res) => {
 	const filter = { _id: req.params.getOne };
 	const cursor = await song.findOne(filter);
@@ -26,7 +23,6 @@ router.get("/getOne/:getOne", async (req, res) => {
 		res.status(200).send({ success: true, msg: "No Data Found" });
 	}
 });
-
 router.post("/save", async (req, res) => {
 	const newSong = song({
 		name: req.body.name,
@@ -44,7 +40,6 @@ router.post("/save", async (req, res) => {
 		res.status(400).send({ success: false, msg: error });
 	}
 });
-
 router.put("/update/:updateId", async (req, res) => {
 	const filter = { _id: req.params.updateId };
 	const options = {
@@ -70,7 +65,6 @@ router.put("/update/:updateId", async (req, res) => {
 		res.status(400).send({ success: false, msg: error });
 	}
 });
-
 router.delete("/delete/:deleteId", async (req, res) => {
 	const filter = { _id: req.params.deleteId };
 	const result = await song.deleteOne(filter);
@@ -80,7 +74,6 @@ router.delete("/delete/:deleteId", async (req, res) => {
 		res.status(200).send({ success: false, msg: "Data Not Found" });
 	}
 });
-
 router.get("/getFavouritesSongs", async (req, res) => {
 	const query = req.query.songId;
 	res.send(query);

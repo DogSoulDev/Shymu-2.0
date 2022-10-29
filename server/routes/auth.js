@@ -2,7 +2,6 @@ const admin = require("../config/firebase.config");
 const song = require("../models/song");
 const user = require("../models/user");
 const router = require("express").Router();
-
 router.get("/login", async (req, res) => {
 	if (!req.headers.authorization) {
 		return res.status(500).send({ message: "Invalid Token" });
@@ -29,7 +28,6 @@ router.get("/login", async (req, res) => {
 router.put("/favourites/:userId", async (req, res) => {
 	const filter = { _id: req.params.userId };
 	const songId = req.query;
-
 	try {
 		console.log(filter, songId);
 		const result = await user.updateOne(filter, {
@@ -48,7 +46,6 @@ router.get("/getUsers", async (req, res) => {
 		// Include only the following
 		// projection : {}
 	};
-
 	const cursor = await user.find(options);
 	if (cursor) {
 		res.status(200).send({ success: true, data: cursor });
@@ -73,12 +70,10 @@ router.put("/updateRole/:userId", async (req, res) => {
 	console.log(req.body.data.role, req.params.userId);
 	const filter = { _id: req.params.userId };
 	const role = req.body.data.role;
-
 	const options = {
 		upsert: true,
 		new: true,
 	};
-
 	try {
 		const result = await user.findOneAndUpdate(filter, { role: role }, options);
 		res.status(200).send({ user: result });
@@ -100,7 +95,6 @@ router.delete("/delete/:userId", async (req, res) => {
 router.put("/removeFavourites/:userId", async (req, res) => {
 	const filter = { _id: req.params.userId };
 	const songId = req.query;
-
 	try {
 		console.log(filter, songId);
 		const result = await user.updateOne(filter, {

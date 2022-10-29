@@ -1,14 +1,12 @@
 const album = require("../models/album");
 const router = require("express").Router();
-
 router.get("/getAll", async (req, res) => {
 	const options = {
-		//*Sort returned documents in ascending order
+		// sort returned documents in ascending order
 		sort: { createdAt: 1 },
-		//*Include only the following
-		//*Projection : {}
+		// Include only the following
+		// projection : {}
 	};
-
 	const cursor = await album.find(options);
 	if (cursor) {
 		res.status(200).send({ success: true, data: cursor });

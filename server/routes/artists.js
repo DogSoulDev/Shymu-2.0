@@ -1,6 +1,5 @@
 const artist = require("../models/artist");
 const router = require("express").Router();
-
 router.get("/getAll", async (req, res) => {
 	const options = {
 		// sort returned documents in ascending order
@@ -15,6 +14,7 @@ router.get("/getAll", async (req, res) => {
 		res.status(200).send({ success: true, msg: "No Data Found" });
 	}
 });
+
 router.get("/getOne/:getOne", async (req, res) => {
 	const filter = { _id: req.params.getOne };
 	const cursor = await artist.findOne(filter);
@@ -24,8 +24,7 @@ router.get("/getOne/:getOne", async (req, res) => {
 		res.status(200).send({ success: true, msg: "No Data Found" });
 	}
 });
-//! Esperara a que se conecte con mongodb y le haga un fetch a la data.
-//!Toda info viene del API Body request.
+
 router.post("/save", async (req, res) => {
 	const newArtist = artist({
 		name: req.body.name,
@@ -63,8 +62,9 @@ router.put("/update/:updateId", async (req, res) => {
 		res.status(400).send({ success: false, msg: error });
 	}
 });
+
 router.delete("/delete/:deleteId", async (req, res) => {
-	const filter = { _id: req.params.deleteId };
+	const filter = { _id: req.params.deleteId }
 	const result = await artist.deleteOne(filter);
 	if (result.deletedCount === 1) {
 		res.status(200).send({ success: true, msg: "Data Deleted" });
