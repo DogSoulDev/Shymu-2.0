@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import { IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
-import { getAllArtist } from "../../api";
+import { getAllArtist, deleteAlbumById } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
 
 const DashboardArtist = () => {
@@ -20,9 +20,7 @@ const DashboardArtist = () => {
 			<div className='relative w-full gap-3  my-4 p-4 py-12 border border-gray-300 rounded-md flex flex-wrap justify-evenly'>
 				{artists &&
 					artists.map((data, index) => (
-						<>
-							<ArtistCard key={data._id} data={data} index={index} />
-						</>
+							<ArtistCard key={index} data={data} index={index} />
 					))}
 			</div>
 		</div>
@@ -31,6 +29,11 @@ const DashboardArtist = () => {
 
 export const ArtistCard = ({ data, index }) => {
 	const [isDelete, setIsDelete] = useState(false);
+
+
+	const test  = (data)=>{
+		console.log(data)
+	}
 	return (
 		<motion.div
 			initial={{ opacity: 0, translateX: -50 }}
@@ -74,7 +77,7 @@ export const ArtistCard = ({ data, index }) => {
 						Are you sure do you want to delete this?
 					</p>
 					<div className='flex items-center w-full justify-center gap-3'>
-						<div className='bg-red-300 px-3 rounded-md' onClick={() => setIsDelete(false)}>
+						<div className='bg-red-300 px-3 rounded-md' onClick={() => test(data)}>
 							<p className='text-headingColor text-sm'>Yes</p>
 						</div>
 						<div
