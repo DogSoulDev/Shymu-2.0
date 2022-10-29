@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { AiOutlineClear } from "react-icons/ai";
 import { deleteSongById, getAllSongs } from "../../api";
 import { useStateValue } from "../../hooks/Context/StateProvider";
-import { actionType } from "../Context/reducer";
+import { actionType } from "../../hooks/Context/reducer";
 import { IoAdd, IoPause, IoPlay, IoTrash } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import AlertSuccess from "../Alerts/AlertSucces";

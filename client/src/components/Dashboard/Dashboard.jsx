@@ -1,11 +1,11 @@
 import React from "react";
 import { IoHome } from "react-icons/io5";
 import { NavLink, Route, Routes } from "react-router-dom";
-import { DashboardNewSong } from ".";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
+import DashboardNewSong from "./DashboardNewSong";
 import DashboardAlbum from "./DashboardAlbum";
 import DashboardArtist from "./DashboardArtist";
-import DashBoardHome from "./DashBoardHome";
+import DashBoardHome from "./DashboardHome";
 import DashboardSongs from "./DashboardSongs";
 import DashboardUser from "./DashboardUser";
 import Header from "../Header/Header";
@@ -14,7 +14,6 @@ const Dashboard = () => {
 	return (
 		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
 			<Header />
-
 			<div className='w-[60%] my-2 p-4 flex items-center justify-evenly'>
 				<NavLink to={"/dashboard/home"}>
 					<IoHome className='text-2xl text-textColor' />

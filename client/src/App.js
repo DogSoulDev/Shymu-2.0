@@ -21,7 +21,7 @@ import {
 	Premium,
 	Contact,
 	AboutUs,
-} from "./components/index.js";
+} from "./components";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion } from "framer-motion";
