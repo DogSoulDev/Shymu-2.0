@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
-import {
-	getAuth,
-	GoogleAuthProvider,
-	inMemoryPersistence,
-	signInWithPopup,
-} from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import { app } from "./config/firebase.config";
 import { getAllSongs, validateUser } from "./api";
 import {
 	Dashboard,
 	Home,
-	Header,
 	Match,
 	Login,
 	MusicPlayer,
@@ -27,7 +21,6 @@ import {
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion } from "framer-motion";
-import { MdOutlineSnowboarding } from "react-icons/md";
 import Onboarding from "./components/Onboarding/Onboarding.jsx";
 // import Error404 from "./pages/Error404.jsx/Error404";
 
@@ -66,6 +59,7 @@ function App() {
 				navigate("/onboarding");
 			}
 		});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	useEffect(() => {
 		if (!allSongs && user) {
@@ -76,6 +70,7 @@ function App() {
 				});
 			});
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
 		<div className='h-auto  items-center justify-center min-w-[680px]'>

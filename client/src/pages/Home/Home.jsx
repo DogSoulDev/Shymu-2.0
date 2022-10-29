@@ -7,7 +7,6 @@ import Header from "../../components/Header/Header";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 import DashboardBanner from "../../components/Dashboard/DashboardBanner";
 const Home = () => {
 	const [
@@ -31,6 +30,7 @@ const Home = () => {
 				});
 			});
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	useEffect(() => {
 		if (searchTerm.length > 0) {
@@ -45,6 +45,7 @@ const Home = () => {
 		} else {
 			setFilteredSongs(null);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [searchTerm]);
 	useEffect(() => {
 		const filtered = allSongs?.filter((data) => data.artist === artistFilter);
@@ -53,6 +54,7 @@ const Home = () => {
 		} else {
 			setFilteredSongs(null);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [artistFilter]);
 	useEffect(() => {
 		const filtered = allSongs?.filter(
@@ -63,6 +65,7 @@ const Home = () => {
 		} else {
 			setFilteredSongs(null);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [filterTerm]);
 	useEffect(() => {
 		const filtered = allSongs?.filter((data) => data.album === albumFilter);
@@ -71,6 +74,7 @@ const Home = () => {
 		} else {
 			setFilteredSongs(null);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [albumFilter]);
 	useEffect(() => {
 		const filtered = allSongs?.filter(
@@ -81,11 +85,12 @@ const Home = () => {
 		} else {
 			setFilteredSongs(null);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [languageFilter]);
 	return (
 		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
 			<Header />
-			<DashboardBanner/>
+			<DashboardBanner />
 			<SearchBar />
 			{searchTerm.length > 0 && (
 				<p className='my-4 text-base text-textColor'>

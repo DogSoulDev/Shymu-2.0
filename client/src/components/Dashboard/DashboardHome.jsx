@@ -56,6 +56,7 @@ const DashboardHome = () => {
 				dispatch({ type: actionType.SET_ALL_ALBUMNS, allAlbums: data.data });
 			});
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	return (
 		<div className='w-full p-6 flex items-center justify-evenly flex-wrap'>

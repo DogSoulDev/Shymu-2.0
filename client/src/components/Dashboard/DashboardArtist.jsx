@@ -5,8 +5,6 @@ import { IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { getAllArtist, deleteArtistById } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
-import AlertError from "../Alerts/AlertError";
-import AlertSucces from "../Alerts/AlertSucces";
 
 const DashboardArtist = () => {
 	const [{ artists }, dispatch] = useStateValue();

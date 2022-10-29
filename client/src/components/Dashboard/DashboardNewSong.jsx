@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
-	getStorage,
 	ref,
 	getDownloadURL,
 	uploadBytesResumable,
@@ -24,7 +23,6 @@ import {
 
 import { actionType } from "../../hooks/Context/reducer";
 import { filterByLanguage, filters } from "../../utils/supportfunctions";
-import { IoMusicalNote } from "react-icons/io5";
 import AlertSuccess from "../Alerts/AlertSucces";
 import AlertError from "../Alerts/AlertError";
 export const ImageLoader = ({ progress }) => {
@@ -168,6 +166,7 @@ const DashboardNewSong = () => {
 				dispatch({ type: actionType.SET_ALL_ALBUMNS, allAlbums: data.data });
 			});
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	const calculateTime = (sec) => {
 		const minutes = Math.floor(sec / 60);
