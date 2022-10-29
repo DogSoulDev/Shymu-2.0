@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { LoginBg } from "../../../assets/video";
+import { videoLogin } from "../../../assets/video";
 import { FcGoogle } from "react-icons/fc";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { app } from "../../../config/firebase.config";
@@ -62,7 +62,7 @@ const Login = ({ setAuth }) => {
           ```
         */}
         <div className="flex min-h-full">
-          <div className="flex flex-1 flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+          <div className="flex flex-1 flex-col p-0 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <div className="mx-auto w-full max-w-sm lg:w-96">
               <div>
                
@@ -149,7 +149,7 @@ const Login = ({ setAuth }) => {
                       </div>
   
                       <div className="text-sm">
-                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                        <a href="#" className="font-medium text-primaryOrange hover:text-primaryOrange">
                           Forgot your password?
                         </a>
                       </div>
@@ -158,7 +158,7 @@ const Login = ({ setAuth }) => {
                     <div>
                       <button
                         type="submit"
-                        className="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-primaryOrange focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        className="flex w-full rounded-md border border-transparent bg-primaryOrange py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-primaryOrange focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                       >
                         Sign in
                       </button>
@@ -168,12 +168,15 @@ const Login = ({ setAuth }) => {
               </div>
             </div>
           </div>
-          <div className="relative hidden w-0 flex-1 lg:block">
-            <img
-              className="absolute inset-0 h-full w-full object-cover"
-              src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
-              alt=""
-            />
+          <div className="relative max-h-screen hidden w-0 flex-1 lg:block">
+          <video
+				src={videoLogin}
+				type='video/mp4'
+				autoPlay
+				muted
+				loop
+				className='w-full h-full object-cover'
+			></video>
           </div>
         </div>
       </>
