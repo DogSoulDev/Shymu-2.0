@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
-import { LoginBg } from "../../assets/video";
+import { LoginBg } from "../../../assets/video";
 import { FcGoogle } from "react-icons/fc";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { app } from "../../config/firebase.config";
+import { app } from "../../../config/firebase.config";
 import { useNavigate } from "react-router-dom";
-import { validateUser } from "../../api";
-import { actionType } from "../../hooks/Context/reducer";
-import { useStateValue } from "../../hooks/Context/StateProvider";
+import { validateUser } from "../../../api";
+import { actionType } from "../../../hooks/Context/reducer";
+import { useStateValue } from "../../../hooks/Context/StateProvider";
 
 const Login = ({ setAuth }) => {
 	const firebaseAuth = getAuth(app);
 	const provider = new GoogleAuthProvider();
 	const navigate = useNavigate();
+	// eslint-disable-next-line no-unused-vars
 	const [{ user }, dispatch] = useStateValue();
 
 	const loginWithGoogle = async () => {
@@ -47,7 +48,7 @@ const Login = ({ setAuth }) => {
 	useEffect(() => {
 		if (window.localStorage.getItem("auth") === "true")
 			navigate("/", { replace: true });
-	}, []);
+	}, [navigate]);
 
 	return (
 		<div className='relative w-screen h-screen'>
