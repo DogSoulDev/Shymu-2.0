@@ -27,7 +27,6 @@ import {
 	saveNewSong,
 } from "../../api";
 
-
 export const ImageLoader = ({ progress }) => {
 	return (
 		<div className='w-full h-full flex flex-col items-center justify-center'>
@@ -614,10 +613,8 @@ export const AddNewAlbum = () => {
 					)}
 				</>
 			)}
-			
 		</div>
 	);
-	
 };
 
 export default DashboardNewSong;

@@ -90,7 +90,7 @@ const Home = () => {
 	return (
 		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
 			<Header />
-			<DashboardBanner/>
+			<DashboardBanner />
 			<SearchBar />
 			{searchTerm.length > 0 && (
 				<p className='my-4 text-base text-textColor'>
@@ -127,7 +127,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 			});
 		}
 	};
-//!Con esto buscamos la cancion por Id dentro del Index.
+	//!Con esto buscamos la cancion por Id dentro del Index.
 	const CurrentSong = (songId) => {
 		const index = allIdSongs.findIndex((song) => {
 			return song._id === songId;
