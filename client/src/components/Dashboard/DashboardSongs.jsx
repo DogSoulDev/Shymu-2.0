@@ -92,7 +92,7 @@ export const ImageUploader = ({
 						<BiCloudUpload />
 					</p>
 					<p className='text-lg'>
-						click to upload {isImage ? "image" : "audio"}
+						Click to upload {isImage ? "image" : "audio"}
 					</p>
 				</div>
 			</div>

@@ -69,6 +69,7 @@ const MusicPlayer = () => {
 			});
 		}
 	}, [song]);
+
 	return (
 		<div className='w-full full flex items-center gap-3 overflow-hidden'>
 			<div

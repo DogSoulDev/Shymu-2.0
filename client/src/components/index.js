@@ -1,11 +1,13 @@
-export { default as Login } from "./Login/Login.jsx";
+export { default as Login } from "./Header/Login/Login.jsx";
 export { default as Home } from "../pages/Home/Home.jsx";
-export { default as Header } from "./Header/Header";
+export { default as Header } from "./Header/Header.jsx";
 export { default as Loader } from "./Loader/Loader.jsx";
 export { default as SearchBar } from "./SearchBar/SearchBar.jsx";
 export { default as Filter } from "./Filter/Filter.jsx";
 export { default as FilterButtons } from "./Filter/FilterButtons.jsx";
-export { default as UserProfile } from "./UserProfile/UserProfile.jsx";
+export { default as UserProfile } from "./Header/Profile/UserProfile/UserProfile.jsx";
+export { default as MyFavourites }  from "./Header/Profile/MyFavourites/MyFavourites.jsx";
+export { default as MyMatches } from "./Header/Profile/MyMatches/MyMatches.jsx"
 
 export { default as Dashboard } from "./Dashboard/Dashboard.jsx";
 export { default as DashboardHome } from "./Dashboard/DashboardHome.jsx";

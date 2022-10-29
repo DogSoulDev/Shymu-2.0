@@ -2,7 +2,6 @@ import React from "react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import Header from "../../Header";
 
-
 const Contact = () => {
 	return (
 		<>
