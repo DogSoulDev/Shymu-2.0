@@ -271,7 +271,7 @@ const DashboardNewSong = () => {
 										<div className='relative w-full h-full overflow-hidden rounded-md'>
 											<img
 												src={songImageUrl}
-												alt='uploaded image'
+												alt='uploaded'
 												className='w-full h-full object-cover'
 											/>
 											<button
@@ -422,7 +422,7 @@ export const AddNewArtist = () => {
 							<div className='relative w-full h-full overflow-hidden rounded-md'>
 								<img
 									src={artistCoverImage}
-									alt='uploaded image'
+									alt='uploaded'
 									className='w-full h-full object-cover'
 								/>
 								<button
@@ -566,7 +566,7 @@ export const AddNewAlbum = () => {
 							<div className='relative w-full h-full overflow-hidden rounded-md'>
 								<img
 									src={artistCoverImage}
-									alt='uploaded image'
+									alt='uploaded'
 									className='w-full h-full object-cover'
 								/>
 								<button
