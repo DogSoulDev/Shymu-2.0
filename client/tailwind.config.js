@@ -65,7 +65,7 @@ module.exports = {
     layout: '#F4F5F7',
     textColor2: '#858F9C',
     textColorMenu: '#ece8e8',
-    Search: '#424665',
+    Search: '#949b9d',
     primaryOrange: '#F4694C',
     primaryBeige: '#FFEFDA',
     primaryFooter: '#1f2937',
