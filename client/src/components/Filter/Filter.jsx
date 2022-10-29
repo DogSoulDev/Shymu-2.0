@@ -48,12 +48,12 @@ const Filter = ({ setFilteredSongs }) => {
 				<div className='inline-flex rounded-md shadow-sm'>
 					<button
 						type='button'
-						className='relative inline-flex items-center rounded-l-md border border-gray-300 bg-layout px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
+						className='relative inline-flex items-center rounded-l-md border-l border-y border-gray-300 bg-layout px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1'
 					>
 						Genres
 					</button>
 					<Menu as='div' className='relative -ml-px block'>
-						<Menu.Button className='relative inline-flex items-center rounded-r-md border border-gray-300 bg-layout px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'>
+						<Menu.Button className='relative inline-flex items-center rounded-r-md border-r border-y border-gray-300 bg-layout px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1'>
 							<span className='sr-only'>Open options</span>
 							<ChevronDownIcon className='h-5 w-5' aria-hidden='true' />
 						</Menu.Button>
@@ -92,17 +92,7 @@ const Filter = ({ setFilteredSongs }) => {
 					</Menu>
 				</div>
 			</div>
-			{/* {filters?.map((data) => (
-					<p
-						key={data.id}
-						onClick={() => updateFilter(data.value)}
-						className={`text-base ${
-							data.value === filterTerm ? "font-semibold" : "font-normal"
-						} text-textColor cursor-pointer hover:font-semibold transition-all duration-100 ease-in-out`}
-					>
-						{data.name}
-					</p>
-				))} */}
+			
 			<FilterButtons filterData={allAlbums} flag={"Albums"} />
 			<FilterButtons filterData={filterByLanguage} flag={"Language"} />
 			<motion.i

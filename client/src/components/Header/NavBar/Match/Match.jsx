@@ -9,10 +9,13 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCards } from "swiper";
+import Header from "../../Header";
+import Footer from "../../../Footer/Footer";
 
 function Match() {
 	return (
 		<>
+		<Header />
 			<Swiper
 				effect={"cards"}
 				grabCursor={true}
@@ -29,6 +32,7 @@ function Match() {
 				<SwiperSlide>Julio</SwiperSlide>
 				<SwiperSlide>Juan</SwiperSlide>
 			</Swiper>
+			<Footer />
 		</>
 	);
 }
