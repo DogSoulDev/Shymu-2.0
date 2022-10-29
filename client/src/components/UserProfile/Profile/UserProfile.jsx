@@ -1,7 +1,7 @@
 import React from "react";
-import { useStateValue } from "../../hooks/Context/StateProvider";
-import { formatDate } from "../../helpers";
-import Header from "../Header/Header";
+import { useStateValue } from "../../../hooks/Context/StateProvider";
+import { formatDate } from "../../../helpers";
+import Header from "../../Header/Header";
 
 const UserProfile = () => {
 	const [{ user }, dispatch] = useStateValue();
