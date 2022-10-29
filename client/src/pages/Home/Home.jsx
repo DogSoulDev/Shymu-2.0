@@ -8,6 +8,7 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
+import DashboardBanner from "../../components/Dashboard/DashboardBanner";
 
 const Home = () => {
 	const [
@@ -82,9 +83,14 @@ const Home = () => {
 			setFilteredSongs(null);
 		}
 	}, [languageFilter]);
+	//?Aqui cambiais los banners "<DashboardBanner/>".
+	//?Aqui cambiais los banners "<DashboardBanner/>".
+	//?Aqui cambiais los banners "<DashboardBanner/>".
+	//?Aqui cambiais los banners "<DashboardBanner/>".
 	return (
 		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
 			<Header />
+			<DashboardBanner/>
 			<SearchBar />
 			{searchTerm.length > 0 && (
 				<p className='my-4 text-base text-textColor'>
