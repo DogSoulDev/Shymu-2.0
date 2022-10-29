@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import { IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
-import { getAllArtist, deleteAlbumById } from "../../api";
+import { getAllArtist, deleteArtistById } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
+import AlertError from "../Alerts/AlertError";
+import AlertSucces from "../Alerts/AlertSucces";
 
 const DashboardArtist = () => {
 	const [{ artists }, dispatch] = useStateValue();
@@ -15,25 +17,38 @@ const DashboardArtist = () => {
 			});
 		}
 	}, [dispatch, artists]);
+
+	const handleDeleteArtist = async (id) => {
+		const { data } = await deleteArtistById(id);
+		if (data.success) {
+			getAllArtist().then((data) => {
+				dispatch({ type: actionType.SET_ARTISTS, artists: data.data });
+			});
+			console.log("Data delete succesfully!");
+		} else {
+			console.log("error");
+		}
+	};
 	return (
 		<div className='w-full p-4 flex items-center justify-center flex-col'>
 			<div className='relative w-full gap-3  my-4 p-4 py-12 border border-gray-300 rounded-md flex flex-wrap justify-evenly'>
 				{artists &&
 					artists.map((data, index) => (
-							<ArtistCard key={index} data={data} index={index} />
+						<ArtistCard
+							key={index}
+							data={data}
+							index={index}
+							deleteArtist={handleDeleteArtist}
+						/>
 					))}
 			</div>
 		</div>
 	);
 };
 
-export const ArtistCard = ({ data, index }) => {
+export const ArtistCard = ({ data, index, deleteArtist }) => {
 	const [isDelete, setIsDelete] = useState(false);
 
-
-	const test  = (data)=>{
-		console.log(data)
-	}
 	return (
 		<motion.div
 			initial={{ opacity: 0, translateX: -50 }}
@@ -77,7 +92,10 @@ export const ArtistCard = ({ data, index }) => {
 						Are you sure do you want to delete this?
 					</p>
 					<div className='flex items-center w-full justify-center gap-3'>
-						<div className='bg-red-300 px-3 rounded-md' onClick={() => test(data)}>
+						<div
+							className='bg-red-300 px-3 rounded-md'
+							onClick={() => deleteArtist(data._id)}
+						>
 							<p className='text-headingColor text-sm'>Yes</p>
 						</div>
 						<div
