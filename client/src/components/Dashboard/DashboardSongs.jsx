@@ -12,11 +12,6 @@ import { MdDelete } from "react-icons/md";
 import { storage } from "../../config/firebase.config";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import FilterButtons from "../Filter/FilterButtons";
-import { actionType } from "../../hooks/Context/reducer";
-import { filterByLanguage, filters } from "../../utils/supportfunctions";
-import { IoMusicalNote } from "react-icons/io5";
-import AlertSuccess from "../Alerts/AlertSucces";
-import AlertError from "../Alerts/AlertError";
 
 import {
 	getAllAlbums,
@@ -27,6 +22,11 @@ import {
 	saveNewSong,
 } from "../../api";
 
+import { actionType } from "../../hooks/Context/reducer";
+import { filterByLanguage, filters } from "../../utils/supportfunctions";
+import { IoMusicalNote } from "react-icons/io5";
+import AlertSuccess from "../Alerts/AlertSucces";
+import AlertError from "../Alerts/AlertError";
 export const ImageLoader = ({ progress }) => {
 	return (
 		<div className='w-full h-full flex flex-col items-center justify-center'>
@@ -134,6 +134,7 @@ export const DisabledButton = () => {
 		</button>
 	);
 };
+
 const DashboardNewSong = () => {
 	const [isImageLoading, setIsImageLoading] = useState(false);
 	const [songImageUrl, setSongImageUrl] = useState(null);
@@ -270,7 +271,7 @@ const DashboardNewSong = () => {
 										<div className='relative w-full h-full overflow-hidden rounded-md'>
 											<img
 												src={songImageUrl}
-												alt='uploaded'
+												alt='uploaded image'
 												className='w-full h-full object-cover'
 											/>
 											<button
@@ -421,7 +422,7 @@ export const AddNewArtist = () => {
 							<div className='relative w-full h-full overflow-hidden rounded-md'>
 								<img
 									src={artistCoverImage}
-									alt='uploaded'
+									alt='uploaded image'
 									className='w-full h-full object-cover'
 								/>
 								<button
@@ -452,7 +453,7 @@ export const AddNewArtist = () => {
 					</p>
 					<input
 						type='text'
-						placeholder='@Twitter ID'
+						placeholder='your id'
 						className='w-full text-base font-semibold text-textColor outline-none bg-transparent'
 						value={twitter}
 						onChange={(e) => setTwitter(e.target.value)}
@@ -464,7 +465,7 @@ export const AddNewArtist = () => {
 					</p>
 					<input
 						type='text'
-						placeholder='@Instagram ID'
+						placeholder='your id'
 						className='w-full text-base font-semibold text-textColor outline-none bg-transparent'
 						value={instagram}
 						onChange={(e) => setInstagram(e.target.value)}
@@ -565,7 +566,7 @@ export const AddNewAlbum = () => {
 							<div className='relative w-full h-full overflow-hidden rounded-md'>
 								<img
 									src={artistCoverImage}
-									alt='uploaded'
+									alt='uploaded image'
 									className='w-full h-full object-cover'
 								/>
 								<button
@@ -585,7 +586,7 @@ export const AddNewAlbum = () => {
 			<div className='flex flex-col items-center justify-center gap-4 '>
 				<input
 					type='text'
-					placeholder='Album Name'
+					placeholder='Artist Name'
 					className='w-full lg:w-300 p-3 rounded-md text-base font-semibold text-textColor outline-none shadow-sm border border-gray-300 bg-transparent'
 					value={artistName}
 					onChange={(e) => setArtistName(e.target.value)}
