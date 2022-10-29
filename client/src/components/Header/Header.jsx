@@ -38,7 +38,7 @@ const Header = () => {
 			  <div className="flex items-center">
 				<a href="/home">
 				  <span className="sr-only">Your Company</span>
-				  <img className="h-14 w-auto" src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/10/logo.png"  alt="" />
+				  <img className="h-20 w-auto" src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/10/logo.png"  alt="" />
 				</a>
 				<div className="ml-10 hidden space-x-8 lg:block">
 				<ul className='flex items-center justify-center ml-7'>
@@ -74,12 +74,12 @@ const Header = () => {
 				</li>
 				<li className='mx-5 text-lg'>
 					<NavLink
-						to={"/contact"}
+						to={"/match"}
 						className={({ isActive }) =>
 							isActive ? isActiveStyles : isNotActiveStyles
 						}
 					>
-						Contact
+						Match
 					</NavLink>
 				</li>
 				<li className='mx-5 text-lg'>
@@ -92,14 +92,15 @@ const Header = () => {
 						About Us
 					</NavLink>
 				</li>
+				
 				<li className='mx-5 text-lg'>
 					<NavLink
-						to={"/match"}
+						to={"/contact"}
 						className={({ isActive }) =>
 							isActive ? isActiveStyles : isNotActiveStyles
 						}
 					>
-						Match
+						Contact
 					</NavLink>
 				</li>
 				</ul>
@@ -117,7 +118,7 @@ const Header = () => {
 					  referrerPolicy='no-referrer'
 				  />
 				  <div className='flex flex-col'>
-					  <p className='text-white text-lg hover:text-headingColor font-semibold'>
+					  <p className='text-white text-lg hover:text-primaryOrange font-semibold'>
 						  {user?.user.name}
 					  </p>
 					  <p className='flex items-center gap-2 text-xs text-white font-normal'>
@@ -163,16 +164,7 @@ const Header = () => {
 			</div>
 			<div className="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">
 			<ul className='flex items-center justify-center ml-7'>
-				<li className='mx-5 text-lg'>
-					<NavLink
-						to={"/home"}
-						className={({ isActive }) =>
-							isActive ? isActiveStyles : isNotActiveStyles
-						}
-					>
-						Home
-					</NavLink>
-				</li>
+				
 				<li className='mx-5 text-lg'>
 					<NavLink
 						to={"/trending"}
@@ -195,12 +187,12 @@ const Header = () => {
 				</li>
 				<li className='mx-5 text-lg'>
 					<NavLink
-						to={"/contact"}
+						to={"/match"}
 						className={({ isActive }) =>
 							isActive ? isActiveStyles : isNotActiveStyles
 						}
 					>
-						Contact
+						Match
 					</NavLink>
 				</li>
 				<li className='mx-5 text-lg'>
@@ -210,19 +202,21 @@ const Header = () => {
 							isActive ? isActiveStyles : isNotActiveStyles
 						}
 					>
-						About Us
+						About
 					</NavLink>
 				</li>
 				<li className='mx-5 text-lg'>
 					<NavLink
-						to={"/match"}
+						to={"/contact"}
 						className={({ isActive }) =>
 							isActive ? isActiveStyles : isNotActiveStyles
 						}
 					>
-						Match
+						Contact
 					</NavLink>
 				</li>
+				
+				
 				</ul>
 			</div>
 		  </nav>

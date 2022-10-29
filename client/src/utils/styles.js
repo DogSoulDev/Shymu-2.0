@@ -1,7 +1,7 @@
 export const isActiveStyles =
-	"text-lg text-headingColor font-semibold hover:text-headingColor duration-100 transition-all ease-in-out";
+	"text-base font-medium text-primaryOrange hover:text-indigo-50";
 export const isNotActiveStyles =
-	"text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out";
+	"text-base font-medium text-textColorMenu hover:text-primaryOrange";
 
 export const bgColors = [
 	"#E9E2FF",
