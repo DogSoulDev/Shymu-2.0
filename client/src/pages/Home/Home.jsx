@@ -93,10 +93,10 @@ const Home = () => {
         className="absolute inset-0 object-cover w-full h-full mix-blend-multiply opacity-25"
         alt=""
       />
-      <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
+      <div className="relative  bg-deep-purple-accent-700 border-b-[10px] border-[white]">
         <svg
           className="absolute inset-x-0 bottom-0 text-white shadow-lg"
-          viewBox="0 0 1160 163"
+          viewBox="0 0 1160 160"
         >
           <path
             fill="currentColor"
@@ -114,8 +114,8 @@ const Home = () => {
                         </svg>
                     </div>
 			<h1 class="mt-2 mb-8 bg-gradient-to-r from-[#ff5722] via-[#e91e63] to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-        		The matching APP
-				<span class="sm:block"> for music lover. </span>
+			THE MATCHING APP
+				<span class="sm:block"> FOR MUSIC LOVERS </span>
 			</h1>	
 			<div class="flex items-center mb-8   ">
                         <img class="object-cover w-12 h-12 rounded-full ring ring-[#ff5722]" src="https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
