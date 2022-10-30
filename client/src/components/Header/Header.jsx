@@ -32,7 +32,7 @@ const Header = () => {
 		navigate("/login", { replace: true });
 	};
 	return (
-		<header className="w-full bg-gradient-to-r from-[#440f74]  to-[#240250] border-b-4 border-[#673ab7]">
+		<header className="w-full bg-gradient-to-r from-[#0B0B02]  to-[#240250] border-b-4 border-[#ff5722]">
 		  <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
 			<div className="flex w-full items-center justify-between border-b border-primaryOrange py-6 lg:border-none">
 			  <div className="flex items-center">
