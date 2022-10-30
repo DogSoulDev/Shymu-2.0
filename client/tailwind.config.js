@@ -66,6 +66,7 @@ module.exports = {
     textColor2: '#858F9C',
     textColorMenu: '#ece8e8',
     Search: '#8c8c8c',
+    Purpple: '#7423ff',
     primaryOrange: '#F4694C',
     primaryBeige: '#FFEFDA',
     primaryFooter: '#1f2937',

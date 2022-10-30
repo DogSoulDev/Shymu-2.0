@@ -87,10 +87,10 @@ const Home = () => {
 			<Header />
 
 
-			<div className="w-full relative bg-gradient-to-r from-primaryHeader">
+			<div className="w-full relative bg-gradient-to-r from-[#160c25] to-[#04051b]">
       <img
-        src="https://nft-tailwind.preview.uideck.com/images/hero/common-bg.jpg"
-        className="absolute inset-0 object-cover w-full h-full mix-blend-multiply"
+        src="https://themekit.strealstudio.com/yorfy/wp-content/uploads/sites/5/2022/05/hero-blur-background.png"
+        className="absolute inset-0 object-cover w-full h-full mix-blend-difference"
         alt=""
       />
       <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
