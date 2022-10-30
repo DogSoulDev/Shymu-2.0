@@ -156,6 +156,8 @@ const Home = () => {
       </div>
     </div>
 
+	
+
 
 			
 			<SearchBar />
