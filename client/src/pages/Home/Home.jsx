@@ -113,21 +113,21 @@ const Home = () => {
                             <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
                         </svg>
                     </div>
-			<h1 class="mb-8 bg-gradient-to-r from-[#ff5722] via-[#e91e63] to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+			<h1 class="mt-2 mb-8 bg-gradient-to-r from-[#ff5722] via-[#e91e63] to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
         		The matching APP
 				<span class="sm:block"> for music lover. </span>
 			</h1>	
 			<div class="flex items-center mb-8   ">
-                        <img class="object-cover w-12 h-12 rounded-full ring ring-white" src="https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
-                        <img class="object-cover w-12 h-12 -mx-4 rounded-full ring ring-white" src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
-                        <img class="object-cover w-12 h-12 rounded-full ring ring-white" src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt=""/>
+                        <img class="object-cover w-12 h-12 rounded-full ring ring-[#ff5722]" src="https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
+                        <img class="object-cover w-12 h-12 -mx-4 rounded-full ring ring-[#ff5722]" src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""/>
+                        <img class="object-cover w-12 h-12 rounded-full ring ring-[#ff5722]" src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt=""/>
                     </div>
 			
 			
               <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
 			  Let people meet the real you. Connect based on your most intimate feelings - Your music, books and  podcast
               </p>
-              <button class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+              <button class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#611dd4] rounded-md hover:bg-[#7423ff] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
 			  Find a match now!
 			</button>
 			
