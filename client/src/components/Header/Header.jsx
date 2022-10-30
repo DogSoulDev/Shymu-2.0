@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../../assets/img/ShymuWhite.png";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
 import { getAuth } from "firebase/auth";

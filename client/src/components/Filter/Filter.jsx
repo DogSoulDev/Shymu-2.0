@@ -27,6 +27,7 @@ const Filter = ({ setFilteredSongs }) => {
 				dispatch({ type: actionType.SET_ALL_ALBUMNS, allAlbums: data.data });
 			});
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	const updateFilter = (value) => {
 		dispatch({
