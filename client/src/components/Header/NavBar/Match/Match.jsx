@@ -9,10 +9,12 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCards } from "swiper";
+import ImageCarousel from "../../../ImageCarousel/ImageCarousel";
 
 function Match() {
 	return (
 		<>
+		<ImageCarousel/>
 			<Swiper
 				effect={"cards"}
 				grabCursor={true}

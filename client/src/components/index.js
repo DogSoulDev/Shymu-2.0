@@ -19,6 +19,8 @@ export { default as DashboardUserCard } from "./Dashboard/DashboardUserCard.jsx"
 export { default as DashboardNewSong } from "./Dashboard/DashboardNewSong.jsx";
 export { default as DashboardBanner } from "./Dashboard/DashboardBanner.jsx";
 
+export { default as ImageCarousel } from "./ImageCarousel/ImageCarousel.jsx";
+
 export { default as AboutUs } from "./Header/NavBar/AboutUs/AboutUs";
 export { default as Contact } from "./Header/NavBar/Contact/Contact";
 export { default as Trending } from "./Header/NavBar/Trending/Trending";
