@@ -5,6 +5,7 @@ import { useStateValue } from "../../hooks/Context/StateProvider";
 import Filter from "../../components/Filter/Filter";
 import Header from "../../components/Header/Header";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import { BookmarkIcon } from '@heroicons/react/20/solid'
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
@@ -241,23 +242,43 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 					initial={{ opacity: 0, translateX: -50 }}
 					animate={{ opacity: 1, translateX: 0 }}
 					transition={{ duration: 0.3, delay: index * 0.1 }}
-					className='relative w-40 px-2 py-4 cursor-pointer hover:shadow-xl hover:bg-card bg-gray-100 shadow-md rounded-lg flex flex-col items-center'
+					className='relative w-[15rem]  cursor-pointer hover:shadow-xl hover:bg-card bg-gray-100 shadow-md rounded-[10px] flex flex-col items-center'
 					onClick={() => addSongToContext(CurrentSong(data._id))}
 				>
-					<div className='w-[10rem] min-w-[160px] h-[20rem] min-h-[160px] rounded-lg drop-shadow-lg relative overflow-hidden'>
+					<div className='w-[16rem] min-w-[160px] h-[25rem] min-h-[160px] rounded-[12px] drop-shadow-lg relative overflow-hidden'>
+						
 						<motion.img
 							whileHover={{ scale: 1.05 }}
 							src={data.imageURL}
 							alt=''
 							className=' w-full h-full rounded-lg object-cover'
 						/>
+						
 					</div>
-					<p className='text-base text-headingColor font-semibold my-2'>
+					<div class=" w-full contents ">
+						<span className="w-full isolate inline-flex rounded-md shadow-sm">
+						<button
+							type="button"
+							className="w-full relative inline-flex items-center rounded-bl-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+						>
+							<BookmarkIcon className="-ml-1 mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
+							Add Song
+						</button>
+						<button
+							type="button"
+							className="w-full relative -ml-px inline-flex items-center rounded-br-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+						>
+							Listen Later
+						</button>
+						</span>
+    				</div>
+					<p className='text-base text-headingColor font-semibold my-1'>
 						{data.name.length > 25 ? `${data.name.slice(0, 25)}` : data.name}
 						<span className='block text-sm text-gray-400 my-1'>
 							{data.artist}
 						</span>
 					</p>
+					
 				</motion.div>
 			))}
 		<Footer />
