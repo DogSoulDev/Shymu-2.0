@@ -6,8 +6,8 @@ export { default as SearchBar } from "./SearchBar/SearchBar.jsx";
 export { default as Filter } from "./Filter/Filter.jsx";
 export { default as FilterButtons } from "./Filter/FilterButtons.jsx";
 export { default as UserProfile } from "./Header/Profile/UserProfile/UserProfile.jsx";
-export { default as MyFavourites } from "./Header/Profile/MyFavourites/MyFavourites.jsx";
-export { default as MyMatches } from "./Header/Profile/MyMatches/MyMatches.jsx";
+export { default as Favourites } from "./Header/Profile//Favourites/Favourites.jsx"
+export { default as Matches } from "./Header/Profile/Matches/Matches.jsx";
 
 export { default as Dashboard } from "./Dashboard/Dashboard.jsx";
 export { default as DashboardHome } from "./Dashboard/DashboardHome.jsx";

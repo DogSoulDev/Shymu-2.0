@@ -11,8 +11,8 @@ import {
 	Login,
 	MusicPlayer,
 	UserProfile,
-	MyFavourites,
-	MyMatches,
+	Favourites,
+	Matches,
 	Trending,
 	Premium,
 	Contact,
@@ -81,8 +81,8 @@ function App() {
 				{/* <Route path='*' element={<Error404 />} /> */}
 				<Route path='/dashboard/*' element={<Dashboard />} />
 				<Route path='/userProfile' element={<UserProfile />} />
-				<Route path='/myFavourites' element={<MyFavourites />} />
-				<Route path='/myMatches' element={<MyMatches />} />
+				<Route path='/favourites' element={<Favourites />} />
+				<Route path='/matches' element={<Matches />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/trending' element={<Trending />} />
 				<Route path='/premium' element={<Premium />} />
