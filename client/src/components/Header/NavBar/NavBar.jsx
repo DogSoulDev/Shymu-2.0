@@ -121,14 +121,14 @@ const Header = () => {
 								Profile
 							</p>
 						</NavLink>
-						<NavLink to={"/myFavourites"}>
+						<NavLink to={"/favourites"}>
 							<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-								My Favourites
+								Favourites
 							</p>
 						</NavLink>
-						<NavLink to={"/myMatches"}>
+						<NavLink to={"/matches"}>
 							<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-								My Matches
+								Matches
 							</p>
 						</NavLink>
 						<hr />
