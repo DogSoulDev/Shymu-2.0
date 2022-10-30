@@ -256,7 +256,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 						
 					</div>
 					<div class=" w-full contents ">
-						<span className="w-full isolate inline-flex rounded-md shadow-sm">
+						<span className="w-full isolate inline-flex rounded-md drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
 						<button
 							type="button"
 							className="w-full relative inline-flex items-center rounded-bl-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
@@ -272,7 +272,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 						</button>
 						</span>
     				</div>
-					<p className='text-base text-headingColor font-semibold my-1'>
+					<p className='text-center text-headingColor  my-1'>
 						{data.name.length > 25 ? `${data.name.slice(0, 25)}` : data.name}
 						<span className='block text-sm text-gray-400 my-1'>
 							{data.artist}
