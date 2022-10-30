@@ -14,7 +14,6 @@ const Login = ({ setAuth }) => {
 	const navigate = useNavigate();
 	// eslint-disable-next-line no-unused-vars
 	const [{ user }, dispatch] = useStateValue();
-
 	const loginWithGoogle = async () => {
 		await signInWithPopup(firebaseAuth, provider).then((userCred) => {
 			if (userCred) {
@@ -44,12 +43,10 @@ const Login = ({ setAuth }) => {
 			}
 		});
 	};
-
 	useEffect(() => {
 		if (window.localStorage.getItem("auth") === "true")
 			navigate("/", { replace: true });
 	}, [navigate]);
-
 	return (
 		<div className='relative w-screen h-screen'>
 			<video

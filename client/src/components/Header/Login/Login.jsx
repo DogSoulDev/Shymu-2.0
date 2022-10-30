@@ -78,7 +78,6 @@ const Login = ({ setAuth }) => {
 								</a>
 							</p>
 						</div>
-
 						<div className='mt-8'>
 							<div>
 								<div>
@@ -93,7 +92,6 @@ const Login = ({ setAuth }) => {
 									<FcGoogle className='text-xl' />
 									<p>Signin with Google</p>
 								</div>
-
 								<div className='relative mt-6'>
 									<div
 										className='absolute inset-0 flex items-center'
@@ -108,7 +106,6 @@ const Login = ({ setAuth }) => {
 									</div>
 								</div>
 							</div>
-
 							<div className='mt-6'>
 								<form action='#' method='POST' className='space-y-6'>
 									<div>
@@ -129,7 +126,6 @@ const Login = ({ setAuth }) => {
 											/>
 										</div>
 									</div>
-
 									<div className='space-y-1'>
 										<label
 											htmlFor='password'
@@ -148,7 +144,6 @@ const Login = ({ setAuth }) => {
 											/>
 										</div>
 									</div>
-
 									<div className='flex items-center justify-between'>
 										<div className='flex items-center'>
 											<input
@@ -164,7 +159,6 @@ const Login = ({ setAuth }) => {
 												Remember me
 											</label>
 										</div>
-
 										<div className='text-sm'>
 											<a
 												href='#'
@@ -174,7 +168,6 @@ const Login = ({ setAuth }) => {
 											</a>
 										</div>
 									</div>
-
 									<div>
 										<button
 											type='submit'
