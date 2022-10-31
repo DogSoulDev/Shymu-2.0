@@ -1,6 +1,6 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import "./Match.css";
-
+import { useState } from "react";
+import Switch from 'react-ios-switch'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -8,30 +8,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCards } from "swiper";
-import ImageCarousel from "../../ImageCarousel/ImageCarousel";
+import Advanced from "./assetsMatch/examples/Advanced";
+import Simple from "./assetsMatch/examples/Simple"
+
 
 function Match() {
+	const [showAdvanced, setShowAdvanced] = useState(true)
 	return (
-		<>
-			<ImageCarousel />
-			<Swiper
-				effect={"cards"}
-				grabCursor={true}
-				modules={[EffectCards]}
-				className='mySwiper'
-			>
-				<SwiperSlide>Adria</SwiperSlide>
-				<SwiperSlide>Marcel</SwiperSlide>
-				<SwiperSlide>Alejandro</SwiperSlide>
-				<SwiperSlide>Ricardo</SwiperSlide>
-				<SwiperSlide>Javier</SwiperSlide>
-				<SwiperSlide>Paco</SwiperSlide>
-				<SwiperSlide>Jose</SwiperSlide>
-				<SwiperSlide>Julio</SwiperSlide>
-				<SwiperSlide>Juan</SwiperSlide>
-			</Swiper>
-		</>
+<div className='app'>
+      {showAdvanced ? <Advanced /> : <Simple />}
+      <div className='row'>
+        <p style={{ color: '#fff' }}>Phone Mode!</p> <Switch checked={showAdvanced} onChange={setShowAdvanced} />
+      </div>
+    </div>
 	);
 }
 
