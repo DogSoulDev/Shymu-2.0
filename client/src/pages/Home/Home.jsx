@@ -6,6 +6,7 @@ import Filter from "../../components/Filter/Filter";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import { BookmarkIcon } from "@heroicons/react/20/solid";
+import { HeartIcon } from "@heroicons/react/20/solid";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
@@ -304,17 +305,21 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 								type='button'
 								className='w-full justify-center relative inline-flex items-center rounded-bl-lg border border-[#e4e4e4] bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
 							>
-								<BookmarkIcon
+								<HeartIcon
 									className='-ml-1 mr-2 h-5 w-5 text-gray-400'
 									aria-hidden='true'
 								/>
-								Add Song
+								ADD
 							</button>
 							<button
 								type='button'
 								className='w-full  justify-center relative -ml-px inline-flex items-center rounded-br-lg border border-[#e4e4e4] bg-white px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
 							>
-								Listen Later
+								<BookmarkIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400'
+									aria-hidden='true'
+								/>
+								BUY
 							</button>
 						</span>
 					</div>
