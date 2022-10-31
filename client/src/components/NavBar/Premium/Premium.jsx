@@ -4,26 +4,47 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import { StarIcon } from "@heroicons/react/20/solid";
 
 const reviews = {
-	average: 4,
-	totalCount: 1624,
+	average: 5,
+	totalCount: 1165,
 	counts: [
-		{ rating: 5, count: 1019 },
-		{ rating: 4, count: 162 },
-		{ rating: 3, count: 97 },
-		{ rating: 2, count: 199 },
-		{ rating: 1, count: 147 },
+		{ rating: 5, count: 1079 },
+		{ rating: 4, count: 72 },
+		{ rating: 3, count: 34 },
+		{ rating: 2, count: 0 },
+		{ rating: 1, count: 0 },
 	],
 	featured: [
 		{
 			id: 1,
 			rating: 5,
 			content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>Shymu offers best-in-class features and an intuitive user experiences, paired with an extremely expansive selection of music and podcasts.</p>
       `,
-			author: "Emily Selman",
+			author: "Alejandro Avila",
 			avatarSrc:
-				"https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
+				"https://media-exp1.licdn.com/dms/image/C4E03AQGXTCbsV8x8Bg/profile-displayphoto-shrink_800_800/0/1663953266461?e=1672876800&v=beta&t=O23Hbc8NeHOYjfF4OazbIcytiuVFkuWibrDy91doHuw",
 		},
+		{
+			id: 1,
+			rating: 5,
+			content: `
+        <p>Shymu is the best mainstream music streaming service.</p>
+      `,
+			author: "Roger Olivé",
+			avatarSrc:
+				"https://media-exp1.licdn.com/dms/image/C4D03AQFOGgJq_r0XIA/profile-displayphoto-shrink_800_800/0/1546944248520?e=1672876800&v=beta&t=fpJ9PSPOm0x-_xEDT4vlnNPJJ2NZvwY2A1sO16okync",
+		},
+		{
+			id: 1,
+			rating: 5,
+			content: `
+        <p>I LOVE this app. It helped me discover so much new music. The "Discovery Weekly" is worth paying for by itself once its tuned and know what you like.</p>
+      `,
+			author: "Matias Patrignani",
+			avatarSrc:
+				"https://media-exp1.licdn.com/dms/image/C4E03AQHZG8FqdRtbZg/profile-displayphoto-shrink_800_800/0/1651236257419?e=1672876800&v=beta&t=mH_V1J55PSBL4N4W1x9ObQPhIwBs6MjeimW7B7N842w",
+		},
+		
 		// More reviews...
 	],
 };
@@ -73,7 +94,7 @@ function Premium() {
 									</p>
 									<div className='mt-8'>
 										<div className='flex items-center'>
-											<h4 className='flex-shrink-0 bg-white pr-4 text-base font-semibold text-indigo-600'>
+											<h4 className='flex-shrink-0 bg-white pr-4 text-base font-semibold text-primaryOrange'>
 												What's included
 											</h4>
 											<div className='flex-1 border-t-2 border-gray-200' />
@@ -89,7 +110,7 @@ function Premium() {
 												>
 													<div className='flex-shrink-0'>
 														<CheckCircleIcon
-															className='h-5 w-5 text-green-400'
+															className='h-5 w-5 text-primaryOrange'
 															aria-hidden='true'
 														/>
 													</div>
@@ -120,7 +141,7 @@ function Premium() {
 										<div className='rounded-md shadow'>
 											<a
 												href='#'
-												className='flex items-center justify-center rounded-md border border-transparent bg-gray-800 px-5 py-3 text-base font-medium text-white hover:bg-gray-900'
+												className='flex items-center justify-center rounded-md border border-transparent bg-primaryOrange px-5 py-3 text-base font-medium text-white hover:bg-gray-900'
 											>
 												Get Access
 											</a>
@@ -219,7 +240,8 @@ function Premium() {
 							</p>
 							<a
 								href='#'
-								className='mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-white py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-50 sm:w-auto lg:w-full'
+								className='mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-primaryOrange py-2 px-8 text-sm font-medium text-white hover:bg-gray-900 sm:w-auto lg:w-full'
+
 							>
 								Write a review
 							</a>
