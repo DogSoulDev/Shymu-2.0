@@ -8,12 +8,12 @@ import DashboardArtist from "./DashboardArtist";
 import DashboardHome from "./DashboardHome";
 import DashboardSongs from "./DashboardSongs";
 import DashboardUser from "./DashboardUser";
-import Header from "../Header/Header";
+import NavBar from "../NavBar/NavBar";
 
 const Dashboard = () => {
 	return (
 		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
-			<Header />
+			<NavBar />
 			<div className='w-[60%] my-2 p-4 flex items-center justify-evenly'>
 				<NavLink to={"/dashboard/home"}>
 					<IoHome className='text-2xl text-textColor' />

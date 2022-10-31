@@ -1,5 +1,5 @@
-import Header from "../../Header";
-import Footer from "../../../Footer/Footer";
+import NavBar from "../NavBar";
+import Footer from "../../Footer/Footer";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 const includedFeatures = [
@@ -11,7 +11,7 @@ const includedFeatures = [
 function Premium() {
 	return (
 		<>
-			<Header />
+			<NavBar />
 			<div className='bg-gray-100'>
 				<div className='pt-12 sm:pt-16 lg:pt-20'>
 					<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>

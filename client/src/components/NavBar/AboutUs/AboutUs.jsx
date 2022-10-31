@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../../../Footer/Footer";
-import Header from "../../Header";
+import Footer from "../../Footer/Footer";
+import NavBar from "../NavBar";
 
 const stats = [
 	{ label: "Founded", value: "2021" },
@@ -56,7 +56,7 @@ const people = [
 function AboutUs() {
 	return (
 		<>
-			<Header />
+			<NavBar />
 			<div className='relative bg-white py-16 sm:py-24'>
 				<div className='lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8'>
 					<div className='relative sm:py-16 lg:py-0'>
@@ -132,7 +132,6 @@ function AboutUs() {
 												cursus nulla feugiat dignissim id lobortis amet.
 											</p>
 										</div>
-
 										<footer className='mt-4'>
 											<p className='text-base font-semibold text-indigo-200'>
 												Sarah Williams, CEO at Workcation
@@ -143,7 +142,6 @@ function AboutUs() {
 							</div>
 						</div>
 					</div>
-
 					<div className='relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0'>
 						{/* Content area */}
 						<div className='pt-12 sm:pt-16 lg:pt-20'>
@@ -175,7 +173,6 @@ function AboutUs() {
 								</p>
 							</div>
 						</div>
-
 						{/* Stats section */}
 						<div className='mt-10'>
 							<dl className='grid grid-cols-2 gap-x-4 gap-y-8'>
@@ -286,7 +283,6 @@ function AboutUs() {
 												<h3 className='text-white'>{person.name}</h3>
 												<p className='text-indigo-400'>{person.role}</p>
 											</div>
-
 											<ul role='list' className='flex justify-center space-x-5'>
 												<li>
 													<a
@@ -351,7 +347,6 @@ function AboutUs() {
 							vel porttitor vitae ut. Amet vitae fames senectus vitae.
 						</p>
 					</div>
-
 					<div className='lg:grid lg:grid-cols-2 lg:items-start lg:gap-8'>
 						<div className='relative z-10'>
 							<div className='prose prose-indigo mx-auto text-gray-500 lg:max-w-none'>
@@ -480,7 +475,6 @@ function AboutUs() {
 					</div>
 				</div>
 			</div>
-
 			<Footer />
 		</>
 	);

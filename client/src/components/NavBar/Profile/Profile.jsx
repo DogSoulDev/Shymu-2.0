@@ -8,7 +8,7 @@ import { app } from "../../../config/firebase.config";
 import { motion } from "framer-motion";
 import { FaCrown } from "react-icons/fa";
 
-const Header = () => {
+const Profile = () => {
 	const navigate = useNavigate();
 	const [{ user }, dispatch] = useStateValue(); //!Nuestro custom hook., que nos sirve para redireccionar mas abajo donde queramos al usuario.(Desplegable del login)
 	const [isMenu, setIsMenu] = useState(false);
@@ -23,72 +23,7 @@ const Header = () => {
 		navigate("/login", { replace: true });
 	};
 	return (
-		<header className='flex items-center w-full p-4 md:py-8 md:px-8 bg-primary '>
-			<NavLink to={"/home"}>
-				<img src={Logo} className='w-20' alt='' />
-			</NavLink>
-			<ul className='text-base font-medium text-white hover:text-indigo-50'>
-				<li className='text-base font-medium text-white hover:text-indigo-50'>
-					<NavLink
-						to={"/home"}
-						className={({ isActive }) =>
-							isActive ? isActiveStyles : isNotActiveStyles
-						}
-					>
-						Home
-					</NavLink>
-				</li>
-				<li className='mx-5 text-lg'>
-					<NavLink
-						to={"/trending"}
-						className={({ isActive }) =>
-							isActive ? isActiveStyles : isNotActiveStyles
-						}
-					>
-						Trending
-					</NavLink>
-				</li>
-				<li className='mx-5 text-lg'>
-					<NavLink
-						to={"/premium"}
-						className={({ isActive }) =>
-							isActive ? isActiveStyles : isNotActiveStyles
-						}
-					>
-						Premium
-					</NavLink>
-				</li>
-				<li className='mx-5 text-lg'>
-					<NavLink
-						to={"/contact"}
-						className={({ isActive }) =>
-							isActive ? isActiveStyles : isNotActiveStyles
-						}
-					>
-						Contact
-					</NavLink>
-				</li>
-				<li className='mx-5 text-lg'>
-					<NavLink
-						to={"/aboutus"}
-						className={({ isActive }) =>
-							isActive ? isActiveStyles : isNotActiveStyles
-						}
-					>
-						About Us
-					</NavLink>
-				</li>
-				<li className='mx-5 text-lg'>
-					<NavLink
-						to={"/match"}
-						className={({ isActive }) =>
-							isActive ? isActiveStyles : isNotActiveStyles
-						}
-					>
-						Match
-					</NavLink>
-				</li>
-			</ul>
+		<>
 			<div
 				className='flex items-center ml-auto cursor-pointer gap-2 relative'
 				onMouseEnter={() => setIsMenu(true)}
@@ -102,7 +37,7 @@ const Header = () => {
 				/>
 				<div className='flex flex-col'>
 					<p className='text-textColor text-lg hover:text-headingColor font-semibold'>
-						{user?.user.name}
+						{user?.user?.name}
 					</p>
 					<p className='flex items-center gap-2 text-xs text-gray-500 font-normal'>
 						Premium Member.{" "}
@@ -121,22 +56,27 @@ const Header = () => {
 								Profile
 							</p>
 						</NavLink>
-						<NavLink to={"/myFavourites"}>
+						<NavLink to={"/favourites"}>
 							<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-								My Favourites
+								Favourites
 							</p>
 						</NavLink>
-						<NavLink to={"/myMatches"}>
+						<NavLink to={"/matches"}>
 							<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-								My Matches
+								Matches
+							</p>
+						</NavLink>
+						<NavLink to={"/tickets"}>
+							<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
+								Tickets
 							</p>
 						</NavLink>
 						<hr />
-						{user?.user.role === "admin" && (
+						{user?.user?.role === "admin" && (
 							<>
 								<NavLink to={"/dashboard/home"}>
 									<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-										Dashboard
+										Admin Dashboard
 									</p>
 								</NavLink>
 								<hr />
@@ -151,8 +91,8 @@ const Header = () => {
 					</motion.div>
 				)}
 			</div>
-		</header>
+		</>
 	);
 };
 
-export default Header;
+export default Profile;

@@ -1,11 +1,11 @@
 import React from "react";
-import Footer from "../../../Footer/Footer";
-import Header from "../../Header";
+import Footer from "../../Footer/Footer";
+import NavBar from "../NavBar";
 
 function Trending() {
 	return (
 		<>
-			<Header />
+			<NavBar />
 			<div className='relative bg-white py-16'>
 				<div
 					className='absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block'

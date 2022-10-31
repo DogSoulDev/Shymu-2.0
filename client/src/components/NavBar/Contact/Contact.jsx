@@ -1,11 +1,11 @@
 import React from "react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
-import Header from "../../Header";
+import NavBar from "../NavBar";
 
 const Contact = () => {
 	return (
 		<>
-			<Header />
+			<NavBar />
 			<div className='relative bg-white mb-20 border-solid border-b-2 border-t-2 border-gray-200'>
 				<div className='absolute inset-0'>
 					<div className='absolute inset-y-0 left-0 w-1/2 bg-gray-50' />
