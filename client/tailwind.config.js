@@ -65,13 +65,15 @@ module.exports = {
     layout: '#F4F5F7',
     textColor2: '#858F9C',
     textColorMenu: '#ece8e8',
-    Search: '#D7D9DD',
+    Search: '#8c8c8c',
+    Purpple: '#7423ff',
     primaryOrange: '#F4694C',
     primaryBeige: '#FFEFDA',
     primaryFooter: '#1f2937',
-    primaryHeader: '#131625',
+    primaryHeader: '#04051b',
     primaryYellow: '#5C76EC'
    },
+   
   },
  },
  plugins: [require("tailwind-scrollbar")],

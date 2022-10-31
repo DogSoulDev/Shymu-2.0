@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import logo from "../../assets/img/ShymuWhite.png";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
 import { getAuth } from "firebase/auth";
@@ -29,9 +30,8 @@ const Header = () => {
 			.catch((e) => console.log(e));
 		navigate("/login", { replace: true });
 	};
-	//?Si es admin le sale el Dashboard.
 	return (
-		<header className='w-full bg-primaryHeader border-b-4 border-primaryOrange'>
+		<header className='w-full bg-gradient-to-r from-[#0B0B02]  to-[#240250] border-b-4 border-[#ff5722]'>
 			<nav className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8' aria-label='Top'>
 				<div className='flex w-full items-center justify-between border-b border-primaryOrange py-6 lg:border-none'>
 					<div className='flex items-center'>
@@ -140,22 +140,15 @@ const Header = () => {
 										Profile
 									</p>
 								</NavLink>
-								<NavLink to={"/favourites"}>
-									<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-										Favourites
-									</p>
-								</NavLink>
-								<NavLink to={"/matches"}>
-									<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-										Matches
-									</p>
-								</NavLink>
+								<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
+									My Favourites
+								</p>
 								<hr />
 								{user?.user.role === "admin" && (
 									<>
 										<NavLink to={"/dashboard/home"}>
 											<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
-												Admin Dashboard
+												Dashboard
 											</p>
 										</NavLink>
 										<hr />
