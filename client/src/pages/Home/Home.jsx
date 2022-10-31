@@ -302,7 +302,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 						<span className='w-full isolate inline-flex rounded-md drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]'>
 							<button
 								type='button'
-								className='w-full relative inline-flex items-center rounded-bl-lg border border-[#e4e4e4] bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
+								className='w-full justify-center relative inline-flex items-center rounded-bl-lg border border-[#e4e4e4] bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
 							>
 								<BookmarkIcon
 									className='-ml-1 mr-2 h-5 w-5 text-gray-400'
@@ -312,7 +312,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 							</button>
 							<button
 								type='button'
-								className='w-full relative -ml-px inline-flex items-center rounded-br-lg border border-[#e4e4e4] bg-white px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
+								className='w-full  justify-center relative -ml-px inline-flex items-center rounded-br-lg border border-[#e4e4e4] bg-white px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
 							>
 								Listen Later
 							</button>
