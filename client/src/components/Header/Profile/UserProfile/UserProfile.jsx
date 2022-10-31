@@ -2,6 +2,7 @@ import React from "react";
 import { useStateValue } from "../../../../hooks/Context/StateProvider";
 import { formatDate } from "../../../../helpers";
 import Header from "../../Header";
+import Footer from "../../../Footer/Footer";
 
 const UserProfile = () => {
 	const [{ user }, dispatch] = useStateValue();
@@ -58,8 +59,11 @@ const UserProfile = () => {
 						</div>
 					</dl>
 				</div>
+				
 			</div>
+			
 		</div>
+		
 	);
 };
 
