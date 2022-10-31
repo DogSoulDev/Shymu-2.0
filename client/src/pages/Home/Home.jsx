@@ -242,10 +242,10 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 					initial={{ opacity: 0, translateX: -50 }}
 					animate={{ opacity: 1, translateX: 0 }}
 					transition={{ duration: 0.3, delay: index * 0.1 }}
-					className='relative w-[15rem]  cursor-pointer hover:shadow-xl hover:bg-card bg-gray-100 shadow-md rounded-[10px] flex flex-col items-center'
+					className='relative w-[15rem]  cursor-pointer hover:shadow-xl hover:bg-card bg-white shadow-md rounded-[10px] flex flex-col items-center'
 					onClick={() => addSongToContext(CurrentSong(data._id))}
 				>
-					<div className='w-[16rem] min-w-[160px] h-[25rem] min-h-[160px] rounded-[12px] drop-shadow-lg relative overflow-hidden'>
+					<div className='w-[16rem] min-w-[160px] h-[25rem] min-h-[160px] rounded-[12px]  relative overflow-hidden'>
 						
 						<motion.img
 							whileHover={{ scale: 1.05 }}
