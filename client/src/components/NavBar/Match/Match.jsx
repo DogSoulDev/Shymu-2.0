@@ -14,7 +14,7 @@ import ImageCarousel from "../../ImageCarousel/ImageCarousel";
 function Match() {
 	return (
 		<>
-		<ImageCarousel/>
+			<ImageCarousel />
 			<Swiper
 				effect={"cards"}
 				grabCursor={true}
