@@ -92,7 +92,7 @@ const Home = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [languageFilter]);
 	return (
-		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
+		<div className='w-full h-auto flex flex-col items-center justify-center bg-[#f3f3f3]'>
 			<NavBar />
 			<div className='w-full relative bg-gradient-to-r from-[#190702] to-[#7423ff]'>
 				<img
@@ -102,7 +102,7 @@ const Home = () => {
 				/>
 				<div className='relative  bg-deep-purple-accent-700 border-b-[10px] border-[white]'>
 					<svg
-						className='absolute inset-x-0 bottom-0 text-white shadow-lg'
+						className='absolute inset-x-0 bottom-0 text-[#1c0c2c52] shadow-lg'
 						viewBox='0 0 1160 160'
 					>
 						<path
