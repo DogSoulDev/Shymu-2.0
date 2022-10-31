@@ -7,6 +7,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import { BookmarkIcon } from "@heroicons/react/20/solid";
 import { HeartIcon } from "@heroicons/react/20/solid";
+import { PlayIcon } from "@heroicons/react/20/solid";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
@@ -323,17 +324,17 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 							</button>
 						</span>
 					</div>
-					<p className='flex text-center text-headingColor  my-1'>
-					<BookmarkIcon
+					<p className='flex text-center text-headingColor  mt-[5px]'>
+					<PlayIcon
 									className='-ml-1 mr-2 h-5 w-5 text-gray-400'
 									aria-hidden='true'
 								/>
 						{data.name.length > 25 ? `${data.name.slice(0, 25)}` : data.name}
-						
-						<span className='block text-sm text-gray-400 my-1'>
+						</p>
+						<span className='block text-sm text-gray-400 mb-[5px]'>
 							{data.artist}
 						</span>
-					</p>
+					
 				</motion.div>
 			))}
 			<Footer />
