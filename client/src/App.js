@@ -11,13 +11,15 @@ import {
 	Login,
 	MusicPlayer,
 	UserProfile,
+	Profile,
 	Favourites,
 	Matches,
+	Tickets,
 	Trending,
 	Premium,
 	Contact,
 	AboutUs,
-} from "./components/index";
+} from "./components/index.js";
 import { useStateValue } from "./hooks/Context/StateProvider";
 import { actionType } from "./hooks/Context/reducer";
 import { motion } from "framer-motion";
@@ -80,9 +82,11 @@ function App() {
 				<Route path='/*' element={<Home />} />
 				{/* <Route path='*' element={<Error404 />} /> */}
 				<Route path='/dashboard/*' element={<Dashboard />} />
-				<Route path='/userProfile' element={<UserProfile />} />
+				<Route path='/profile' element={<Profile />} />
+				<Route path='/userprofile' element={<UserProfile />} />
 				<Route path='/favourites' element={<Favourites />} />
 				<Route path='/matches' element={<Matches />} />
+				<Route path='/tickets' element={<Tickets />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/trending' element={<Trending />} />
 				<Route path='/premium' element={<Premium />} />

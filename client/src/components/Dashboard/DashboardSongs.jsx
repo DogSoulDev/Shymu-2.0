@@ -24,7 +24,6 @@ import { actionType } from "../../hooks/Context/reducer";
 import { filterByLanguage, filters } from "../../utils/supportfunctions";
 import AlertSuccess from "../Alerts/AlertSucces";
 import AlertError from "../Alerts/AlertError";
-import Footer from "../Footer/Footer";
 export const ImageLoader = ({ progress }) => {
 	return (
 		<div className='w-full h-full flex flex-col items-center justify-center'>
@@ -611,7 +610,6 @@ export const AddNewAlbum = () => {
 					) : (
 						<AlertError msg={alertMsg} />
 					)}
-					<Footer />
 				</>
 			)}
 		</div>

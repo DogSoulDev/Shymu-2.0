@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import { videoLogin } from "../../../assets/video";
+import { videoLogin } from "../../../../assets/video";
 import { FcGoogle } from "react-icons/fc";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { app } from "../../../config/firebase.config";
+import { app } from "../../../../config/firebase.config";
 import { useNavigate } from "react-router-dom";
-import { validateUser } from "../../../api";
-import { actionType } from "../../../hooks/Context/reducer";
-import { useStateValue } from "../../../hooks/Context/StateProvider";
-import logo from "../../../assets/img/shymu-logo-1@2x.png";
+import { validateUser } from "../../../../api";
+import { actionType } from "../../../../hooks/Context/reducer";
+import { useStateValue } from "../../../../hooks/Context/StateProvider";
+import logo from "../../../../assets/img/shymu-logo-1@2x.png";
 
 const Login = ({ setAuth }) => {
 	const firebaseAuth = getAuth(app);
@@ -15,7 +15,6 @@ const Login = ({ setAuth }) => {
 	const navigate = useNavigate();
 	// eslint-disable-next-line no-unused-vars
 	const [{ user }, dispatch] = useStateValue();
-
 	const loginWithGoogle = async () => {
 		await signInWithPopup(firebaseAuth, provider).then((userCred) => {
 			if (userCred) {
@@ -52,14 +51,6 @@ const Login = ({ setAuth }) => {
 	}, [navigate]);
 	return (
 		<>
-			{/*
-          This example requires updating your template:
-  
-          ```
-          <html class="h-full bg-white">
-          <body class="h-full">
-          ```
-        */}
 			<div className='flex min-h-full'>
 				<div className='flex flex-1 flex-col p-0 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24'>
 					<div className='mx-auto w-full max-w-sm lg:w-96'>
@@ -78,7 +69,6 @@ const Login = ({ setAuth }) => {
 								</a>
 							</p>
 						</div>
-
 						<div className='mt-8'>
 							<div>
 								<div>
@@ -93,7 +83,6 @@ const Login = ({ setAuth }) => {
 									<FcGoogle className='text-xl' />
 									<p>Signin with Google</p>
 								</div>
-
 								<div className='relative mt-6'>
 									<div
 										className='absolute inset-0 flex items-center'
@@ -108,7 +97,6 @@ const Login = ({ setAuth }) => {
 									</div>
 								</div>
 							</div>
-
 							<div className='mt-6'>
 								<form action='#' method='POST' className='space-y-6'>
 									<div>
@@ -129,7 +117,6 @@ const Login = ({ setAuth }) => {
 											/>
 										</div>
 									</div>
-
 									<div className='space-y-1'>
 										<label
 											htmlFor='password'
@@ -148,7 +135,6 @@ const Login = ({ setAuth }) => {
 											/>
 										</div>
 									</div>
-
 									<div className='flex items-center justify-between'>
 										<div className='flex items-center'>
 											<input
@@ -164,7 +150,6 @@ const Login = ({ setAuth }) => {
 												Remember me
 											</label>
 										</div>
-
 										<div className='text-sm'>
 											<a
 												href='#'
@@ -174,7 +159,6 @@ const Login = ({ setAuth }) => {
 											</a>
 										</div>
 									</div>
-
 									<div>
 										<button
 											type='submit'

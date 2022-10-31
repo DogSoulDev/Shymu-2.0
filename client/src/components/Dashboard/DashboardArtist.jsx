@@ -5,7 +5,6 @@ import { IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { getAllArtist, deleteArtistById } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
-import Footer from "../Footer/Footer";
 
 const DashboardArtist = () => {
 	const [{ artists }, dispatch] = useStateValue();
@@ -103,7 +102,6 @@ export const ArtistCard = ({ data, index, deleteArtist }) => {
 						>
 							<p className='text-headingColor text-sm'>No</p>
 						</div>
-						<Footer />
 					</div>
 				</motion.div>
 			)}
