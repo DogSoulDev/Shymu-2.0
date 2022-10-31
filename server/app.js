@@ -40,6 +40,9 @@ mongoose.connect(process.env.DB_STRING, (err, req) => {
 	}
 });
 
+const host = process.env.LH_PORT || '0.0.0.0'
+const port = process.env.LH_HOST || 4000;
+
 app.listen(process.env.LH_PORT, (req, res) => {
 	console.log("Server Runs OK!");
 });
