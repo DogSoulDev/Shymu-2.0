@@ -166,7 +166,7 @@ const DashboardNewSong = () => {
 				dispatch({ type: actionType.SET_ALL_ALBUMNS, allAlbums: data.data });
 			});
 		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	const calculateTime = (sec) => {
 		const minutes = Math.floor(sec / 60);

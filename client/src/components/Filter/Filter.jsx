@@ -93,17 +93,17 @@ const Filter = ({ setFilteredSongs }) => {
 					</Menu>
 				</div>
 			</div>
-			{filters?.map((data) => (
-				<p
-					key={data.id}
-					onClick={() => updateFilter(data.value)}
-					className={`text-base ${
-						data.value === filterTerm ? "font-semibold" : "font-normal"
-					} text-textColor cursor-pointer hover:font-semibold transition-all duration-100 ease-in-out`}
-				>
-					{data.name}
-				</p>
-			))}
+			{/* {filters?.map((data) => (
+					<p
+						key={data.id}
+						onClick={() => updateFilter(data.value)}
+						className={`text-base ${
+							data.value === filterTerm ? "font-semibold" : "font-normal"
+						} text-textColor cursor-pointer hover:font-semibold transition-all duration-100 ease-in-out`}
+					>
+						{data.name}
+					</p>
+				))} */}
 			<FilterButtons filterData={allAlbums} flag={"Albums"} />
 			<FilterButtons filterData={filterByLanguage} flag={"Language"} />
 			<motion.i
