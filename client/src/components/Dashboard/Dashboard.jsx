@@ -9,7 +9,7 @@ import DashboardHome from "./DashboardHome";
 import DashboardSongs from "./DashboardSongs";
 import DashboardUser from "./DashboardUser";
 import NavBar from "../NavBar/NavBar";
-
+import Footer from "../Footer/Footer";
 const Dashboard = () => {
 	return (
 		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
@@ -65,6 +65,7 @@ const Dashboard = () => {
 					<Route path='/newSong' element={<DashboardNewSong />} />
 				</Routes>
 			</div>
+			<Footer />
 		</div>
 	);
 };

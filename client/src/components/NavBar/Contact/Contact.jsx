@@ -9,10 +9,10 @@ const Contact = () => {
 			<NavBar />
 			<div className='bg-gray-50 py-4 sm:py-16'>
 				<div className='mx-auto max-w-md pl-4 pr-8 sm:max-w-lg sm:px-8 lg:max-w-7xl lg:px-8'>
-					<h1 className='text-center pb-4 text-8xl font-bold leading-10 tracking-tight text-primaryOrange sm:text-8xl sm:leading-none lg:text-8xl'>
+					<h1 className='text-center pb-4 text-8xl font-bold leading-10 tracking-tight text-gray-900 sm:text-8xl sm:leading-none lg:text-8xl'>
 						Join the band
 					</h1>
-					<h2 className='mx-auto mt-6 max-w-4xl font-bold text-center text-2xl leading-normal text-gray-900'>
+					<h2 className='mx-auto mt-6 max-w-4xl font-bold text-center text-2xl leading-normal text-gray-600'>
 						To unlock the potential of human creativity by giving a million
 						creators the opportunity to live off their art and billions of fans
 						the opportunity to enjoy and be inspired by it.
