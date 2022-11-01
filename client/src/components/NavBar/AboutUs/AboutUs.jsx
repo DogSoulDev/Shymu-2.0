@@ -111,12 +111,12 @@ function AboutUs() {
 								<div className='relative px-8'>
 									<div>
 										<img
-											className='h-12'
-											src='https://tailwindui.com/img/logos/workcation.svg?color=white'
+											className='h-[100px] ml-[-5px]'
+											src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/10/logo.png'
 											alt='Workcation'
 										/>
 									</div>
-									<blockquote className='mt-8'>
+									<blockquote className='ml-2'>
 										<div className='relative text-lg font-medium text-white md:flex-grow'>
 											<svg
 												className='absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-indigo-400'
@@ -134,7 +134,7 @@ function AboutUs() {
 										</div>
 										<footer className='mt-4'>
 											<p className='text-base font-semibold text-indigo-200'>
-												Sarah Williams, CEO at Workcation
+												Marcel Barreiro, Marketing Specialist at Shymu
 											</p>
 										</footer>
 									</blockquote>
@@ -146,17 +146,14 @@ function AboutUs() {
 						{/* Content area */}
 						<div className='pt-12 sm:pt-16 lg:pt-20'>
 							<h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-								On a mission to empower teams
+							About Shymu
+
 							</h2>
 							<div className='mt-6 space-y-6 text-gray-500'>
 								<p className='text-lg'>
-									Sagittis scelerisque nulla cursus in enim consectetur quam.
-									Dictum urna sed consectetur neque tristique pellentesque.
-									Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc
-									nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-									senectus vitae.
+								MUSIC ISN'T EVERYTHING — While mutual interests are a good place to start in building a connection with someone else, they shouldn't be the only thing you consider. Shymu is not just a dating app that uses your taste in music to find matches. You can also find your soulmate in business, fitness or even coding. 
 								</p>
-								<p className='text-base leading-7'>
+								<p className='text-lg'>
 									Sollicitudin tristique eros erat odio sed vitae, consequat
 									turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
 									Eros eu viverra donec ut volutpat donec laoreet quam urna.
@@ -164,7 +161,7 @@ function AboutUs() {
 									turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
 									Eros eu viverra donec ut volutpat donec laoreet quam urna.
 								</p>
-								<p className='text-base leading-7'>
+								<p className='text-lg'>
 									Rhoncus nisl, libero egestas diam fermentum dui. At quis
 									tincidunt vel ultricies. Vulputate aliquet velit faucibus
 									semper. Pellentesque in venenatis vestibulum consectetur nibh
