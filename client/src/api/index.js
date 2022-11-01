@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:4000/";
+const baseURL = "gs://project-musicapp-13584.appspot.com";
 
 export const validateUser = async (token) => {
 	try {

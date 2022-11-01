@@ -4,6 +4,10 @@ require("dotenv/config");
 const cors = require("cors");
 const { default: mongoose } = require("mongoose");
 
+app.get("/",(req,res)=>{
+	res.json("server start")
+})
+
 app.use(cors({ origin: true }));
 //!Esto lo que hace es convertir los datos default en JSON:
 app.use(express.json());
@@ -39,6 +43,9 @@ mongoose.connect(process.env.DB_STRING, (err, req) => {
 		console.log("Error connecting to Mongodb!");
 	}
 });
+
+const host = process.env.LH_PORT || '0.0.0.0'
+const port = process.env.LH_HOST || 4000;
 
 app.listen(process.env.LH_PORT, (req, res) => {
 	console.log("Server Runs OK!");
