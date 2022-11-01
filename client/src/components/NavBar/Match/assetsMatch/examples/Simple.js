@@ -48,7 +48,7 @@ function Simple() {
 			<div className='cardContainer'>
 				{characters.map((character) => (
 					<TinderCard
-						className='swipe'
+						className='absolute'
 						key={character.name}
 						onSwipe={(dir) => swiped(dir, character.name)}
 						onCardLeftScreen={() => outOfFrame(character.name)}

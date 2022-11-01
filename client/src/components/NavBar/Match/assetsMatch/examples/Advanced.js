@@ -4,19 +4,19 @@ import TinderCard from "react-tinder-card";
 const db = [
 	{
 		name: "Rosa",
-		url: "../img/1.jpg",
+		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
 		name: "Jenny",
-		url: "../img/2.jpg",
+		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
 		name: "Julia",
-		url: "../img/3.jpg",
+		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
 		name: "Marisa",
-		url: "../img/4.jpg",
+		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
 		name: "Samantha Carvalho",
@@ -62,20 +62,13 @@ function Advanced() {
 	};
 	return (
 		<div>
-			<link
-				href='https://fonts.googleapis.com/css?family=Damion&display=swap'
-				rel='stylesheet'
-			/>
-			<link
-				href='https://fonts.googleapis.com/css?family=Alatsi&display=swap'
-				rel='stylesheet'
-			/>
+			
 			<h1>MATCHES SUGGESTION</h1>
 			<div className='cardContainer'>
 				{db.map((character, index) => (
 					<TinderCard
 						ref={childRefs[index]}
-						className='swipe '
+						className='absolute  left-[35%] right-[35%] '
 						key={character.name}
 						onSwipe={(dir) => swiped(dir, character.name, index)}
 						onCardLeftScreen={() => outOfFrame(character.name, index)}
@@ -87,25 +80,26 @@ function Advanced() {
 							
 						</div>
 						<h3 className="flex items-center justify-center py-3 bg-gray-900  text-lg font-semibold text-white">{character.name}</h3>
-						<div className='buttons'>
-				<button
+						
+						<div className='buttons justify-center'>
+				{/* <button
 					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
 					onClick={() => swipe("left")}
 				>
 					Swipe left!
-				</button>
+				</button> */}
 				<button
 					style={{ backgroundColor: !canGoBack && "#c3c4d3" }}
 					onClick={() => goBack()}
 				>
 					Undo swipe!
 				</button>
-				<button
+				{/* <button
 					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
 					onClick={() => swipe("right")}
 				>
 					Swipe right!
-				</button>
+				</button> */}
 				
 			</div>
 			
@@ -113,15 +107,6 @@ function Advanced() {
 				))}
 			</div>
 			
-			{lastDirection ? (
-				<h2 key={lastDirection} className='infoText'>
-					You swiped {lastDirection}
-				</h2>
-			) : (
-				<h2 className='infoText'>
-					Make your Match with SHYMU !
-				</h2>
-			)}
 		</div>
 	);
 }
