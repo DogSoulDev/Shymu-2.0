@@ -57,7 +57,7 @@ function AboutUs() {
 	return (
 		<>
 			<NavBar />
-			<div className='relative bg-white py-16 sm:py-24'>
+			<div className='relative bg-white py-2 sm:py-2'>
 				<div className='lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8'>
 					<div className='relative sm:py-16 lg:py-0'>
 						<div
@@ -185,9 +185,9 @@ function AboutUs() {
 				</div>
 			</div>
 			<div className='bg-white'>
-				<div className='mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
+				<div className='mx-auto max-w-7xl py-12 sm:px-6 lg:py-5 lg:px-8'>
 					<p className='text-center text-lg font-semibold text-gray-600'>
-						Trusted by over 5 very average small businesses
+					Our technologies used to develop Shymu
 					</p>
 					<div className='mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8'>
 						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
