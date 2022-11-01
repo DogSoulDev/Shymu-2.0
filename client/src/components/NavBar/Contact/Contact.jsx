@@ -24,7 +24,7 @@ const Contact = () => {
 					<div className='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
 						<img
 							className='h-56 w-full object-cover lg:absolute lg:h-full'
-							src='https://images.pexels.com/photos/4406759/pexels-photo-4406759.jpeg?auto=compress&cs=tinysrgb&w=800'
+							src='https://images.pexels.com/photos/2489986/pexels-photo-2489986.jpeg?auto=compress&cs=tinysrgb&w=800'
 							alt=''
 						/>
 					</div>
