@@ -200,14 +200,14 @@ function AboutUs() {
 						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
 							<img
 								className='max-h-12'
-								src='https://tailwindui.com/img/logos/mirage-logo-gray-400.svg'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Node-logo-gray-400.png'
 								alt='Mirage'
 							/>
 						</div>
 						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
 							<img
 								className='max-h-12'
-								src='https://tailwindui.com/img/logos/tuple-logo-gray-400.svg'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Mongo-logo-gray-400.png'
 								alt='Tuple'
 							/>
 						</div>
@@ -221,14 +221,57 @@ function AboutUs() {
 						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
 							<img
 								className='max-h-12'
-								src='https://tailwindui.com/img/logos/statickit-logo-gray-400.svg'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/tailwind-logo-gray-400.png'
 								alt='StaticKit'
 							/>
 						</div>
 						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
 							<img
 								className='max-h-12'
-								src='https://tailwindui.com/img/logos/statamic-logo-gray-400.svg'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Axios-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Git-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Figma-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/NPM-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Net-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/heroku-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Firebase-logo-gray-400.png'
 								alt='Statamic'
 							/>
 						</div>
