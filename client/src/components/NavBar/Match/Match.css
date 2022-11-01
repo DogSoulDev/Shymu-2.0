@@ -2,6 +2,13 @@
   overflow: hidden;
 }
 
+.matchBG {
+  background: linear-gradient(#4231634f, rgb(255 255 255)),
+    url(https://images.pexels.com/photos/2914629/pexels-photo-2914629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center;
+}
+
 .app > div {
   display: flex;
   flex-direction: column;
@@ -23,10 +30,7 @@
 
 .card {
   position: relative;
-  background-color: #fff;
   height: 460px;
-  background-size: cover;
-  background-position: center;
 }
 
 .cardContent {
@@ -45,7 +49,6 @@
 }
 
 .buttons {
-  margin: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -59,15 +62,12 @@
 .buttons button {
   flex-shrink: 0;
   padding: 10px;
-  border-radius: 5px;
-  border: none;
   color: #fff;
   font-size: 18px;
   background-color: #9198e5;
   transition: 200ms;
-  margin: 10px;
   font-weight: bolder;
-  width: 160px;
+  width: -webkit-fill-available;
 }
 
 .buttons button:hover {

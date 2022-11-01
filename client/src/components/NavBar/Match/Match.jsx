@@ -20,7 +20,7 @@ function Match() {
 	return (
     <>
     <NavBar />
-    <div className='w-full bg-[#f3f3f3] py-20'> 
+    <div className='matchBG w-full bg-[#f3f3f3] py-20'> 
     <div className='app'>
       {showAdvanced ? <Advanced /> : <Simple />}
       

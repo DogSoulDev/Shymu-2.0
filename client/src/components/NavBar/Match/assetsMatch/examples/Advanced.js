@@ -3,23 +3,23 @@ import TinderCard from "react-tinder-card";
 
 const db = [
 	{
-		name: "Rosa",
+		name: "Martha Salazar | 29 years | 70% Match",
 		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
-		name: "Jenny",
+		name: "Sofia De la Torre | 29 years | 72% Match",
 		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
-		name: "Julia",
+		name: "Natalia Duarte | 32 years | 75% Match",
 		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
-		name: "Marisa",
+		name: "Daniella Martin | 25 years | 82% Match",
 		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
-		name: "Samantha Carvalho",
+		name: "Samantha Carvalho | 29 years | 86% Match",
 		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 ];
@@ -64,35 +64,35 @@ function Advanced() {
 		<div>
 			
 			<h1>MATCHES SUGGESTION</h1>
-			<div className='cardContainer'>
+			<div className='cardContainer '>
 				{db.map((character, index) => (
 					<TinderCard
 						ref={childRefs[index]}
-						className='absolute  left-[35%] right-[35%] '
+						className='absolute  left-[35%] right-[35%]  '
 						key={character.name}
 						onSwipe={(dir) => swiped(dir, character.name, index)}
 						onCardLeftScreen={() => outOfFrame(character.name, index)}
 					>
 						<div
 							style={{ backgroundImage: "url(" + character.url + ")" }}
-							className=' rounded-t-lg card bg-cover bg-center'
+							className=' rounded-t-lg card bg-cover bg-top drop-shadow-[0_21px_14px_rgba(0,0,0,0.15)]'
 						>
 							
 						</div>
 						<h3 className="flex items-center justify-center py-3 bg-gray-900  text-lg font-semibold text-white">{character.name}</h3>
 						
-						<div className='buttons justify-center'>
+						<div className='buttons justify-center '>
 				{/* <button
 					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
 					onClick={() => swipe("left")}
 				>
 					Swipe left!
 				</button> */}
-				<button
+				<button 
 					style={{ backgroundColor: !canGoBack && "#c3c4d3" }}
 					onClick={() => goBack()}
 				>
-					Undo swipe!
+					 Undo swipe! ↩
 				</button>
 				{/* <button
 					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
