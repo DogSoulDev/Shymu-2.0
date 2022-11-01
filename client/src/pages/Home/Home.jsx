@@ -325,16 +325,15 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 						</span>
 					</div>
 					<p className='flex text-center text-headingColor  mt-[5px]'>
-					<PlayIcon
-									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
-									aria-hidden='true'
-								/>
+						<PlayIcon
+							className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+							aria-hidden='true'
+						/>
 						{data.name.length > 25 ? `${data.name.slice(0, 25)}` : data.name}
-						</p>
-						<span className='block text-sm text-gray-400 mb-[5px]'>
-							{data.artist}
-						</span>
-					
+					</p>
+					<span className='block text-sm text-gray-400 mb-[5px]'>
+						{data.artist}
+					</span>
 				</motion.div>
 			))}
 			<Footer />
