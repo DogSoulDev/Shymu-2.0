@@ -10,17 +10,14 @@ const Onboarding = () => {
 	const [btnSecondPage, setBtnSecondPage] = useState(true);
 	const [btnFirstPage, setBtnFirstPage] = useState(true);
 	const [btnThirdPage, setBtnThirdPage] = useState(true);
-
 	useEffect(() => {
 		setTimeout(() => {
 			setLogo(false);
 		}, 800000);
 	}, []);
-
 	const handleLogo = () => {
 		setLogo(false);
 	};
-
 	return (
 		<div className='splash_card'>
 			{logo ? (

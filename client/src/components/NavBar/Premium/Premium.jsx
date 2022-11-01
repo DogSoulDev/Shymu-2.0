@@ -25,8 +25,8 @@ const reviews = {
 				"https://media-exp1.licdn.com/dms/image/C4E03AQGXTCbsV8x8Bg/profile-displayphoto-shrink_800_800/0/1663953266461?e=1672876800&v=beta&t=O23Hbc8NeHOYjfF4OazbIcytiuVFkuWibrDy91doHuw",
 		},
 		{
-			id: 1,
-			rating: 5,
+			id: 2,
+			rating: 4,
 			content: `
 <p>Shymu is the best mainstream music streaming service.</p>
       `,
@@ -35,8 +35,8 @@ const reviews = {
 				"https://media-exp1.licdn.com/dms/image/C4D03AQFOGgJq_r0XIA/profile-displayphoto-shrink_800_800/0/1546944248520?e=1672876800&v=beta&t=fpJ9PSPOm0x-_xEDT4vlnNPJJ2NZvwY2A1sO16okync",
 		},
 		{
-			id: 1,
-			rating: 5,
+			id: 3,
+			rating: 3,
 			content: `
         <p>I LOVE this app. It helped me discover so much new music. The "Discovery Weekly" is worth paying for by itself once its tuned and know what you like.</p>
       `,
@@ -44,7 +44,6 @@ const reviews = {
 			avatarSrc:
 				"https://media-exp1.licdn.com/dms/image/C4E03AQHZG8FqdRtbZg/profile-displayphoto-shrink_800_800/0/1651236257419?e=1672876800&v=beta&t=mH_V1J55PSBL4N4W1x9ObQPhIwBs6MjeimW7B7N842w",
 		},
-
 		// More reviews...
 	],
 };

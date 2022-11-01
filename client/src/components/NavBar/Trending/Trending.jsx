@@ -20,7 +20,6 @@ const audiobooks = [
 		price: "",
 		color: "by Nicole Lewis",
 	},
-
 	{
 		id: 3,
 		name: "The Goldfinch by Donna Tartt, narrated",
@@ -42,7 +41,7 @@ const audiobooks = [
 ];
 const products = [
 	{
-		id: 1,
+		id: 5,
 		name: "Shakira",
 		href: "#",
 		imageSrc:
@@ -52,7 +51,7 @@ const products = [
 		color: "Hips Do not Lie",
 	},
 	{
-		id: 2,
+		id: 6,
 		name: "Taylor Swift",
 		href: "#",
 		imageSrc:
@@ -62,7 +61,7 @@ const products = [
 		color: "Anti-Hero",
 	},
 	{
-		id: 3,
+		id: 7,
 		name: "As It Was",
 		href: "#",
 		imageSrc:
@@ -72,7 +71,7 @@ const products = [
 		color: "Harry Styles",
 	},
 	{
-		id: 4,
+		id: 8,
 		name: "Quevedo: Bzrp Music Sessions, Vol. 52",
 		href: "#",
 		imageSrc:
@@ -86,7 +85,7 @@ const products = [
 ];
 const podcast = [
 	{
-		id: 5,
+		id: 9,
 		name: "Start With This",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849078/380/285/image.jpg",
@@ -95,7 +94,7 @@ const podcast = [
 		color: "",
 	},
 	{
-		id: 6,
+		id: 10,
 		name: "Why Wont You Date Me",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849090/380/285/image.jpg",
@@ -104,21 +103,19 @@ const podcast = [
 		color: "",
 	},
 	{
-		id: 7,
+		id: 11,
 		name: "Crime Show",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849416/380/285/image.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 	},
 	{
-		id: 8,
+		id: 12,
 		name: "The New Yorker Fiction Podcast",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849137/380/285/image.jpg",
 		imageAlt: "",
 	},
-
-	// More products...
 ];
 
 function Trending() {

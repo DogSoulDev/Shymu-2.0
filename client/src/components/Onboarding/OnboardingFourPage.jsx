@@ -58,8 +58,8 @@ const OnboardingFourPage = () => {
 						<span className='mulish-medium-white-16px'>
 							Don’t have an account?{" "}
 						</span>
-					</p>
-					<div className='mulish-bold-outrageous-orange-16px'>Sign Up</div>
+						</p>
+						<div className='mulish-bold-outrageous-orange-16px'>Sign Up</div>
 					<p className='privacy-policy roboto-medium-gunsmoke-13px'>
 						By continuing, you agree to the Terms of Service &amp; Privacy
 						Policy
