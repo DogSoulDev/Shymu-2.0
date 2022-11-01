@@ -36,10 +36,10 @@ const Profile = () => {
 					referrerPolicy='no-referrer'
 				/>
 				<div className='flex flex-col'>
-					<p className='text-textColor text-lg hover:text-headingColor font-semibold'>
+					<p className='text-white text-lg hover:text-primaryOrange font-semibold'>
 						{user?.user?.name}
 					</p>
-					<p className='flex items-center gap-2 text-xs text-gray-500 font-normal'>
+					<p className='flex items-center gap-2 text-xs text-white font-normal'>
 						Premium Member.{" "}
 						<FaCrown className='text-xm -ml-1 text-yellow-500' />{" "}
 					</p>
