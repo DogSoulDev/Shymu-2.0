@@ -28,7 +28,7 @@ const reviews = {
 			id: 1,
 			rating: 5,
 			content: `
-        <p>Shymu is the best mainstream music streaming service.</p>
+<p>Shymu is the best mainstream music streaming service.</p>
       `,
 			author: "Roger Olivé",
 			avatarSrc:
@@ -50,10 +50,10 @@ const reviews = {
 };
 
 const includedFeatures = [
-	"Private forum access",
-	"Member resources",
-	"Entry to annual conference",
-	"Official member t-shirt",
+	"Play your favorites.",
+	"Playlists made easy.",
+	"Make it yours.",
+	"Save mobile data.",
 ];
 
 function classNames(...classes) {
@@ -85,12 +85,10 @@ function Premium() {
 							<div className='mx-auto max-w-lg overflow-hidden rounded-lg shadow-lg lg:flex lg:max-w-none'>
 								<div className='flex-1 bg-white px-6 py-8 lg:p-12'>
 									<h3 className='text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight'>
-										Lifetime Membership
+										Premium Membership
 									</h3>
 									<p className='mt-6 text-base text-gray-500'>
-										Lorem ipsum dolor sit amet consect etur adipisicing elit.
-										Itaque amet indis perferendis blanditiis repellendus etur
-										quidem assumenda.
+									Go Premium Today. Try 1 Month for Free!  Exclusive Podcasts. Cancel Anytime. Curated Playlists. Unlimited Skips. Listen with Lyrics. Over 50 Million Songs. New Music Discovery.
 									</p>
 									<div className='mt-8'>
 										<div className='flex items-center'>
@@ -124,10 +122,10 @@ function Premium() {
 								</div>
 								<div className='bg-gray-50 py-8 px-6 text-center lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12'>
 									<p className='text-lg font-medium leading-6 text-gray-900'>
-										Pay once, own it forever
+										Try now, and change your life.
 									</p>
 									<div className='mt-4 flex items-center justify-center text-5xl font-bold tracking-tight text-gray-900'>
-										<span>$349</span>
+										<span>$9,90 a month</span>
 										<span className='ml-3 text-xl font-medium tracking-normal text-gray-500'>
 											USD
 										</span>
@@ -149,7 +147,7 @@ function Premium() {
 									</div>
 									<div className='mt-4 text-sm'>
 										<a href='#' className='font-medium text-gray-900'>
-											Get a free sample{" "}
+											Try one month for free!
 											<span className='font-normal text-gray-500'>(20MB)</span>
 										</a>
 									</div>
@@ -247,7 +245,7 @@ function Premium() {
 							</a>
 						</div>
 					</div>
-					<div className='mt-16 lg:col-span-7 lg:col-start-6 lg:mt-0'>
+					<div className='mt-16 pb-18 lg:col-span-7 lg:col-start-6 lg:mt-0 pb-16'>
 						<h3 className='sr-only'>Recent reviews</h3>
 						<div className='flow-root'>
 							<div className='-my-12 divide-y divide-gray-200'>
