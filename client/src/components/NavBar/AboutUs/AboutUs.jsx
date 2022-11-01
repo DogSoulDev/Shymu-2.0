@@ -114,8 +114,8 @@ function AboutUs() {
 									src='https://vinyllyapp.com/wp-content/uploads/couple-listening-to-music-together-PTFM2DJ.jpg'
 									alt=''
 								/>
-								<div className='absolute inset-0 bg-indigo-500 mix-blend-multiply' />
-								<div className='absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90' />
+								<div className='absolute inset-0 bg-whitesmoke mix-blend-multiply' />
+								<div className='absolute inset-0 bg-gradient-to-t from-[#7423ff] via-[#7423ff] opacity-90' />
 								<div className='relative px-8'>
 									<div>
 										<img
