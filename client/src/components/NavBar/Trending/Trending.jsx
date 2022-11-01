@@ -22,7 +22,7 @@ const audiobooks = [
 	},
 
 	{
-		id: 2,
+		id: 3,
 		name: "The Goldfinch by Donna Tartt, narrated",
 		href: "#",
 		imageSrc: "https://m.media-amazon.com/images/I/51IbuiT-ndL.jpg",
@@ -31,7 +31,7 @@ const audiobooks = [
 		color: "by David Pittu",
 	},
 	{
-		id: 2,
+		id: 4,
 		name: "The Vanishing Half by Brit Bennett, narrated",
 		href: "#",
 		imageSrc: "https://m.media-amazon.com/images/I/51NJs+Rj6hL.jpg",
@@ -52,7 +52,7 @@ const products = [
 		color: "Hips Do not Lie",
 	},
 	{
-		id: 1,
+		id: 2,
 		name: "Taylor Swift",
 		href: "#",
 		imageSrc:
@@ -62,7 +62,7 @@ const products = [
 		color: "Anti-Hero",
 	},
 	{
-		id: 1,
+		id: 3,
 		name: "As It Was",
 		href: "#",
 		imageSrc:
@@ -72,7 +72,7 @@ const products = [
 		color: "Harry Styles",
 	},
 	{
-		id: 1,
+		id: 4,
 		name: "Quevedo: Bzrp Music Sessions, Vol. 52",
 		href: "#",
 		imageSrc:
@@ -86,7 +86,7 @@ const products = [
 ];
 const podcast = [
 	{
-		id: 1,
+		id: 5,
 		name: "Start With This",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849078/380/285/image.jpg",
@@ -95,7 +95,7 @@ const podcast = [
 		color: "",
 	},
 	{
-		id: 1,
+		id: 6,
 		name: "Why Wont You Date Me",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849090/380/285/image.jpg",
@@ -104,14 +104,14 @@ const podcast = [
 		color: "",
 	},
 	{
-		id: 1,
+		id: 7,
 		name: "Crime Show",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849416/380/285/image.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 	},
 	{
-		id: 1,
+		id: 8,
 		name: "The New Yorker Fiction Podcast",
 		href: "#",
 		imageSrc: "https://media.timeout.com/images/105849137/380/285/image.jpg",
