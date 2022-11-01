@@ -1,125 +1,240 @@
 import React from "react";
 import Footer from "../../Footer/Footer";
 import NavBar from "../NavBar";
+const audiobooks = [
+	{
+		id: 1,
+		name: "The Dutch House by Ann Patchett, narrated",
+		href: "#",
+		imageSrc: "https://m.media-amazon.com/images/I/51ewjTW-w1L.jpg",
+		imageAlt: "",
+		price: "",
+		color: "by Tom Hanks",
+	},
+	{
+		id: 2,
+		name: "Such a Fun Age by Kiley Reid, narrated",
+		href: "#",
+		imageSrc: "https://m.media-amazon.com/images/I/61wBl9XtMSL.jpg",
+		imageAlt: "",
+		price: "",
+		color: "by Nicole Lewis",
+	},
+
+	{
+		id: 3,
+		name: "The Goldfinch by Donna Tartt, narrated",
+		href: "#",
+		imageSrc: "https://m.media-amazon.com/images/I/51IbuiT-ndL.jpg",
+		imageAlt: "",
+		price: "",
+		color: "by David Pittu",
+	},
+	{
+		id: 4,
+		name: "The Vanishing Half by Brit Bennett, narrated",
+		href: "#",
+		imageSrc: "https://m.media-amazon.com/images/I/51NJs+Rj6hL.jpg",
+		imageAlt: "",
+		price: "",
+		color: "by Shayna Small",
+	},
+];
+const products = [
+	{
+		id: 1,
+		name: "Shakira",
+		href: "#",
+		imageSrc:
+			"https://www.elnacional.cat/enblau/uploads/s1/36/73/42/68/shakira-en-su-u-ltimo-videoclip.jpeg",
+		imageAlt: "Front of men's Basic Tee in black.",
+		price: "",
+		color: "Hips Do not Lie",
+	},
+	{
+		id: 2,
+		name: "Taylor Swift",
+		href: "#",
+		imageSrc:
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUUtDH-thLKUTvZz3MkITolkx_E9PWdHh9w&usqp=CAU",
+		imageAlt: "Front of men's Basic Tee in black.",
+		price: "",
+		color: "Anti-Hero",
+	},
+	{
+		id: 3,
+		name: "As It Was",
+		href: "#",
+		imageSrc:
+			"https://media.vogue.es/photos/628362b937bc84cca63cf0f1/4:3/w_2716,h_2037,c_limit/Harry%20Hero.jpg",
+		imageAlt: "Front of men's Basic Tee in black.",
+		price: "",
+		color: "Harry Styles",
+	},
+	{
+		id: 4,
+		name: "Quevedo: Bzrp Music Sessions, Vol. 52",
+		href: "#",
+		imageSrc:
+			"https://images.genius.com/fe73e901785425383a42561849ff31f9.1000x1000x1.jpg",
+		imageAlt: "Front of men's Basic Tee in black.",
+		price: "",
+		color: "Bizarrap/Quevedo",
+	},
+
+	// More products...
+];
+const podcast = [
+	{
+		id: 5,
+		name: "Start With This",
+		href: "#",
+		imageSrc: "https://media.timeout.com/images/105849078/380/285/image.jpg",
+		imageAlt: "Front of men's Basic Tee in black.",
+		price: "",
+		color: "",
+	},
+	{
+		id: 6,
+		name: "Why Wont You Date Me",
+		href: "#",
+		imageSrc: "https://media.timeout.com/images/105849090/380/285/image.jpg",
+		imageAlt: "Front of men's Basic Tee in black.",
+		price: "",
+		color: "",
+	},
+	{
+		id: 7,
+		name: "Crime Show",
+		href: "#",
+		imageSrc: "https://media.timeout.com/images/105849416/380/285/image.jpg",
+		imageAlt: "Front of men's Basic Tee in black.",
+	},
+	{
+		id: 8,
+		name: "The New Yorker Fiction Podcast",
+		href: "#",
+		imageSrc: "https://media.timeout.com/images/105849137/380/285/image.jpg",
+		imageAlt: "",
+	},
+
+	// More products...
+];
 
 function Trending() {
 	return (
 		<>
 			<NavBar />
-			<div className='relative bg-white py-16'>
-				<div
-					className='absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block'
-					aria-hidden='true'
-				/>
-				<div className='mx-auto  bg-indigo-600 lg:bg-transparent lg:px-8 w-full'>
-					<div className='lg:grid lg:grid-cols-12'>
-						<div className='relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16'>
-							<div
-								className='absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden'
-								aria-hidden='true'
-							/>
-							<div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0'>
-								<div className='aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1'>
+			<div className='bg-white'>
+				<div className='mx-auto max-w-2xl py-8 px-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8'>
+					<h2 className='text-4xl font-bold tracking-tight text-primaryOrange'>
+						Music
+					</h2>
+					<h3 className='text-2xl font-bold tracking-tight text-gray-900'>
+						Top 4 of the week.
+					</h3>
+					<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
+						{products.map((product) => (
+							<div key={product.id} className='group relative'>
+								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
 									<img
-										className='rounded-3xl object-cover object-center shadow-2xl'
-										src='https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80'
-										alt=''
+										src={product.imageSrc}
+										alt={product.imageAlt}
+										className='h-full w-full object-cover object-center lg:h-full lg:w-full'
 									/>
 								</div>
+								<div className='mt-4 flex justify-between'>
+									<div>
+										<h3 className='text-sm text-gray-700'>
+											<a href={product.href}>
+												<span aria-hidden='true' className='absolute inset-0' />
+												{product.name}
+											</a>
+										</h3>
+										<p className='mt-1 text-sm text-gray-500'>
+											{product.color}
+										</p>
+									</div>
+									<p className='text-sm font-medium text-gray-900'>
+										{product.price}
+									</p>
+								</div>
 							</div>
-						</div>
-						<div className='relative bg-indigo-600 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl'>
-							<div
-								className='absolute inset-0 hidden overflow-hidden rounded-3xl lg:block'
-								aria-hidden='true'
-							>
-								<svg
-									className='absolute bottom-full left-full translate-y-1/3 -translate-x-2/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0'
-									width={404}
-									height={384}
-									fill='none'
-									viewBox='0 0 404 384'
-									aria-hidden='true'
-								>
-									<defs>
-										<pattern
-											id='64e643ad-2176-4f86-b3d7-f2c5da3b6a6d'
-											x={0}
-											y={0}
-											width={20}
-											height={20}
-											patternUnits='userSpaceOnUse'
-										>
-											<rect
-												x={0}
-												y={0}
-												width={4}
-												height={4}
-												className='text-indigo-500'
-												fill='currentColor'
-											/>
-										</pattern>
-									</defs>
-									<rect
-										width={404}
-										height={384}
-										fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)'
-									/>
-								</svg>
-								<svg
-									className='absolute top-full -translate-y-1/3 -translate-x-1/3 transform xl:-translate-y-1/2'
-									width={404}
-									height={384}
-									fill='none'
-									viewBox='0 0 404 384'
-									aria-hidden='true'
-								>
-									<defs>
-										<pattern
-											id='64e643ad-2176-4f86-b3d7-f2c5da3b6a6d'
-											x={0}
-											y={0}
-											width={20}
-											height={20}
-											patternUnits='userSpaceOnUse'
-										>
-											<rect
-												x={0}
-												y={0}
-												width={4}
-												height={4}
-												className='text-indigo-500'
-												fill='currentColor'
-											/>
-										</pattern>
-									</defs>
-									<rect
-										width={404}
-										height={384}
-										fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)'
-									/>
-								</svg>
+						))}
+					</div>
+				</div>
+			</div>
+			<div className='mx-auto max-w-2xl py-8 px-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8'>
+				<h2 className='text-4xl font-bold tracking-tight text-primaryOrange'>
+					AudioBooks
+				</h2>
+				<h3 className='text-2xl font-bold tracking-tight text-gray-900'>
+					Top 4 of the week.
+				</h3>
+				<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
+					{audiobooks.map((product) => (
+						<div key={product.id} className='group relative'>
+							<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+								<img
+									src={product.imageSrc}
+									alt={product.imageAlt}
+									className='h-full w-full object-cover object-center lg:h-full lg:w-full'
+								/>
 							</div>
-							<div className='relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0'>
-								<h2
-									className='text-3xl font-bold tracking-tight text-white'
-									id='join-heading'
-								>
-									Join our team
-								</h2>
-								<p className='text-lg text-white'>
-									Varius facilisi mauris sed sit. Non sed et duis dui leo,
-									vulputate id malesuada non. Cras aliquet purus dui laoreet
-									diam sed lacus, fames.
+							<div className='mt-4 flex justify-between'>
+								<div>
+									<h3 className='text-sm text-gray-700'>
+										<a href={product.href}>
+											<span aria-hidden='true' className='absolute inset-0' />
+											{product.name}
+										</a>
+									</h3>
+									<p className='mt-1 text-sm text-gray-500'>{product.color}</p>
+								</div>
+								<p className='text-sm font-medium text-gray-900'>
+									{product.price}
 								</p>
-								<a
-									className='block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto'
-									href='#'
-								>
-									Explore open positions
-								</a>
 							</div>
 						</div>
+					))}
+				</div>
+			</div>
+			<div className='bg-white'>
+				<div className='mx-auto max-w-2xl py-8 px-4 sm:py-8 sm:px-6 lg:max-w-7xl lg:px-8'>
+					<h2 className='text-4xl font-bold tracking-tight text-primaryOrange'>
+						Podcasts
+					</h2>
+					<h3 className='text-2xl font-bold tracking-tight text-gray-900'>
+						Top 4 of the week.
+					</h3>
+					<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
+						{podcast.map((product) => (
+							<div key={product.id} className='group relative'>
+								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+									<img
+										src={product.imageSrc}
+										alt={product.imageAlt}
+										className='h-full w-full object-cover object-center lg:h-full lg:w-full'
+									/>
+								</div>
+								<div className='mt-4 flex justify-between'>
+									<div>
+										<h3 className='text-sm text-gray-700'>
+											<a href={product.href}>
+												<span aria-hidden='true' className='absolute inset-0' />
+												{product.name}
+											</a>
+										</h3>
+										<p className='mt-1 text-sm text-gray-500'>
+											{product.color}
+										</p>
+									</div>
+									<p className='text-sm font-medium text-gray-900'>
+										{product.price}
+									</p>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

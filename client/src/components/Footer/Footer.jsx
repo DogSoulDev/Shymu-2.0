@@ -1,4 +1,6 @@
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
+import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
 
 const navigation = {
 	solutions: [
@@ -193,7 +195,7 @@ const Footer = () => {
 								<div className='mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0'>
 									<button
 										type='submit'
-										className='flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-500 py-2 px-4 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800'
+										className='flex w-full items-center justify-center rounded-md border border-transparent bg-primaryOrange py-2 px-4 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800'
 									>
 										Subscribe
 									</button>
@@ -235,17 +237,24 @@ const Footer = () => {
 											We announced a new product!
 										</span>
 										<span className='hidden md:inline'>
-											Big news! We're excited to announce a brand new product.
+											Big news! We're excited to announce a new PREMIUM feature.
 										</span>
 									</p>
 								</div>
 								<div className='order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto'>
-									<a
-										href='#'
-										className='flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50'
+									<NavLink
+										to={"/premium"}
+										className={({ isActive }) =>
+											isActive ? isActiveStyles : isNotActiveStyles
+										}
 									>
-										Learn more
-									</a>
+										<a
+											href='#'
+											className='flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50'
+										>
+											Learn more
+										</a>
+									</NavLink>
 								</div>
 								<div className='order-2 flex-shrink-0 sm:order-3 sm:ml-3'>
 									<button

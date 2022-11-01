@@ -45,13 +45,13 @@ const OnboardingSecondPage = ({
 						<div className='BackNext'>
 							<input
 								// type='button'
-								value='← BACK'
+								defaultValue='← BACK'
 								className='card__btn back-1 inter-semi-bold-white-16px '
 								onClick={handleBtnBack}
 							/>
 							<input
 								// type='button'
-								value='NEXT →'
+								defaultValue='NEXT →'
 								className='card__btn back-1 inter-semi-bold-white-16px '
 								onClick={handleBtnSecondPage}
 							/>

@@ -1,54 +1,98 @@
-.swiper {
-	width: 240px;
-	height: 320px;
+.app {
+	overflow: hidden;
 }
 
-.swiper-slide {
+.matchBG {
+	background: #1f2937;
+	background-size: cover;
+	background-position: center;
+}
+
+.app > div {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	justify-content: center;
-	border-radius: 18px;
-	font-size: 22px;
-	font-weight: bold;
+	align-items: center;
+}
+
+.row {
+	flex-direction: row !important;
+}
+
+.row > * {
+	margin: 5px;
+}
+
+.cardContainer {
+	height: 520px;
+}
+
+.card {
+	position: relative;
+	height: 460px;
+}
+
+.cardContent {
+}
+
+.card h3 {
+}
+
+.infoText {
+	width: 100%;
+	justify-content: center;
+	display: flex;
 	color: #fff;
+	animation-name: popup;
+	animation-duration: 800ms;
 }
 
-.swiper-slide:nth-child(1n) {
-	background-color: rgb(206, 17, 17);
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.swiper-slide:nth-child(2n) {
-	background-color: rgb(0, 140, 255);
+@media (max-width: 625px) {
+	.buttons {
+		flex-direction: column;
+	}
 }
 
-.swiper-slide:nth-child(3n) {
-	background-color: rgb(10, 184, 111);
+.buttons button {
+	flex-shrink: 0;
+	padding: 10px;
+	color: #fff;
+	font-size: 18px;
+	background-color: #9198e5;
+	transition: 200ms;
+	font-weight: bolder;
+	width: -webkit-fill-available;
 }
 
-.swiper-slide:nth-child(4n) {
-	background-color: rgb(211, 122, 7);
+.buttons button:hover {
+	transform: scale(1.05);
 }
 
-.swiper-slide:nth-child(5n) {
-	background-color: rgb(118, 163, 12);
-}
-
-.swiper-slide:nth-child(6n) {
-	background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-	background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-	background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-	background-color: rgb(218, 12, 218);
-}
-
-.swiper-slide:nth-child(10n) {
-	background-color: rgb(54, 94, 77);
+@keyframes popup {
+	0% {
+		transform: scale(1, 1);
+	}
+	10% {
+		transform: scale(1.1, 1.1);
+	}
+	30% {
+		transform: scale(0.9, 0.9);
+	}
+	50% {
+		transform: scale(1, 1);
+	}
+	57% {
+		transform: scale(1, 1);
+	}
+	64% {
+		transform: scale(1, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
 }

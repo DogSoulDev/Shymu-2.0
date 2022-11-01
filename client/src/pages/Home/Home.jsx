@@ -6,6 +6,8 @@ import Filter from "../../components/Filter/Filter";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import { BookmarkIcon } from "@heroicons/react/20/solid";
+import { HeartIcon } from "@heroicons/react/20/solid";
+import { PlayIcon } from "@heroicons/react/20/solid";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
@@ -90,7 +92,7 @@ const Home = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [languageFilter]);
 	return (
-		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
+		<div className='w-full h-auto flex flex-col items-center justify-center bg-[#f3f3f3]'>
 			<NavBar />
 			<div className='w-full relative bg-gradient-to-r from-[#190702] to-[#7423ff]'>
 				<img
@@ -100,7 +102,7 @@ const Home = () => {
 				/>
 				<div className='relative  bg-deep-purple-accent-700 border-b-[10px] border-[white]'>
 					<svg
-						className='absolute inset-x-0 bottom-0 text-white shadow-lg'
+						className='absolute inset-x-0 bottom-0 text-[#1c0c2c52] shadow-lg'
 						viewBox='0 0 1160 160'
 					>
 						<path
@@ -287,7 +289,7 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 					initial={{ opacity: 0, translateX: -50 }}
 					animate={{ opacity: 1, translateX: 0 }}
 					transition={{ duration: 0.3, delay: index * 0.1 }}
-					className='relative w-[15rem]  cursor-pointer hover:shadow-xl hover:bg-card bg-white shadow-md rounded-[10px] flex flex-col items-center'
+					className='drop-shadow-2xl relative w-[15rem]  cursor-pointer hover:shadow-xl hover:bg-card bg-white shadow-md rounded-[10px] flex flex-col items-center'
 					onClick={() => addSongToContext(CurrentSong(data._id))}
 				>
 					<div className='w-[16rem] min-w-[160px] h-[25rem] min-h-[160px] rounded-[12px]  relative overflow-hidden'>
@@ -302,28 +304,36 @@ export const HomeSongContainer = ({ musics, allIdSongs }) => {
 						<span className='w-full isolate inline-flex rounded-md drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]'>
 							<button
 								type='button'
-								className='w-full relative inline-flex items-center rounded-bl-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
+								className='w-full justify-center relative inline-flex items-center rounded-bl-lg border border-[#e4e4e4] bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 '
 							>
-								<BookmarkIcon
-									className='-ml-1 mr-2 h-5 w-5 text-gray-400'
+								<HeartIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
 									aria-hidden='true'
 								/>
-								Add Song
+								ADD
 							</button>
 							<button
 								type='button'
-								className='w-full relative -ml-px inline-flex items-center rounded-br-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
+								className='w-full  justify-center relative -ml-px inline-flex items-center rounded-br-lg border border-[#e4e4e4] bg-white px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500'
 							>
-								Listen Later
+								<BookmarkIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
+								BUY
 							</button>
 						</span>
 					</div>
-					<p className='text-center text-headingColor  my-1'>
+					<p className='flex text-center text-headingColor  mt-[5px]'>
+						<PlayIcon
+							className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+							aria-hidden='true'
+						/>
 						{data.name.length > 25 ? `${data.name.slice(0, 25)}` : data.name}
-						<span className='block text-sm text-gray-400 my-1'>
-							{data.artist}
-						</span>
 					</p>
+					<span className='block text-sm text-gray-400 mb-[5px]'>
+						{data.artist}
+					</span>
 				</motion.div>
 			))}
 			<Footer />
