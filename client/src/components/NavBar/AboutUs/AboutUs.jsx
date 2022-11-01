@@ -11,8 +11,8 @@ const stats = [
 
 const people = [
 	{
-		name: "Adriá Valles",
-		role: "Frontend & Web Developer",
+		name: "Adrià Vallès",
+		role: "Frontend & UI Developer",
 		imageUrl:
 			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Adria-1.jpg",
 		twitterUrl: "#",
@@ -28,7 +28,7 @@ const people = [
 	},
 	{
 		name: "Marcel Barreiro",
-		role: "Frontend & UI Designer",
+		role: "Frontend UI Designer",
 		imageUrl:
 			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Marcel1.jpg",
 		twitterUrl: "#",
@@ -36,7 +36,7 @@ const people = [
 	},
 	{
 		name: "Ricardo Vieira",
-		role: "Fullstack Developer",
+		role: "Project Manager",
 		imageUrl:
 			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Ricardito-1.jpg",
 		twitterUrl: "#",
@@ -44,9 +44,9 @@ const people = [
 	},
 	{
 		name: "Javier Fernandez ",
-		role: "Backend Developer",
+		role: "Fullstack Developer",
 		imageUrl:
-			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Javi-1.jpg",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Javier-1.jpg",
 		twitterUrl: "#",
 		linkedinUrl: "#",
 	},
@@ -114,8 +114,8 @@ function AboutUs() {
 									src='https://vinyllyapp.com/wp-content/uploads/couple-listening-to-music-together-PTFM2DJ.jpg'
 									alt=''
 								/>
-								<div className='absolute inset-0 bg-indigo-500 mix-blend-multiply' />
-								<div className='absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90' />
+								<div className='absolute inset-0 bg-whitesmoke mix-blend-multiply' />
+								<div className='absolute inset-0 bg-gradient-to-t from-[#7423ff] via-[#7423ff] opacity-90' />
 								<div className='relative px-8'>
 									<div>
 										<img
@@ -280,6 +280,27 @@ function AboutUs() {
 							<img
 								className='max-h-12'
 								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Firebase-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Jest-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/express-logo-gray-400.png'
+								alt='Statamic'
+							/>
+						</div>
+						<div className='col-span-1 flex justify-center bg-gray-50 py-8 px-8'>
+							<img
+								className='max-h-12'
+								src='https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Mongoose-logo-gray-400.png'
 								alt='Statamic'
 							/>
 						</div>
