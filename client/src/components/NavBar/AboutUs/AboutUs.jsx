@@ -3,10 +3,10 @@ import Footer from "../../Footer/Footer";
 import NavBar from "../NavBar";
 
 const stats = [
-	{ label: "Founded", value: "2021" },
+	{ label: "Founded", value: "2022" },
 	{ label: "Employees", value: "5" },
-	{ label: "Beta Users", value: "521" },
-	{ label: "Raised", value: "$25M" },
+	{ label: "Beta Version", value: "1.0" },
+	{ label: "Hours Worked", value: "3 Weeks" },
 ];
 
 const people = [
@@ -152,20 +152,14 @@ function AboutUs() {
 								MUSIC ISN'T EVERYTHING — While mutual interests are a good place to start in building a connection with someone else, they shouldn't be the only thing you consider. Shymu is not just a dating app that uses your taste in music to find matches. You can also find your soulmate in business, fitness or even coding. 
 								</p>
 								<p className='text-lg'>
-								We believe that the music, audiobooks and podcasts we love and the way we listen to it is a powerful window into who we are. 
+								We believe that the music, audiobooks and podcasts we love and the way we listen to it is a powerful window into who we are. Swiping right or left is too simple, but matches users through an analysis of their streaming, that's another story.
 								</p>
-								<p className='text-lg'>
-									Rhoncus nisl, libero egestas diam fermentum dui. At quis
-									tincidunt vel ultricies. Vulputate aliquet velit faucibus
-									semper. Pellentesque in venenatis vestibulum consectetur nibh
-									id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi
-									enim fermentum lacus in. Viverra.
-								</p>
+
 							</div>
 						</div>
 						{/* Stats section */}
-						<div className='mt-10'>
-							<dl className='grid grid-cols-2 gap-x-4 gap-y-8'>
+						<div className='mt-5'>
+							<dl className='grid grid-cols-4 gap-x-4 gap-y-8'>
 								{stats.map((stat) => (
 									<div
 										key={stat.label}
@@ -182,7 +176,7 @@ function AboutUs() {
 							</dl>
 							<div className='mt-10'>
 								<a href='#' className='text-base font-medium text-indigo-600'>
-									Learn more about how we're changing the world
+									Learn more about how we're changing the datting world.
 									<span aria-hidden='true'> &rarr;</span>
 								</a>
 							</div>
