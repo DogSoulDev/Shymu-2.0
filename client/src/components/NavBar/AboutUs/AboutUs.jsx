@@ -11,40 +11,48 @@ const stats = [
 
 const people = [
 	{
-		name: "Marcel Barreiro",
-		role: "Senior Designer",
+		name: "Adriá Valles",
+		role: "Frontend & Web Developer",
 		imageUrl:
-			"https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Adria-1.jpg",
 		twitterUrl: "#",
 		linkedinUrl: "#",
 	},
 	{
 		name: "Alejandro Gaerste",
-		role: "Senior Designer",
+		role: "Frontend Developer",
 		imageUrl:
-			"https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Ale.jpg",
 		twitterUrl: "#",
 		linkedinUrl: "#",
 	},
 	{
-		name: "Javier Fernandez",
-		role: "Senior Designer",
+		name: "Marcel Barreiro",
+		role: "Frontend & UI Designer",
 		imageUrl:
-			"https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Marcel1.jpg",
 		twitterUrl: "#",
 		linkedinUrl: "#",
 	},
 	{
 		name: "Ricardo Vieira",
-		role: "Senior Designer",
+		role: "Fullstack Developer",
+		imageUrl:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Ricardito-1.jpg",
+		twitterUrl: "#",
+		linkedinUrl: "#",
+	},
+	{
+		name: "Javier Fernandez ",
+		role: "Backend Developer",
 		imageUrl:
 			"https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
 		twitterUrl: "#",
 		linkedinUrl: "#",
 	},
 	{
-		name: "Adriá Valles",
-		role: "Senior Designer",
+		name: "Alejandro Ávila ",
+		role: "Best Friend",
 		imageUrl:
 			"https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
 		twitterUrl: "#",
@@ -282,12 +290,11 @@ function AboutUs() {
 				<div className='mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24'>
 					<div className='space-y-12'>
 						<div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none'>
-							<h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
+							<h2 className='text-3xl font-bold text-center tracking-tight text-white sm:text-4xl'>
 								Meet our team
 							</h2>
-							<p className='text-xl text-gray-300'>
-								Ornare sagittis, suspendisse in hendrerit quis. Sed dui aliquet
-								lectus sit pretium egestas vel mattis neque.
+							<p className='text-xl text-center text-gray-300'>
+								Meet our team of developers, designers and world-class problem solvers. 	 
 							</p>
 						</div>
 						<ul
