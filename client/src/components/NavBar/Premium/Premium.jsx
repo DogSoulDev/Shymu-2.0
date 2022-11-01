@@ -4,35 +4,56 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import { StarIcon } from "@heroicons/react/20/solid";
 
 const reviews = {
-	average: 4,
-	totalCount: 1624,
+	average: 5,
+	totalCount: 1165,
 	counts: [
-		{ rating: 5, count: 1019 },
-		{ rating: 4, count: 162 },
-		{ rating: 3, count: 97 },
-		{ rating: 2, count: 199 },
-		{ rating: 1, count: 147 },
+		{ rating: 5, count: 1079 },
+		{ rating: 4, count: 72 },
+		{ rating: 3, count: 34 },
+		{ rating: 2, count: 0 },
+		{ rating: 1, count: 0 },
 	],
 	featured: [
 		{
 			id: 1,
 			rating: 5,
 			content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>Shymu offers best-in-class features and an intuitive user experiences, paired with an extremely expansive selection of music and podcasts.</p>
       `,
-			author: "Emily Selman",
+			author: "Alejandro Avila",
 			avatarSrc:
-				"https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
+				"https://media-exp1.licdn.com/dms/image/C4E03AQGXTCbsV8x8Bg/profile-displayphoto-shrink_800_800/0/1663953266461?e=1672876800&v=beta&t=O23Hbc8NeHOYjfF4OazbIcytiuVFkuWibrDy91doHuw",
 		},
+		{
+			id: 1,
+			rating: 5,
+			content: `
+<p>Shymu is the best mainstream music streaming service.</p>
+      `,
+			author: "Roger Olivé",
+			avatarSrc:
+				"https://media-exp1.licdn.com/dms/image/C4D03AQFOGgJq_r0XIA/profile-displayphoto-shrink_800_800/0/1546944248520?e=1672876800&v=beta&t=fpJ9PSPOm0x-_xEDT4vlnNPJJ2NZvwY2A1sO16okync",
+		},
+		{
+			id: 1,
+			rating: 5,
+			content: `
+        <p>I LOVE this app. It helped me discover so much new music. The "Discovery Weekly" is worth paying for by itself once its tuned and know what you like.</p>
+      `,
+			author: "Matias Patrignani",
+			avatarSrc:
+				"https://media-exp1.licdn.com/dms/image/C4E03AQHZG8FqdRtbZg/profile-displayphoto-shrink_800_800/0/1651236257419?e=1672876800&v=beta&t=mH_V1J55PSBL4N4W1x9ObQPhIwBs6MjeimW7B7N842w",
+		},
+
 		// More reviews...
 	],
 };
 
 const includedFeatures = [
-	"Private forum access",
-	"Member resources",
-	"Entry to annual conference",
-	"Official member t-shirt",
+	"Play your favorites.",
+	"Playlists made easy.",
+	"Make it yours.",
+	"Save mobile data.",
 ];
 
 function classNames(...classes) {
@@ -64,16 +85,16 @@ function Premium() {
 							<div className='mx-auto max-w-lg overflow-hidden rounded-lg shadow-lg lg:flex lg:max-w-none'>
 								<div className='flex-1 bg-white px-6 py-8 lg:p-12'>
 									<h3 className='text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight'>
-										Lifetime Membership
+										Premium Membership
 									</h3>
 									<p className='mt-6 text-base text-gray-500'>
-										Lorem ipsum dolor sit amet consect etur adipisicing elit.
-										Itaque amet indis perferendis blanditiis repellendus etur
-										quidem assumenda.
+										Go Premium Today. Try 1 Month for Free! Exclusive Podcasts.
+										Cancel Anytime. Curated Playlists. Unlimited Skips. Listen
+										with Lyrics. Over 50 Million Songs. New Music Discovery.
 									</p>
 									<div className='mt-8'>
 										<div className='flex items-center'>
-											<h4 className='flex-shrink-0 bg-white pr-4 text-base font-semibold text-indigo-600'>
+											<h4 className='flex-shrink-0 bg-white pr-4 text-base font-semibold text-primaryOrange'>
 												What's included
 											</h4>
 											<div className='flex-1 border-t-2 border-gray-200' />
@@ -89,7 +110,7 @@ function Premium() {
 												>
 													<div className='flex-shrink-0'>
 														<CheckCircleIcon
-															className='h-5 w-5 text-green-400'
+															className='h-5 w-5 text-primaryOrange'
 															aria-hidden='true'
 														/>
 													</div>
@@ -103,13 +124,10 @@ function Premium() {
 								</div>
 								<div className='bg-gray-50 py-8 px-6 text-center lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12'>
 									<p className='text-lg font-medium leading-6 text-gray-900'>
-										Pay once, own it forever
+										Try now, and change your life.
 									</p>
 									<div className='mt-4 flex items-center justify-center text-5xl font-bold tracking-tight text-gray-900'>
-										<span>$349</span>
-										<span className='ml-3 text-xl font-medium tracking-normal text-gray-500'>
-											USD
-										</span>
+										<span>9,90€ a month</span>
 									</div>
 									<p className='mt-4 text-sm'>
 										<a href='#' className='font-medium text-gray-500 underline'>
@@ -120,7 +138,7 @@ function Premium() {
 										<div className='rounded-md shadow'>
 											<a
 												href='#'
-												className='flex items-center justify-center rounded-md border border-transparent bg-gray-800 px-5 py-3 text-base font-medium text-white hover:bg-gray-900'
+												className='flex items-center justify-center rounded-md border border-transparent bg-primaryOrange px-5 py-3 text-base font-medium text-white hover:bg-gray-900'
 											>
 												Get Access
 											</a>
@@ -128,7 +146,7 @@ function Premium() {
 									</div>
 									<div className='mt-4 text-sm'>
 										<a href='#' className='font-medium text-gray-900'>
-											Get a free sample{" "}
+											Try one month for free!
 											<span className='font-normal text-gray-500'>(20MB)</span>
 										</a>
 									</div>
@@ -219,13 +237,13 @@ function Premium() {
 							</p>
 							<a
 								href='#'
-								className='mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-white py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-50 sm:w-auto lg:w-full'
+								className='mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-primaryOrange py-2 px-8 text-sm font-medium text-white hover:bg-gray-900 sm:w-auto lg:w-full'
 							>
 								Write a review
 							</a>
 						</div>
 					</div>
-					<div className='mt-16 lg:col-span-7 lg:col-start-6 lg:mt-0'>
+					<div className='mt-16 pb-18 lg:col-span-7 lg:col-start-6 lg:mt-0 pb-16'>
 						<h3 className='sr-only'>Recent reviews</h3>
 						<div className='flow-root'>
 							<div className='-my-12 divide-y divide-gray-200'>
