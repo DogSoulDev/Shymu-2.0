@@ -3,24 +3,24 @@ import TinderCard from "react-tinder-card";
 
 const db = [
 	{
-		name: "Rosa",
-		url: "../img/1.jpg",
+		name: "Martha Salazar | 29 years | 70% Match",
+		url: "https://images.pexels.com/photos/247206/pexels-photo-247206.jpeg?auto=compress&cs=tinysrgb&w=800",
 	},
 	{
-		name: "Jenny",
-		url: "../img/2.jpg",
+		name: "Sofia De la Torre | 29 years | 72% Match",
+		url: "https://images.pexels.com/photos/2061346/pexels-photo-2061346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 	{
-		name: "Julia",
-		url: "../img/3.jpg",
+		name: "Natalia Duarte | 32 years | 75% Match",
+		url: "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&w=800",
 	},
 	{
-		name: "Marisa",
-		url: "../img/4.jpg",
+		name: "Daniella Martin | 25 years | 82% Match",
+		url: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=800",
 	},
 	{
-		name: "Dashira",
-		url: "../img/5.jpg",
+		name: "Samantha Carvalho | 29 years | 86% Match",
+		url: "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	},
 ];
 console.log(db);
@@ -62,62 +62,47 @@ function Advanced() {
 	};
 	return (
 		<div>
-			<link
-				href='https://fonts.googleapis.com/css?family=Damion&display=swap'
-				rel='stylesheet'
-			/>
-			<link
-				href='https://fonts.googleapis.com/css?family=Alatsi&display=swap'
-				rel='stylesheet'
-			/>
-			<h1>Shymu Match</h1>
-			<div className='cardContainer'>
+			<h1>MATCHES SUGGESTION</h1>
+			<div className='cardContainer '>
 				{db.map((character, index) => (
 					<TinderCard
 						ref={childRefs[index]}
-						className='swipe'
+						className='absolute  left-[35%] right-[35%]  '
 						key={character.name}
 						onSwipe={(dir) => swiped(dir, character.name, index)}
 						onCardLeftScreen={() => outOfFrame(character.name, index)}
 					>
 						<div
 							style={{ backgroundImage: "url(" + character.url + ")" }}
-							className='card'
-						>
-							<h3>{character.name}</h3>
-						</div>
-					</TinderCard>
-				))}
-			</div>
-			<div className='buttons'>
-				<button
+							className=' rounded-t-lg card bg-cover bg-top drop-shadow-[0_21px_14px_rgba(0,0,0,0.15)]'
+						></div>
+						<h3 className='flex items-center justify-center py-3 bg-gray-900  text-lg font-semibold text-white'>
+							{character.name}
+						</h3>
+
+						<div className='buttons justify-center '>
+							{/* <button
 					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
 					onClick={() => swipe("left")}
 				>
 					Swipe left!
-				</button>
-				<button
-					style={{ backgroundColor: !canGoBack && "#c3c4d3" }}
-					onClick={() => goBack()}
-				>
-					Undo swipe!
-				</button>
-				<button
+				</button> */}
+							<button
+								style={{ backgroundColor: !canGoBack && "#c3c4d3" }}
+								onClick={() => goBack()}
+							>
+								Undo swipe! ↩
+							</button>
+							{/* <button
 					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
 					onClick={() => swipe("right")}
 				>
 					Swipe right!
-				</button>
+				</button> */}
+						</div>
+					</TinderCard>
+				))}
 			</div>
-			{lastDirection ? (
-				<h2 key={lastDirection} className='infoText'>
-					You swiped {lastDirection}
-				</h2>
-			) : (
-				<h2 className='infoText'>
-					Make your Match with SHYMU !
-				</h2>
-			)}
 		</div>
 	);
 }
