@@ -82,15 +82,12 @@ function Advanced() {
 					>
 						<div
 							style={{ backgroundImage: "url(" + character.url + ")" }}
-							className='rounded-t-lg card bg-cover bg-center'
+							className=' rounded-t-lg card bg-cover bg-center'
 						>
 							
 						</div>
 						<h3 className="flex items-center justify-center py-3 bg-gray-900  text-lg font-semibold text-white">{character.name}</h3>
-					</TinderCard>
-				))}
-			</div>
-			<div className='buttons'>
+						<div className='buttons'>
 				<button
 					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
 					onClick={() => swipe("left")}
@@ -109,7 +106,13 @@ function Advanced() {
 				>
 					Swipe right!
 				</button>
+				
 			</div>
+			
+					</TinderCard>
+				))}
+			</div>
+			
 			{lastDirection ? (
 				<h2 key={lastDirection} className='infoText'>
 					You swiped {lastDirection}

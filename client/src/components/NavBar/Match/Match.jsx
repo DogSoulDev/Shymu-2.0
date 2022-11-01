@@ -23,9 +23,7 @@ function Match() {
     <div className='w-full bg-[#f3f3f3] py-20'> 
     <div className='app'>
       {showAdvanced ? <Advanced /> : <Simple />}
-      <div className='row'>
-        <p style={{ color: '#fff' }}>Phone Mode!</p> <Switch checked={showAdvanced} onChange={setShowAdvanced} />
-      </div>
+      
     </div>
     </div>
     <Footer />
