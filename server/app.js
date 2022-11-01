@@ -4,6 +4,10 @@ require("dotenv/config");
 const cors = require("cors");
 const { default: mongoose } = require("mongoose");
 
+app.get("/",(req,res)=>{
+	res.json("server start")
+})
+
 app.use(cors({ origin: true }));
 //!Esto lo que hace es convertir los datos default en JSON:
 app.use(express.json());
