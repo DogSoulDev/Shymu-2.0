@@ -48,12 +48,12 @@ const OnboardingFirstPage = ({
 							</p>
 							<div className='BackNext'>
 								<input
-									value='← BACK'
+									defaultValue='← BACK'
 									className='card__btn back-1 inter-semi-bold-white-16px '
 									onClick={handleBtnBack}
 								/>
 								<input
-									value='NEXT →'
+									defaultValue='NEXT →'
 									className='card__btn back-1 inter-semi-bold-white-16px '
 									onClick={handleBtnFirstPage}
 								/>
