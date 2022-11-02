@@ -4,41 +4,43 @@ import NavBar from "../NavBar";
 const audiobooks = [
 	{
 		id: 1,
-		name: "The Dutch House by Ann Patchett, narrated",
+		name: "Con tu Permiso by Martin Llorens, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/51ewjTW-w1L.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Martin.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by Tom Hanks",
+		color: "by Martin Llorens",
 	},
 	{
 		id: 2,
-		name: "Such a Fun Age by Kiley Reid, narrated",
+		name: "Inquebrantable by Daniel Habif, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/61wBl9XtMSL.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Inquebrantable.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by Nicole Lewis",
+		color: "by Daniel Habif",
 	},
 
 	{
 		id: 3,
-		name: "The Goldfinch by Donna Tartt, narrated",
+		name: "El Libro Negro by Eva Saenz, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/51IbuiT-ndL.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Horas.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by David Pittu",
+		color: "by Eva Saenz",
 	},
 	{
 		id: 4,
-		name: "The Vanishing Half by Brit Bennett, narrated",
+		name: "El Manuscrito by Luis Garcia, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/51NJs+Rj6hL.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Manuscrito.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by Shayna Small",
+		color: "by Luis Garcia Jambrimna",
 	},
+
+	
 ];
 const products = [
 	{
@@ -136,7 +138,7 @@ function Trending() {
 					<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
 						{products.map((product) => (
 							<div key={product.id} className='group relative'>
-								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
 									<img
 										src={product.imageSrc}
 										alt={product.imageAlt}
