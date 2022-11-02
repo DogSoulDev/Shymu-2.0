@@ -10,23 +10,49 @@ import DashboardSongs from "./DashboardSongs";
 import DashboardUser from "./DashboardUser";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
+import { HomeIcon } from '@heroicons/react/20/solid'
 const Dashboard = () => {
 	return (
+		
 		<div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
 			<NavBar />
-			<div className='w-[60%] my-2 p-4 flex items-center justify-evenly'>
-				<NavLink to={"/dashboard/home"}>
-					<IoHome className='text-2xl text-textColor' />
-				</NavLink>
-				<NavLink
+			<div className="flex" aria-label="Breadcrumb">
+			<ol role="list" className="flex space-x-4 rounded-md bg-white p-[20px] shadow bg-[#1f2937] my-3 ">
+			<li className="flex">
+          <div className="flex items-center">
+            <a href="#" className="text-gray-400 hover:text-gray-500">
+              <HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
+              <span className="sr-only">Home</span>
+            </a>
+          </div>
+        </li>
+		<svg
+                className="h-5 w-5 flex-shrink-0 text-gray-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+              >
+                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+              </svg>
+				<NavLink 
 					to={"/dashboard/user"}
 					className={({ isActive }) =>
-						isActive ? isActiveStyles : isNotActiveStyles
+						isActive ? isActiveStyles : isNotActiveStyles 
 					}
 				>
 					{" "}
 					Users{" "}
 				</NavLink>
+				<svg
+                className="h-5 w-5 flex-shrink-0 text-gray-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+              >
+                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+              </svg>
 				<NavLink
 					to={"/dashboard/songs"}
 					className={({ isActive }) =>
@@ -36,6 +62,15 @@ const Dashboard = () => {
 					{" "}
 					Songs{" "}
 				</NavLink>
+				<svg
+                className="h-5 w-5 flex-shrink-0 text-gray-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+              >
+                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+              </svg>
 				<NavLink
 					to={"/dashboard/artist"}
 					className={({ isActive }) =>
@@ -45,6 +80,15 @@ const Dashboard = () => {
 					{" "}
 					Artist{" "}
 				</NavLink>
+				<svg
+                className="h-5 w-5 flex-shrink-0 text-gray-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+              >
+                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+              </svg>
 				<NavLink
 					to={"/dashboard/albums"}
 					className={({ isActive }) =>
@@ -54,6 +98,8 @@ const Dashboard = () => {
 					{" "}
 					Albums{" "}
 				</NavLink>
+			
+				</ol>
 			</div>
 			<div className='my-4 w-full p-4'>
 				<Routes>
