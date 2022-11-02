@@ -80,7 +80,6 @@ export const ImageUploader = ({
 			},
 		);
 	};
-
 	return (
 		<label>
 			<div className='flex flex-col items-center justify-center h-full'>
@@ -274,7 +273,7 @@ const DashboardNewSong = () => {
 											/>
 											<button
 												type='button'
-												className='absolute bottom-3 right-3 p-3 rounded-full bg-red-500 text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
+												className='absolute bottom-3 right-3 p-3 rounded-full bg-[#f44336] text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
 												onClick={() => {
 													deleteImageObject(songImageUrl, "image");
 												}}
@@ -304,7 +303,7 @@ const DashboardNewSong = () => {
 											<audio ref={audioRef} src={audioAsset} controls />
 											<button
 												type='button'
-												className='absolute bottom-3 right-3 p-3 rounded-full bg-red-500 text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
+												className='absolute bottom-3 right-3 p-3 rounded-full bg-[#f44336] text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
 												onClick={() => {
 													deleteImageObject(audioAsset, "audio");
 												}}

@@ -80,7 +80,6 @@ function App() {
 				<Route path='/onboarding' element={<Onboarding />} />
 				<Route path='/login' element={<Login setAuth={setAuth} />} />
 				<Route path='/*' element={<Home />} />
-				{/* <Route path='*' element={<Error404 />} /> */}
 				<Route path='/dashboard/*' element={<Dashboard />} />
 				<Route path='/profile' element={<Profile />} />
 				<Route path='/userprofile' element={<UserProfile />} />

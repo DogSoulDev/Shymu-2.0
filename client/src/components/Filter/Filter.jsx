@@ -43,7 +43,7 @@ const Filter = ({ setFilteredSongs }) => {
 		dispatch({ type: actionType.SET_FILTER_TERM, filterTerm: null });
 	};
 	return (
-		<div className='w-full my-4 px-6 py-4 flex items-center justify-start md:justify-center gap-10'>
+		<div className='w-full h-auto flex items-center justify-evenly gap-4 flex-wrap p-4'>
 			<FilterButtons filterData={artists} flag={"Artist"} />
 			<div className=' flex items-center gap-6 mx-4'>
 				<div className='inline-flex rounded-md shadow-sm'>
@@ -93,17 +93,7 @@ const Filter = ({ setFilteredSongs }) => {
 					</Menu>
 				</div>
 			</div>
-			{/* {filters?.map((data) => (
-					<p
-						key={data.id}
-						onClick={() => updateFilter(data.value)}
-						className={`text-base ${
-							data.value === filterTerm ? "font-semibold" : "font-normal"
-						} text-textColor cursor-pointer hover:font-semibold transition-all duration-100 ease-in-out`}
-					>
-						{data.name}
-					</p>
-				))} */}
+			
 			<FilterButtons filterData={allAlbums} flag={"Albums"} />
 			<FilterButtons filterData={filterByLanguage} flag={"Language"} />
 			<motion.i

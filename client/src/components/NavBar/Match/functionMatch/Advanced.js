@@ -74,31 +74,18 @@ function Advanced() {
 					>
 						<div
 							style={{ backgroundImage: "url(" + character.url + ")" }}
-							className=' rounded-t-lg card bg-cover bg-top drop-shadow-[0_21px_14px_rgba(0,0,0,0.15)]'
+							className=' rounded-t-lg card_tinder bg-cover bg-top drop-shadow-[0_21px_14px_rgba(0,0,0,0.15)]'
 						></div>
 						<h3 className='flex items-center justify-center py-3 bg-gray-900  text-lg font-semibold text-white'>
 							{character.name}
 						</h3>
-
 						<div className='buttons justify-center '>
-							{/* <button
-					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
-					onClick={() => swipe("left")}
-				>
-					Swipe left!
-				</button> */}
 							<button
 								style={{ backgroundColor: !canGoBack && "#c3c4d3" }}
 								onClick={() => goBack()}
 							>
 								Undo swipe! ↩
 							</button>
-							{/* <button
-					style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
-					onClick={() => swipe("right")}
-				>
-					Swipe right!
-				</button> */}
 						</div>
 					</TinderCard>
 				))}

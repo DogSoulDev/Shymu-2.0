@@ -9,10 +9,10 @@ const Contact = () => {
 			<NavBar />
 			<div className='bg-gray-50 py-4 sm:py-16'>
 				<div className='mx-auto max-w-md pl-4 pr-8 sm:max-w-lg sm:px-8 lg:max-w-7xl lg:px-8'>
-					<h1 className='text-center pb-4 text-8xl font-bold leading-10 tracking-tight text-primaryOrange sm:text-8xl sm:leading-none lg:text-8xl'>
+					<h1 className='text-center pb-4 text-8xl font-bold leading-10 tracking-tight text-gray-900 sm:text-8xl sm:leading-none lg:text-8xl'>
 						Join the band
 					</h1>
-					<h2 className='mx-auto mt-6 max-w-4xl font-bold text-center text-2xl leading-normal text-gray-900'>
+					<h2 className='mx-auto mt-6 max-w-4xl font-bold text-center text-2xl leading-normal text-gray-600'>
 						To unlock the potential of human creativity by giving a million
 						creators the opportunity to live off their art and billions of fans
 						the opportunity to enjoy and be inspired by it.
@@ -23,7 +23,7 @@ const Contact = () => {
 				<div className='lg:absolute lg:inset-0'>
 					<div className='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
 						<img
-							className='h-56 w-full object-cover lg:absolute lg:h-full'
+							className='lg:absolute   lg:h-full sm:pr-0'
 							src='https://images.pexels.com/photos/2489986/pexels-photo-2489986.jpeg?auto=compress&cs=tinysrgb&w=800'
 							alt=''
 						/>
@@ -33,7 +33,7 @@ const Contact = () => {
 					<div className='lg:pr-8'>
 						<div className='mx-auto max-w-md sm:max-w-lg lg:mx-0'>
 							<div className='pb-24'>
-								<h2 className='text-4xl font-bold tracking-tight sm:text-6xl'>
+								<h2 className='text-4xl text-primaryOrange font-bold tracking-tight sm:text-6xl'>
 									Let's work together
 								</h2>
 							</div>
@@ -47,23 +47,19 @@ const Contact = () => {
 									matters.
 								</p>
 							</div>
-
 							<div className='pb-12'>
 								<h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
 									We all have parts to play
 								</h2>
-
 								<p className='mt-4 text-lg text-gray-500 sm:mt-3'>
 									We want you to feel like you belong here and can thrive here.
 									No two creators or listeners are the same, so neither are we.
 								</p>
 							</div>
-
 							<div className='pb-12'>
 								<h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
 									Listening and learning
 								</h2>
-
 								<p className='mt-4 text-lg text-gray-500 sm:mt-3'>
 									We’re not just shaping the future of audio. We want to help
 									shape a better future for society and the planet too. Bit by

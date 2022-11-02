@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer } from "react";
-//?Nuestro customHook para almacenar el user junto al reducer.
+
 export const StateContext = createContext();
 
 export const StateProvider = ({ reducer, initialState, children }) => (

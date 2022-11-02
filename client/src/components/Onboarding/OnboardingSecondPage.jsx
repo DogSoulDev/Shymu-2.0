@@ -12,11 +12,9 @@ const OnboardingSecondPage = ({
 	const handleBtnSecondPage = () => {
 		setBtnSecondPage(false);
 	};
-
 	const handleBtnBack = () => {
 		setBtnFirstPage(true);
 	};
-
 	return (
 		<div className='card'>
 			{btnSecondPage ? (

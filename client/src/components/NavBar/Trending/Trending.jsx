@@ -4,116 +4,123 @@ import NavBar from "../NavBar";
 const audiobooks = [
 	{
 		id: 1,
-		name: "The Dutch House by Ann Patchett, narrated",
+		name: "Con tu Permiso by Martin Llorens, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/51ewjTW-w1L.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Martin.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by Tom Hanks",
+		color: "by Martin Llorens",
 	},
 	{
 		id: 2,
-		name: "Such a Fun Age by Kiley Reid, narrated",
+		name: "Inquebrantable by Daniel Habif, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/61wBl9XtMSL.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Inquebrantable.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by Nicole Lewis",
+		color: "by Daniel Habif",
 	},
+
 	{
 		id: 3,
-		name: "The Goldfinch by Donna Tartt, narrated",
+		name: "El Libro Negro by Eva Saenz, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/51IbuiT-ndL.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Horas.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by David Pittu",
+		color: "by Eva Saenz",
 	},
 	{
 		id: 4,
-		name: "The Vanishing Half by Brit Bennett, narrated",
+		name: "El Manuscrito by Luis Garcia, narrated",
 		href: "#",
-		imageSrc: "https://m.media-amazon.com/images/I/51NJs+Rj6hL.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Manuscrito.jpg",
 		imageAlt: "",
 		price: "",
-		color: "by Shayna Small",
+		color: "by Luis Garcia Jambrimna",
 	},
 ];
 const products = [
 	{
 		id: 5,
-		name: "Shakira",
+		name: "Lady Gaga",
 		href: "#",
 		imageSrc:
-			"https://www.elnacional.cat/enblau/uploads/s1/36/73/42/68/shakira-en-su-u-ltimo-videoclip.jpeg",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/LadyGaga.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Hips Do not Lie",
+		color: "Shallow",
 	},
 	{
 		id: 6,
-		name: "Taylor Swift",
+		name: "Rauw Alejandro",
 		href: "#",
 		imageSrc:
-			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUUtDH-thLKUTvZz3MkITolkx_E9PWdHh9w&usqp=CAU",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Rauw.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Anti-Hero",
+		color: "Te Felicito",
 	},
 	{
 		id: 7,
-		name: "As It Was",
+		name: "Farruko",
 		href: "#",
 		imageSrc:
-			"https://media.vogue.es/photos/628362b937bc84cca63cf0f1/4:3/w_2716,h_2037,c_limit/Harry%20Hero.jpg",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Farruko.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Harry Styles",
+		color: "Bendición",
 	},
 	{
 		id: 8,
-		name: "Quevedo: Bzrp Music Sessions, Vol. 52",
+		name: "Tim Herson",
 		href: "#",
 		imageSrc:
-			"https://images.genius.com/fe73e901785425383a42561849ff31f9.1000x1000x1.jpg",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/TimHenson.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Bizarrap/Quevedo",
+		color: "Position",
 	},
-
-	// More products...
 ];
 const podcast = [
 	{
 		id: 9,
-		name: "Start With This",
+		name: "Ted en Español",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849078/380/285/image.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/TED-1.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
 		color: "",
 	},
 	{
 		id: 10,
-		name: "Why Wont You Date Me",
+		name: "Nadie Sabe Nada",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849090/380/285/image.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Nadie.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
 		color: "",
 	},
 	{
 		id: 11,
-		name: "Crime Show",
+		name: "Serial Killes",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849416/380/285/image.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/SERIAL-1.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 	},
 	{
 		id: 12,
-		name: "The New Yorker Fiction Podcast",
+		name: "Programar es una mierda Podcast",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849137/380/285/image.jpg",
+		imageSrc:
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Programar.jpg",
 		imageAlt: "",
 	},
 ];
@@ -133,7 +140,7 @@ function Trending() {
 					<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
 						{products.map((product) => (
 							<div key={product.id} className='group relative'>
-								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+								<div className=' drop-shadow-lg aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
 									<img
 										src={product.imageSrc}
 										alt={product.imageAlt}
@@ -171,7 +178,7 @@ function Trending() {
 				<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
 					{audiobooks.map((product) => (
 						<div key={product.id} className='group relative'>
-							<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+							<div className=' aspect-w-1 drop-shadow-lg aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
 								<img
 									src={product.imageSrc}
 									alt={product.imageAlt}
@@ -207,7 +214,7 @@ function Trending() {
 					<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
 						{podcast.map((product) => (
 							<div key={product.id} className='group relative'>
-								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+								<div className=' drop-shadow-lg aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
 									<img
 										src={product.imageSrc}
 										alt={product.imageAlt}

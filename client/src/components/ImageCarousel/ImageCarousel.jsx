@@ -20,7 +20,6 @@ function ImageCarousel() {
 				"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/10/1.jpg",
 		},
 	];
-
 	return (
 		<div className='carousel_container'>
 			<ImageGallery

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { Logo } from "../../../assets/img";
 import { useStateValue } from "../../../hooks/Context/StateProvider";
-import { isActiveStyles, isNotActiveStyles } from "../../../utils/styles";
 import { getAuth } from "firebase/auth";
 import { app } from "../../../config/firebase.config";
 import { motion } from "framer-motion";
@@ -10,7 +8,7 @@ import { FaCrown } from "react-icons/fa";
 
 const Profile = () => {
 	const navigate = useNavigate();
-	const [{ user }, dispatch] = useStateValue(); //!Nuestro custom hook., que nos sirve para redireccionar mas abajo donde queramos al usuario.(Desplegable del login)
+	const [{ user }, dispatch] = useStateValue();
 	const [isMenu, setIsMenu] = useState(false);
 	const logout = () => {
 		const firebaseAuth = getAuth(app);
@@ -61,7 +59,7 @@ const Profile = () => {
 								Favourites
 							</p>
 						</NavLink>
-						<NavLink to={"/matches"}>
+						<NavLink to={"/match"}>
 							<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
 								Matches
 							</p>

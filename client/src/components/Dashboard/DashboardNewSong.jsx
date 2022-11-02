@@ -11,7 +11,6 @@ import { MdDelete } from "react-icons/md";
 import { storage } from "../../config/firebase.config";
 import { useStateValue } from "../../hooks/Context/StateProvider";
 import FilterButtons from "../Filter/FilterButtons";
-
 import {
 	getAllAlbums,
 	getAllArtist,
@@ -20,7 +19,6 @@ import {
 	saveNewArtist,
 	saveNewSong,
 } from "../../api";
-
 import { actionType } from "../../hooks/Context/reducer";
 import { filterByLanguage, filters } from "../../utils/supportfunctions";
 import AlertSuccess from "../Alerts/AlertSucces";
@@ -81,7 +79,6 @@ export const ImageUploader = ({
 			},
 		);
 	};
-
 	return (
 		<label>
 			<div className='flex flex-col items-center justify-center h-full'>
@@ -166,7 +163,7 @@ const DashboardNewSong = () => {
 				dispatch({ type: actionType.SET_ALL_ALBUMNS, allAlbums: data.data });
 			});
 		}
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	const calculateTime = (sec) => {
 		const minutes = Math.floor(sec / 60);
@@ -275,7 +272,7 @@ const DashboardNewSong = () => {
 											/>
 											<button
 												type='button'
-												className='absolute bottom-3 right-3 p-3 rounded-full bg-red-500 text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
+												className='absolute bottom-3 right-3 p-3 rounded-full bg-[#f44336] text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
 												onClick={() => {
 													deleteImageObject(songImageUrl, "image");
 												}}

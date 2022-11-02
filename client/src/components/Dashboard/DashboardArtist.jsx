@@ -46,7 +46,6 @@ const DashboardArtist = () => {
 
 export const ArtistCard = ({ data, index, deleteArtist }) => {
 	const [isDelete, setIsDelete] = useState(false);
-
 	return (
 		<motion.div
 			initial={{ opacity: 0, translateX: -50 }}

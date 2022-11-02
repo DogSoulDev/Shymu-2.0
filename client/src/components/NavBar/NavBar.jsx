@@ -3,23 +3,21 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
 import Profile from "./Profile/Profile";
 import { useStateValue } from "../../hooks/Context/StateProvider";
-import { motion } from "framer-motion";
-import { FaCrown } from "react-icons/fa";
-import logo from "../../assets/img/ShymuWhite.png";
+
 import { getAuth } from "firebase/auth";
 import { app } from "../../config/firebase.config";
 
-// const navigation = [
-// 	{ name: 'Home', href: '/home' },
-// 	{ name: 'Music', href: '/musics' },
-// 	{ name: 'Premium', href: '/premium' },
-// 	{ name: 'Contact', href: '/contact' },
-// 	{ name: 'AboutUs', href: '/aboutus' },
-//   ]
+import { HomeIcon } from "@heroicons/react/20/solid";
+import { ArrowTrendingUpIcon } from "@heroicons/react/20/solid";
+import { CreditCardIcon } from "@heroicons/react/20/solid";
+import { UsersIcon } from "@heroicons/react/20/solid";
+import { FolderIcon } from "@heroicons/react/20/solid";
+import { InboxIcon } from "@heroicons/react/20/solid";
+
 
 const NavBar = () => {
 	const navigate = useNavigate();
-	const [{ user }, dispatch] = useStateValue(); //!Nuestro custom hook., que nos sirve para redireccionar mas abajo donde queramos al usuario.(Desplegable del login)
+	const [{ user }, dispatch] = useStateValue();
 	const [isMenu, setIsMenu] = useState(false);
 	const logout = () => {
 		const firebaseAuth = getAuth(app);
@@ -97,7 +95,6 @@ const NavBar = () => {
 										About Us
 									</NavLink>
 								</li>
-
 								<li className='mx-5 text-lg'>
 									<NavLink
 										to={"/contact"}
@@ -117,12 +114,28 @@ const NavBar = () => {
 					<ul className='flex items-center justify-center ml-7'>
 						<li className='mx-5 text-lg'>
 							<NavLink
+								to={"/home"}
+								className={({ isActive }) =>
+									isActive ? isActiveStyles : isNotActiveStyles
+								}
+							>
+								<HomeIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
+							</NavLink>
+						</li>
+						<li className='mx-5 text-lg'>
+							<NavLink
 								to={"/trending"}
 								className={({ isActive }) =>
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Trending
+								<ArrowTrendingUpIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -132,7 +145,10 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Premium
+								<CreditCardIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -142,7 +158,10 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Match
+								<UsersIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -152,7 +171,10 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								About
+								<FolderIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -162,7 +184,10 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Contact
+								<InboxIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 					</ul>
