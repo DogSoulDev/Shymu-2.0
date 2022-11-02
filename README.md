@@ -15,7 +15,7 @@ We believe that the music, audiobooks and podcasts we love and the way we listen
 ## Installation
 An explanation of how to start the backend and the front-end.
 ##The first thing to install:
-npm install
+<code>npm install</code>
 ###Front-End
 cd client
 npm start
