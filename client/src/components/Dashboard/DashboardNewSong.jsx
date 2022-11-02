@@ -236,9 +236,12 @@ const DashboardNewSong = () => {
 		}
 	};
 	return (
+		
 		<div className='flex items-center justify-center p-4 border border-gray-300 rounded-md'>
+			
 			<div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
 				<div className='flex flex-col items-center justify-center gap-4'>
+					
 					<input
 						type='text'
 						placeholder='Type your song name'
@@ -246,12 +249,14 @@ const DashboardNewSong = () => {
 						value={songName}
 						onChange={(e) => setSongName(e.target.value)}
 					/>
+					
 					<div className='flex w-full justify-between flex-wrap items-center gap-4'>
 						<FilterButtons filterData={artists} flag={"Artist"} />
 						<FilterButtons filterData={allAlbums} flag={"Albums"} />
 						<FilterButtons filterData={filterByLanguage} flag={"Language"} />
 						<FilterButtons filterData={filters} flag={"Category"} />
 					</div>
+					
 					<div className='flex items-center justify-between gap-2 w-full flex-wrap'>
 						<div className='bg-card  backdrop-blur-md w-full lg:w-300 h-300 rounded-md border-2 border-dotted border-gray-300 cursor-pointer'>
 							{isImageLoading && <ImageLoader progress={uploadProgress} />}
@@ -275,7 +280,7 @@ const DashboardNewSong = () => {
 											/>
 											<button
 												type='button'
-												className='absolute bottom-3 right-3 p-3 rounded-full bg-red-500 text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
+												className='absolute bottom-3 right-3 p-3 rounded-full bg-[#f44336] text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out'
 												onClick={() => {
 													deleteImageObject(songImageUrl, "image");
 												}}
@@ -287,6 +292,7 @@ const DashboardNewSong = () => {
 								</>
 							)}
 						</div>
+						
 						<div className='bg-card  backdrop-blur-md w-full lg:w-300 h-300 rounded-md border-2 border-dotted border-gray-300 cursor-pointer'>
 							{isAudioLoading && <ImageLoader progress={uploadProgress} />}
 							{!isAudioLoading && (
@@ -336,6 +342,7 @@ const DashboardNewSong = () => {
 					<AddNewArtist />
 					<AddNewAlbum />
 				</div>
+				
 			</div>
 			{setAlert && (
 				<>
@@ -347,6 +354,7 @@ const DashboardNewSong = () => {
 				</>
 			)}
 		</div>
+		
 	);
 };
 
