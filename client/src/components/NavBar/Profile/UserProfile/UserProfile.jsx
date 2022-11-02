@@ -8,7 +8,7 @@ function UserProfile() {
 	return (
 		<>
 		<NavBar />
-		<div className='flex items-center w-full p-4 md:py-8 md:px-8 bg-primary '>
+		<div className='flex items-center w-full p-4 md:py-8 md:px-8 bg-primary justify-center '>
 			<div className='overflow-hidden bg-white shadow sm:rounded-lg'>
 				<div className='px-4 py-5 sm:px-6 flex justify-between'>
 					<div>
