@@ -15,12 +15,12 @@ We believe that the music, audiobooks and podcasts we love and the way we listen
 ## Installation
 An explanation of how to start the backend and the front-end.
 ##The first thing to install:
-<npm install>
+npm install
 ###Front-End
-<cd client>
-<npm start>
+cd client
+npm start
 ###Backend
-<cd server>
-<npm run dev>
+cd server
+npm run dev
 ## Technologies 
 ![Captura de pantalla 2022-11-02 a las 10 30 20](https://user-images.githubusercontent.com/98118775/199454623-32a15403-e317-4951-a7f3-cb00213b8a87.png)
