@@ -204,7 +204,7 @@ const Footer = () => {
 							</form>
 						</div>
 					</div>
-					<div className='mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between'>
+					<div className='mt-8 border-t border-gray-700 pb-8 pt-8 md:flex md:items-center md:justify-between'>
 						<div className='flex space-x-6 md:order-2'>
 							{navigation.social.map((item) => (
 								<a
@@ -233,7 +233,7 @@ const Footer = () => {
 											aria-hidden='true'
 										/>
 									</span>
-									<p className='ml-3 truncate font-medium text-white'>
+									<p className='ml-6 truncate font-medium text-white'>
 										<span className='md:hidden'>
 											We announced a new product!
 										</span>

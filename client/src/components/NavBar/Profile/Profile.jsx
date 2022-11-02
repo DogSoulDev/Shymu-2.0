@@ -7,6 +7,7 @@ import { getAuth } from "firebase/auth";
 import { app } from "../../../config/firebase.config";
 import { motion } from "framer-motion";
 import { FaCrown } from "react-icons/fa";
+import NavBar from "../NavBar";
 
 const Profile = () => {
 	const navigate = useNavigate();
@@ -24,6 +25,7 @@ const Profile = () => {
 	};
 	return (
 		<>
+		
 			<div
 				className='flex items-center ml-auto cursor-pointer gap-2 relative'
 				onMouseEnter={() => setIsMenu(true)}
