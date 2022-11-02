@@ -45,43 +45,43 @@ const audiobooks = [
 const products = [
 	{
 		id: 1,
-		name: "Shakira",
+		name: "Lady Gaga",
 		href: "#",
 		imageSrc:
-			"https://www.elnacional.cat/enblau/uploads/s1/36/73/42/68/shakira-en-su-u-ltimo-videoclip.jpeg",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/LadyGaga.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Hips Do not Lie",
+		color: "Shallow",
 	},
 	{
 		id: 2,
-		name: "Taylor Swift",
+		name: "Rauw Alejandro",
 		href: "#",
 		imageSrc:
-			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUUtDH-thLKUTvZz3MkITolkx_E9PWdHh9w&usqp=CAU",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Rauw.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Anti-Hero",
+		color: "Te Felicito",
 	},
 	{
 		id: 3,
-		name: "As It Was",
+		name: "Farruko",
 		href: "#",
 		imageSrc:
-			"https://media.vogue.es/photos/628362b937bc84cca63cf0f1/4:3/w_2716,h_2037,c_limit/Harry%20Hero.jpg",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Farruko.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Harry Styles",
+		color: "Bendición",
 	},
 	{
 		id: 4,
-		name: "Quevedo: Bzrp Music Sessions, Vol. 52",
+		name: "Tim Herson",
 		href: "#",
 		imageSrc:
-			"https://images.genius.com/fe73e901785425383a42561849ff31f9.1000x1000x1.jpg",
+			"https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/TimHenson.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
-		color: "Bizarrap/Quevedo",
+		color: "Position",
 	},
 
 	// More products...
@@ -89,34 +89,34 @@ const products = [
 const podcast = [
 	{
 		id: 5,
-		name: "Start With This",
+		name: "Ted en Español",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849078/380/285/image.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/TED-1.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
 		color: "",
 	},
 	{
 		id: 6,
-		name: "Why Wont You Date Me",
+		name: "Nadie Sabe Nada",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849090/380/285/image.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Nadie.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: "",
 		color: "",
 	},
 	{
 		id: 7,
-		name: "Crime Show",
+		name: "Serial Killes",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849416/380/285/image.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/SERIAL-1.jpg",
 		imageAlt: "Front of men's Basic Tee in black.",
 	},
 	{
 		id: 8,
-		name: "The New Yorker Fiction Podcast",
+		name: "Programar es una mierda Podcast",
 		href: "#",
-		imageSrc: "https://media.timeout.com/images/105849137/380/285/image.jpg",
+		imageSrc: "https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Programar.jpg",
 		imageAlt: "",
 	},
 
