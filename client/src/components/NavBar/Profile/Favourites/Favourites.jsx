@@ -24,7 +24,7 @@ function Favourites() {
 	
 
 
-		<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{/* Content goes here */}
+		<div className="mx-auto  px-4 sm:px-6 lg:px-8">{/* Content goes here */}
 		<div className="relative overflow-hidden bg-white">
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
@@ -37,7 +37,7 @@ function Favourites() {
             </p>
           </div>
           <div>
-            <div className="mt-10">
+            <div className="mt-10 ">
               {/* Decorative image grid */}
               <div
                 aria-hidden="true"
@@ -48,37 +48,14 @@ function Favourites() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Rauw.jpg"
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                          src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Inquebrantable.jpg"
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -87,14 +64,37 @@ function Favourites() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                          src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/TED.jpg"
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                          src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/LadyGaga.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/SERIAL.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Martin.jpg"
+                          alt=""
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          src="https://wordpress-797010-2726389.cloudwaysapps.com/wp-content/uploads/2022/11/Farruko.jpg"
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -104,7 +104,7 @@ function Favourites() {
                 </div>
               </div>
 
-              <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
+              <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left invisible md:visible">
                 <p className="text-base font-medium text-gray-900">Sign up to get notified when it’s ready.</p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
