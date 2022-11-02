@@ -3,11 +3,20 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
 import Profile from "./Profile/Profile";
 import { useStateValue } from "../../hooks/Context/StateProvider";
-import { motion } from "framer-motion";
-import { FaCrown } from "react-icons/fa";
-import logo from "../../assets/img/ShymuWhite.png";
+
 import { getAuth } from "firebase/auth";
 import { app } from "../../config/firebase.config";
+
+import { HomeIcon } from "@heroicons/react/20/solid";
+import { ArrowTrendingUpIcon } from "@heroicons/react/20/solid";
+import { CreditCardIcon } from "@heroicons/react/20/solid";
+import { UsersIcon } from "@heroicons/react/20/solid";
+import { FolderIcon } from "@heroicons/react/20/solid";
+import { InboxIcon } from "@heroicons/react/20/solid";
+
+
+
+
 
 // const navigation = [
 // 	{ name: 'Home', href: '/home' },
@@ -115,6 +124,19 @@ const NavBar = () => {
 				</div>
 				<div className='flex flex-wrap justify-center space-x-6 py-4 lg:hidden'>
 					<ul className='flex items-center justify-center ml-7'>
+					<li className='mx-5 text-lg'>
+							<NavLink
+								to={"/home"}
+								className={({ isActive }) =>
+									isActive ? isActiveStyles : isNotActiveStyles
+								}
+							>
+								<HomeIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
+							</NavLink>
+						</li>
 						<li className='mx-5 text-lg'>
 							<NavLink
 								to={"/trending"}
@@ -122,7 +144,10 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Trending
+								<ArrowTrendingUpIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -132,7 +157,11 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Premium
+								<CreditCardIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
+								
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -142,7 +171,10 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Match
+								<UsersIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -151,8 +183,11 @@ const NavBar = () => {
 								className={({ isActive }) =>
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
-							>
-								About
+							><FolderIcon
+							className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+							aria-hidden='true'
+						/>
+								
 							</NavLink>
 						</li>
 						<li className='mx-5 text-lg'>
@@ -162,7 +197,10 @@ const NavBar = () => {
 									isActive ? isActiveStyles : isNotActiveStyles
 								}
 							>
-								Contact
+								<InboxIcon
+									className='-ml-1 mr-2 h-5 w-5 text-gray-400 hover:text-[#e91e63]'
+									aria-hidden='true'
+								/>
 							</NavLink>
 						</li>
 					</ul>
