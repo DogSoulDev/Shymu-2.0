@@ -23,17 +23,17 @@ const Contact = () => {
 				<div className='lg:absolute lg:inset-0'>
 					<div className='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
 						<img
-							className='h-56 w-full object-cover lg:absolute lg:h-full'
+							className='h-full pr-12   object-cover lg:absolute   lg:h-full sm:pr-0'
 							src='https://images.pexels.com/photos/2489986/pexels-photo-2489986.jpeg?auto=compress&cs=tinysrgb&w=800'
 							alt=''
 						/>
 					</div>
 				</div>
-				<div className='relative sm:py-24 sm:px-6 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:py-32'>
+				<div className='relative sm:py-24  lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:py-32'>
 					<div className='lg:pr-8'>
 						<div className='mx-auto max-w-md sm:max-w-lg lg:mx-0'>
 							<div className='pb-24'>
-								<h2 className='text-4xl font-bold tracking-tight sm:text-6xl'>
+								<h2 className='text-4xl font-bold text-primaryOrange tracking-tight sm:text-6xl'>
 									Let's work together
 								</h2>
 							</div>
