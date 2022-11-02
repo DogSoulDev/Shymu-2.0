@@ -4,6 +4,7 @@ import shymu_Logo1 from "../../assets/img/shymu-logo-1.png";
 import iconEmail from "../../assets/img/icon-email.svg";
 import iconGoogle from "../../assets/img/icon-google.svg";
 import iconFacebook from "../../assets/img/icon-facebook.svg";
+import "./styleguide.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
