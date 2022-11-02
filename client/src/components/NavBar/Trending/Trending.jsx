@@ -138,7 +138,7 @@ function Trending() {
 					<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
 						{products.map((product) => (
 							<div key={product.id} className='group relative'>
-								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
+								<div className=' drop-shadow-lg aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
 									<img
 										src={product.imageSrc}
 										alt={product.imageAlt}
@@ -176,7 +176,7 @@ function Trending() {
 				<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
 					{audiobooks.map((product) => (
 						<div key={product.id} className='group relative'>
-							<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+							<div className=' aspect-w-1 drop-shadow-lg aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
 								<img
 									src={product.imageSrc}
 									alt={product.imageAlt}
@@ -212,7 +212,7 @@ function Trending() {
 					<div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
 						{podcast.map((product) => (
 							<div key={product.id} className='group relative'>
-								<div className=' aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-300'>
+								<div className=' drop-shadow-lg aspect-w-1 aspect-h-4 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none '>
 									<img
 										src={product.imageSrc}
 										alt={product.imageAlt}
