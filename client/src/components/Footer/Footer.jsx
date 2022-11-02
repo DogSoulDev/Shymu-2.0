@@ -1,6 +1,7 @@
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
+import { useState } from "react";
 
 const navigation = {
 	solutions: [
@@ -92,12 +93,19 @@ const navigation = {
 	],
 };
 const Footer = () => {
+const [open,setOpen]= useState(true)
+
+const handleClosed = () =>{
+	setOpen(false)
+}
+
 	return (
 		<>
+
 			<footer
 				className='w-full h-auto flex items-center bg-gray-800'
 				aria-labelledby='footer-heading'
-			>
+				>
 				<h2 id='footer-heading' className='sr-only'>
 					Footer
 				</h2>
@@ -115,7 +123,7 @@ const Footer = () => {
 												<a
 													href={item.href}
 													className='text-base text-gray-300 hover:text-white'
-												>
+													>
 													{item.name}
 												</a>
 											</li>
@@ -130,7 +138,7 @@ const Footer = () => {
 												<a
 													href={item.href}
 													className='text-base text-gray-300 hover:text-white'
-												>
+													>
 													{item.name}
 												</a>
 											</li>
@@ -147,7 +155,7 @@ const Footer = () => {
 												<a
 													href={item.href}
 													className='text-base text-gray-300 hover:text-white'
-												>
+													>
 													{item.name}
 												</a>
 											</li>
@@ -162,7 +170,7 @@ const Footer = () => {
 												<a
 													href={item.href}
 													className='text-base text-gray-300 hover:text-white'
-												>
+													>
 													{item.name}
 												</a>
 											</li>
@@ -191,12 +199,12 @@ const Footer = () => {
 									required
 									className='w-full min-w-0 appearance-none rounded-md border border-transparent bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:border-white focus:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'
 									placeholder='Enter your email'
-								/>
+									/>
 								<div className='mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0'>
 									<button
 										type='submit'
 										className='flex w-full items-center justify-center rounded-md border border-transparent bg-primaryOrange py-2 px-4 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800'
-									>
+										>
 										Subscribe
 									</button>
 								</div>
@@ -207,9 +215,9 @@ const Footer = () => {
 						<div className='flex space-x-6 md:order-2'>
 							{navigation.social.map((item) => (
 								<a
-									key={item.name}
-									href={item.href}
-									className='text-gray-400 hover:text-gray-300'
+								key={item.name}
+								href={item.href}
+								className='text-gray-400 hover:text-gray-300'
 								>
 									<span className='sr-only'>{item.name}</span>
 									<item.icon className='h-6 w-6' aria-hidden='true' />
@@ -222,15 +230,19 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className='fixed inset-x-0 bottom-0'>
+					{open && (
+
 					<div className='bg-Purpple'>
 						<div className='mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8'>
+					
 							<div className='flex flex-wrap items-center justify-between'>
+
 								<div className='flex w-0 flex-1 items-center'>
 									<span className='flex rounded-lg bg-indigo-800 p-2'>
 										<MegaphoneIcon
 											className='h-6 w-6 text-white'
 											aria-hidden='true'
-										/>
+											/>
 									</span>
 									<p className='ml-3 truncate font-medium text-white'>
 										<span className='md:hidden'>
@@ -259,6 +271,7 @@ const Footer = () => {
 								<div className='order-2 flex-shrink-0 sm:order-3 sm:ml-3'>
 									<button
 										type='button'
+										onClick={handleClosed}
 										className='-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2'
 									>
 										<span className='sr-only'>Dismiss</span>
@@ -267,10 +280,13 @@ const Footer = () => {
 											aria-hidden='true'
 										/>
 									</button>
-								</div>{" "}
+								</div>
+
+
 							</div>
 						</div>
 					</div>
+					)}
 				</div>
 			</footer>
 		</>
