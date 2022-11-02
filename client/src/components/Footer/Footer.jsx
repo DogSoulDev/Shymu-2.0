@@ -4,25 +4,26 @@ import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
 
 const navigation = {
 	solutions: [
-		{ name: "Marketing", href: "#" },
-		{ name: "Analytics", href: "#" },
-		{ name: "Commerce", href: "#" },
-		{ name: "Insights", href: "#" },
+		{ name: "About Shymu", href: "#" },
+		{ name: "Technologies", href: "#" },
+		{ name: "Our Team", href: "#" },
+		{ name: "Testimonials", href: "#" },
 	],
 	support: [
 		{ name: "Pricing", href: "#" },
-		{ name: "Documentation", href: "#" },
-		{ name: "Guides", href: "#" },
-		{ name: "API Status", href: "#" },
+		{ name: "Features", href: "#" },
+		{ name: "Reviews", href: "#" },
+		{ name: "Membership", href: "#" },
 	],
 	company: [
-		{ name: "About", href: "#" },
-		{ name: "Blog", href: "#" },
-		{ name: "Jobs", href: "#" },
-		{ name: "Press", href: "#" },
-		{ name: "Partners", href: "#" },
+		{ name: "Trending", href: "#" },
+		{ name: "Match", href: "#" },
+		{ name: "Profile", href: "#" },
+		{ name: "Tickets", href: "#" },
+		
 	],
 	legal: [
+		{ name: "Contact Us", href: "#" },
 		{ name: "Claim", href: "#" },
 		{ name: "Privacy", href: "#" },
 		{ name: "Terms", href: "#" },
@@ -107,7 +108,7 @@ const Footer = () => {
 							<div className='md:grid md:grid-cols-2 md:gap-8'>
 								<div>
 									<h3 className='text-base font-medium text-white'>
-										Solutions
+										About us
 									</h3>
 									<ul role='list' className='mt-4 space-y-4'>
 										{navigation.solutions.map((item) => (
@@ -123,7 +124,7 @@ const Footer = () => {
 									</ul>
 								</div>
 								<div className='mt-12 md:mt-0'>
-									<h3 className='text-base font-medium text-white'>Support</h3>
+									<h3 className='text-base font-medium text-white'>Premium</h3>
 									<ul role='list' className='mt-4 space-y-4'>
 										{navigation.support.map((item) => (
 											<li key={item.name}>
@@ -217,7 +218,7 @@ const Footer = () => {
 							))}
 						</div>
 						<p className='mt-8 text-base text-gray-400 md:order-1 md:mt-0'>
-							&copy; 2020 Your Company, Inc. All rights reserved.
+							&copy; 2022 Shymu Inc. All rights reserved.
 						</p>
 					</div>
 				</div>
