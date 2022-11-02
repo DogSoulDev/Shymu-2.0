@@ -63,7 +63,7 @@ const Profile = () => {
 								Favourites
 							</p>
 						</NavLink>
-						<NavLink to={"/matches"}>
+						<NavLink to={"/match"}>
 							<p className='text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out'>
 								Matches
 							</p>
