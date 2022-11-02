@@ -2,10 +2,7 @@ const artist = require("../models/artist");
 const router = require("express").Router();
 router.get("/getAll", async (req, res) => {
 	const options = {
-		// sort returned documents in ascending order
 		sort: { createdAt: 1 },
-		// Include only the following
-		// projection : {}
 	};
 	const cursor = await artist.find(options);
 	if (cursor) {
@@ -64,7 +61,7 @@ router.put("/update/:updateId", async (req, res) => {
 });
 
 router.delete("/delete/:deleteId", async (req, res) => {
-	const filter = { _id: req.params.deleteId }
+	const filter = { _id: req.params.deleteId };
 	const result = await artist.deleteOne(filter);
 	if (result.deletedCount === 1) {
 		res.status(200).send({ success: true, msg: "Data Deleted" });
