@@ -1,35 +1,35 @@
 .app {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .matchBG {
-	background: #1f2937;
-	background-size: cover;
-	background-position: center;
+  background: #1f2937;
+  background-size: cover;
+  background-position: center;
 }
 
 .app > div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .row {
-	flex-direction: row !important;
+  flex-direction: row !important;
 }
 
 .row > * {
-	margin: 5px;
+  margin: 5px;
 }
 
 .cardContainer {
-	height: 520px;
+  height: 520px;
 }
 
-.card {
-	position: relative;
-	height: 460px;
+.card_tinder {
+  position: relative;
+  height: 460px;
 }
 
 .cardContent {
@@ -39,60 +39,60 @@
 }
 
 .infoText {
-	width: 100%;
-	justify-content: center;
-	display: flex;
-	color: #fff;
-	animation-name: popup;
-	animation-duration: 800ms;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  animation-name: popup;
+  animation-duration: 800ms;
 }
 
 .buttons {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 625px) {
-	.buttons {
-		flex-direction: column;
-	}
+  .buttons {
+    flex-direction: column;
+  }
 }
 
 .buttons button {
-	flex-shrink: 0;
-	padding: 10px;
-	color: #fff;
-	font-size: 18px;
-	background-color: #9198e5;
-	transition: 200ms;
-	font-weight: bolder;
-	width: -webkit-fill-available;
+  flex-shrink: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #9198e5;
+  transition: 200ms;
+  font-weight: bolder;
+  width: -webkit-fill-available;
 }
 
 .buttons button:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @keyframes popup {
-	0% {
-		transform: scale(1, 1);
-	}
-	10% {
-		transform: scale(1.1, 1.1);
-	}
-	30% {
-		transform: scale(0.9, 0.9);
-	}
-	50% {
-		transform: scale(1, 1);
-	}
-	57% {
-		transform: scale(1, 1);
-	}
-	64% {
-		transform: scale(1, 1);
-	}
-	100% {
-		transform: scale(1, 1);
-	}
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 1.1);
+  }
+  30% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  57% {
+    transform: scale(1, 1);
+  }
+  64% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
