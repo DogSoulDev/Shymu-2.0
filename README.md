@@ -11,5 +11,16 @@ We believe that the music, audiobooks and podcasts we love and the way we listen
 ![Captura de pantalla 2022-11-02 a las 10 29 55](https://user-images.githubusercontent.com/98118775/199454594-f68f88a6-6fff-498b-a35b-4eaa542516b9.png)
 
 ![Captura de pantalla 2022-11-02 a las 10 30 08](https://user-images.githubusercontent.com/98118775/199454609-ef064b6d-df44-42a4-8e86-1745b241e9db.png)
+
+## Installation
+An explanation of how to start the backend and the front-end.
+##The first thing to install:
+>>npm install
+###Front-End
+>cd client
+>>npm start
+###Backend
+>>cd server
+>>npm run dev
 ## Technologies 
 ![Captura de pantalla 2022-11-02 a las 10 30 20](https://user-images.githubusercontent.com/98118775/199454623-32a15403-e317-4951-a7f3-cb00213b8a87.png)
