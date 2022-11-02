@@ -72,7 +72,7 @@ const MusicPlayer = () => {
 	}, [song]);
 
 	return (
-		<div className='w-full full flex items-center gap-3 overflow-hidden'>
+		<div className='w-full full flex items-center gap-3 overflow-hidden bg-[#efefef]'>
 			<div
 				className={`w-full full items-center gap-3 p-4 ${
 					miniPlayer ? "absolute top-40" : "flex relative"
