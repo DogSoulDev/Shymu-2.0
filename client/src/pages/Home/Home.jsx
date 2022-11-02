@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getAllSongs } from "../../api";
 import { actionType } from "../../hooks/Context/reducer";
 import { useStateValue } from "../../hooks/Context/StateProvider";
@@ -150,9 +151,13 @@ const Home = () => {
 									Let people meet the real you. Connect based on your most
 									intimate feelings - Your music, books and podcast
 								</p>
-								<button className='px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#611dd4] rounded-md hover:bg-[#7423ff] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
-									Find a match now!
-								</button>
+								<div>
+									<Link to='/match'>
+										<button className='px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#611dd4] rounded-md hover:bg-[#7423ff] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
+											Find a match now!
+										</button>
+									</Link>
+								</div>
 							</div>
 							<div className='w-full max-w-xl xl:px-8 xl:w-5/12'>
 								<div className='bg-white rounded shadow-2xl p-7 sm:p-10'>
