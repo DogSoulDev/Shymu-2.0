@@ -21,7 +21,15 @@ const Dashboard = () => {
 			<li className="flex">
           <div className="flex items-center">
             <a href="#" className="text-gray-400 hover:text-gray-500">
-              <HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
+              
+			  <NavLink 
+					to={"/dashboard/home"}
+					className={({ isActive }) =>
+						isActive ? isActiveStyles : isNotActiveStyles 
+					}
+				>
+					<HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
+				</NavLink>
               <span className="sr-only">Home</span>
             </a>
           </div>
