@@ -1,4 +1,6 @@
 # Shymu
+<img width="345" alt="shymu-logo-1@2x" src="https://user-images.githubusercontent.com/98118775/199455460-1c51f7ef-8b50-4d80-8872-24439bcbb4c5.png">
+
 ## About Shymu
 While mutual interests are a good place to start in building a connection with someone else, they shouldn't be the only thing you consider. Shymu is not just a dating app that uses your taste in music to find matches. You can also find your soulmate in business, fitness or even coding.
 
