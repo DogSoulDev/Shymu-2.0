@@ -1,29 +1,29 @@
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import { isActiveStyles, isNotActiveStyles } from "../../utils/styles";
+import { useState } from "react";
 
 const navigation = {
 	solutions: [
-		{ name: "About Shymu", href: "#" },
-		{ name: "Technologies", href: "#" },
-		{ name: "Our Team", href: "#" },
-		{ name: "Testimonials", href: "#" },
+		{ name: "Marketing", href: "#" },
+		{ name: "Analytics", href: "#" },
+		{ name: "Commerce", href: "#" },
+		{ name: "Insights", href: "#" },
 	],
 	support: [
 		{ name: "Pricing", href: "#" },
-		{ name: "Features", href: "#" },
-		{ name: "Reviews", href: "#" },
-		{ name: "Membership", href: "#" },
+		{ name: "Documentation", href: "#" },
+		{ name: "Guides", href: "#" },
+		{ name: "API Status", href: "#" },
 	],
 	company: [
-		{ name: "Trending", href: "#" },
-		{ name: "Match", href: "#" },
-		{ name: "Profile", href: "#" },
-		{ name: "Tickets", href: "#" },
-		
+		{ name: "About", href: "#" },
+		{ name: "Blog", href: "#" },
+		{ name: "Jobs", href: "#" },
+		{ name: "Press", href: "#" },
+		{ name: "Partners", href: "#" },
 	],
 	legal: [
-		{ name: "Contact Us", href: "#" },
 		{ name: "Claim", href: "#" },
 		{ name: "Privacy", href: "#" },
 		{ name: "Terms", href: "#" },
@@ -93,6 +93,12 @@ const navigation = {
 	],
 };
 const Footer = () => {
+	const [open, setOpen] = useState(true);
+
+	const handleClosed = () => {
+		setOpen(false);
+	};
+
 	return (
 		<>
 			<footer
@@ -108,7 +114,7 @@ const Footer = () => {
 							<div className='md:grid md:grid-cols-2 md:gap-8'>
 								<div>
 									<h3 className='text-base font-medium text-white'>
-										About us
+										Solutions
 									</h3>
 									<ul role='list' className='mt-4 space-y-4'>
 										{navigation.solutions.map((item) => (
@@ -124,7 +130,7 @@ const Footer = () => {
 									</ul>
 								</div>
 								<div className='mt-12 md:mt-0'>
-									<h3 className='text-base font-medium text-white'>Premium</h3>
+									<h3 className='text-base font-medium text-white'>Support</h3>
 									<ul role='list' className='mt-4 space-y-4'>
 										{navigation.support.map((item) => (
 											<li key={item.name}>
@@ -204,7 +210,7 @@ const Footer = () => {
 							</form>
 						</div>
 					</div>
-					<div className='mt-8 border-t border-gray-700 pb-8 pt-8 md:flex md:items-center md:justify-between'>
+					<div className='mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between'>
 						<div className='flex space-x-6 md:order-2'>
 							{navigation.social.map((item) => (
 								<a
@@ -218,60 +224,64 @@ const Footer = () => {
 							))}
 						</div>
 						<p className='mt-8 text-base text-gray-400 md:order-1 md:mt-0'>
-							&copy; 2022 Shymu Inc. All rights reserved.
+							&copy; 2020 Your Company, Inc. All rights reserved.
 						</p>
 					</div>
 				</div>
 				<div className='fixed inset-x-0 bottom-0'>
-					<div className='bg-Purpple'>
-						<div className='mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8'>
-							<div className='flex flex-wrap items-center justify-between'>
-								<div className='flex w-0 flex-1 items-center'>
-									<span className='flex rounded-lg bg-indigo-800 p-2'>
-										<MegaphoneIcon
-											className='h-6 w-6 text-white'
-											aria-hidden='true'
-										/>
-									</span>
-									<p className='ml-6 truncate font-medium text-white'>
-										<span className='md:hidden'>
-											We announced a new product!
+					{open && (
+						<div className='bg-Purpple'>
+							<div className='mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8'>
+								<div className='flex flex-wrap items-center justify-between'>
+									<div className='flex w-0 flex-1 items-center'>
+										<span className='flex rounded-lg bg-indigo-800 p-2'>
+											<MegaphoneIcon
+												className='h-6 w-6 text-white'
+												aria-hidden='true'
+											/>
 										</span>
-										<span className='hidden md:inline'>
-											Big news! We're excited to announce a new PREMIUM feature.
-										</span>
-									</p>
-								</div>
-								<div className='order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto'>
-									<NavLink
-										to={"/premium"}
-										className={({ isActive }) =>
-											isActive ? isActiveStyles : isNotActiveStyles
-										}
-									>
-										<a
-											href='#'
-											className='flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50'
+										<p className='ml-3 truncate font-medium text-white'>
+											<span className='md:hidden'>
+												We announced a new product!
+											</span>
+											<span className='hidden md:inline'>
+												Big news! We're excited to announce a new PREMIUM
+												feature.
+											</span>
+										</p>
+									</div>
+									<div className='order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto'>
+										<NavLink
+											to={"/premium"}
+											className={({ isActive }) =>
+												isActive ? isActiveStyles : isNotActiveStyles
+											}
 										>
-											Learn more
-										</a>
-									</NavLink>
+											<a
+												href='#'
+												className='flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50'
+											>
+												Learn more
+											</a>
+										</NavLink>
+									</div>
+									<div className='order-2 flex-shrink-0 sm:order-3 sm:ml-3'>
+										<button
+											type='button'
+											onClick={handleClosed}
+											className='-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2'
+										>
+											<span className='sr-only'>Dismiss</span>
+											<XMarkIcon
+												className='h-6 w-6 text-white'
+												aria-hidden='true'
+											/>
+										</button>
+									</div>
 								</div>
-								<div className='order-2 flex-shrink-0 sm:order-3 sm:ml-3'>
-									<button
-										type='button'
-										className='-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2'
-									>
-										<span className='sr-only'>Dismiss</span>
-										<XMarkIcon
-											className='h-6 w-6 text-white'
-											aria-hidden='true'
-										/>
-									</button>
-								</div>{" "}
 							</div>
 						</div>
-					</div>
+					)}
 				</div>
 			</footer>
 		</>
