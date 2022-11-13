@@ -29,6 +29,6 @@ export { default as Trending } from "./NavBar/Trending/Trending.jsx";
 export { default as Premium } from "./NavBar/Premium/Premium.jsx";
 export { default as Match } from "./NavBar/Match/Match.jsx";
 
-export { default as AlertSuccess } from "./Alerts/AlertSucces.jsx";
+export { default as AlertSuccess } from "./Alerts/AlertSuccess.jsx";
 export { default as AlertError } from "./Alerts/AlertError.jsx";
 export { default as MusicPlayer } from "./MusicPlayer/MusicPlayer.jsx";

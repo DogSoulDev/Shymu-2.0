@@ -22,7 +22,7 @@ import {
 
 import { actionType } from "../../hooks/Context/reducer";
 import { filterByLanguage, filters } from "../../utils/supportfunctions";
-import AlertSuccess from "../Alerts/AlertSucces";
+import AlertSuccess from "../Alerts/AlertSuccess";
 import AlertError from "../Alerts/AlertError";
 export const ImageLoader = ({ progress }) => {
 	return (
@@ -161,7 +161,7 @@ const DashboardNewSong = () => {
 		}
 		if (!allAlbums) {
 			getAllAlbums().then((data) => {
-				dispatch({ type: actionType.SET_ALL_ALBUMNS, allAlbums: data.data });
+				dispatch({ type: actionType.SET_ALL_ALBUMS, allAlbums: data.data });
 			});
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
@@ -534,7 +534,7 @@ export const AddNewAlbum = () => {
 			saveNewAlbum(data).then((res) => {
 				getAllAlbums().then((albumData) => {
 					dispatch({
-						type: actionType.SET_ALL_ALBUMNS,
+						type: actionType.SET_ALL_ALBUMS,
 						albumData: albumData.data,
 					});
 				});
