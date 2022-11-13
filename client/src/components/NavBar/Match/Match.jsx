@@ -1,6 +1,7 @@
 import "./Match.css";
 import { useState } from "react";
-import Switch from "react-ios-switch";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -15,16 +16,16 @@ import Advanced from "./functionMatch/Advanced";
 import Simple from "./functionMatch/Simple";
 
 function Match() {
-	const [showAdvanced, setShowAdvanced] = useState(true);
-	return (
-		<>
-			<NavBar />
-			<div className='matchBG w-full bg-[#f3f3f3] py-20'>
-				<div className='app'>{showAdvanced ? <Advanced /> : <Simple />}</div>
-			</div>
-			<Footer />
-		</>
-	);
+  const [showAdvanced, setShowAdvanced] = useState(true);
+  return (
+    <>
+      <NavBar />
+      <div className="matchBG w-full bg-[#f3f3f3] py-20">
+        <div className="app">{showAdvanced ? <Advanced /> : <Simple />}</div>
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default Match;
