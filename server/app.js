@@ -20,17 +20,17 @@ const songRoute = require("./routes/songs");
 app.use("/api/songs/", songRoute);
 
 mongoose.connect(process.env.DB_STRING, (err, req) => {
-	try {
-		if (err) {
-			throw err;
-		} else {
-			console.log("Connection to Mongodb OK!");
-		}
-	} catch (error) {
-		console.log("Error connecting to Mongodb!");
-	}
+  try {
+    if (err) {
+      throw err;
+    } else {
+      console.log("Connection to Mongodb OK!");
+    }
+  } catch (error) {
+    console.log("Error connecting to Mongodb!");
+  }
 });
 
 app.listen(process.env.LH_PORT, (req, res) => {
-	console.log("Server Runs OK!");
+  console.log("Server Runs OK!");
 });
