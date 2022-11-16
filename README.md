@@ -18,7 +18,7 @@ An explanation of how to start the backend and the frontend.
 ### The first thing to install:
 
 <code>npm install</code>
-### Front-End
+### Frontend
 <code>cd client</code>
 <code>npm start</code>
 ### Backend
