@@ -13,7 +13,7 @@ We believe that the music, audiobooks and podcasts we love and the way we listen
 ![Captura de pantalla 2022-11-02 a las 10 30 08](https://user-images.githubusercontent.com/98118775/199454609-ef064b6d-df44-42a4-8e86-1745b241e9db.png)
 
 ## Installation
-An explanation of how to start the backend and the front-end.
+An explanation of how to start the backend and the frontend.
 
 ### The first thing to install:
 
